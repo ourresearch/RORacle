@@ -1,4 +1,4 @@
-import pandas as pd
+import csv
 import json
 import ast
 import os
@@ -43,37 +43,37 @@ def process_csv():
     input_path = os.path.join(project_root, 'data', 'openalex_gold_w_ror_ids.csv')
     output_path = os.path.join(project_root, 'data', 'test_cases.json')
 
-    # Read the CSV file
-    df = pd.read_csv(input_path)
     test_cases = []
-
-    for _, row in df.iterrows():
-        # Get institution names
-        names = clean_labels_name(row['labels_name'])
-        
-        # Get ROR IDs
-        ror_ids = []
-        if pd.notna(row['ror_id']) and row['ror_id'] != '':
-            ror_ids = [id.strip() for id in row['ror_id'].split(';')]
-        
-        # Validate lengths match
-        if len(names) != len(ror_ids):
-            print(f"Error: Mismatch in number of names and IDs for affiliation: {row['affiliation_string']}")
-            print(f"Names: {names}")
-            print(f"IDs: {ror_ids}")
-            continue
+    
+    with open(input_path, 'r', encoding='utf-8') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            # Get institution names
+            names = clean_labels_name(row['labels_name'])
             
-        # Create ROR records
-        ror_records = [ROR_record(id=id, name=name) 
-                      for name, id in zip(names, ror_ids)]
-        
-        # Create TestCase
-        test_case = TestCase(
-            affiliation_string=row['affiliation_string'],
-            ror_records=ror_records
-        )
-        
-        test_cases.append(test_case)
+            # Get ROR IDs
+            ror_ids = []
+            if row['ror_id']:
+                ror_ids = [id.strip() for id in row['ror_id'].split(';')]
+            
+            # Validate lengths match
+            if len(names) != len(ror_ids):
+                print(f"Error: Mismatch in number of names and IDs for affiliation: {row['affiliation_string']}")
+                print(f"Names: {names}")
+                print(f"IDs: {ror_ids}")
+                continue
+                
+            # Create ROR records
+            ror_records = [ROR_record(id=id, name=name) 
+                          for name, id in zip(names, ror_ids)]
+            
+            # Create TestCase
+            test_case = TestCase(
+                affiliation_string=row['affiliation_string'],
+                ror_records=ror_records
+            )
+            
+            test_cases.append(test_case)
     
     # Convert to JSON and save
     json_data = [tc.to_dict() for tc in test_cases]
