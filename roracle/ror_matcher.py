@@ -18,7 +18,7 @@ def find_ror_records(affiliation_string: str) -> List[RORRecord]:
     """
     # Return a sample record for now
     sample_record = RORRecord(
-        id="https://ror.org/02ex6cf31",
-        name="Brookhaven National Laboratory"
+        id="https://ror.org/00krab219",
+        name="Nippon Medical School"
     )
     return [sample_record]
