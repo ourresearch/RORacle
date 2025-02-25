@@ -9,4 +9,3 @@ ENV/
 *.log
 
 # Large data files
-data/ror_organizations.csv
