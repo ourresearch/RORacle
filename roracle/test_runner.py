@@ -1,6 +1,7 @@
 import json
 import time
-from typing import List, Dict, Optional
+import random
+from typing import List, Dict, Optional, Union
 from dataclasses import dataclass, asdict
 import os
 from .ror_matcher import find_ror_records, RORRecord
@@ -41,12 +42,13 @@ def compare_records(produced_records: List[RORRecord], expected_records: List[RO
     
     return matches, under_matches, over_matches
 
-def run_tests(limit: Optional[int] = None) -> Dict:
+def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = None) -> Dict:
     """
     Run tests and return results summary.
     
     Args:
         limit: Optional maximum number of tests to run
+        sample: If True, randomizes test order. If int, uses it as random seed.
     """
     # Load test cases
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -56,6 +58,22 @@ def run_tests(limit: Optional[int] = None) -> Dict:
     with open(test_cases_path, 'r') as f:
         test_cases = json.load(f)
     
+    # Handle sampling if requested
+    seed = None
+    if sample is not None:
+        if isinstance(sample, bool) and sample:
+            # Generate a random seed if sample is True
+            seed = random.randint(1, 1000000)
+        elif isinstance(sample, int):
+            # Use the provided integer as seed
+            seed = sample
+            
+        if seed is not None:
+            # Set the random seed and shuffle the test cases
+            random.seed(seed)
+            random.shuffle(test_cases)
+    
+    # Apply limit after shuffling if needed
     if limit:
         test_cases = test_cases[:limit]
     
@@ -141,6 +159,7 @@ def run_tests(limit: Optional[int] = None) -> Dict:
             "elapsed_per_test": round(avg_time, 3),
             "elapsed_min": round(min_time, 3),
             "elapsed_max": round(max_time, 3),
+            "seed": seed,
             "performance": {
                 "precision": round(precision, 3),
                 "recall": round(recall, 3),
