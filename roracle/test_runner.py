@@ -44,6 +44,82 @@ def compare_records(produced_records: List[RORRecord], expected_records: List[RO
     
     return matches, under_matches, over_matches
 
+def run_test_by_id(test_id: int) -> Dict:
+    """
+    Run a single test case by ID and return the result.
+    
+    Args:
+        test_id: ID of the test case to run
+        
+    Returns:
+        Dict with test result or error message
+    """
+    # Load test cases
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    test_cases_path = os.path.join(project_root, 'data', 'test_cases.json')
+    
+    with open(test_cases_path, 'r') as f:
+        test_cases = json.load(f)
+    
+    # Check if test_id is valid
+    if test_id < 0 or test_id >= len(test_cases):
+        return {
+            "error": f"Invalid test ID: {test_id}. Valid IDs range from 0 to {len(test_cases) - 1}."
+        }
+    
+    # Get the test case
+    test_case = test_cases[test_id]
+    
+    try:
+        # Time this individual test
+        test_start = time.time()
+        
+        # Get affiliation and expected records
+        affiliation = test_case["affiliation_string"]
+        expected_records = [RORRecord(r["id"], r["name"]) for r in test_case["ror_records"]]
+        
+        # Get produced records
+        produced_records = find_ror_records(affiliation)
+        
+        # Calculate elapsed time
+        elapsed = time.time() - test_start
+        
+        # Compare produced and expected records
+        matches, under_matches, over_matches = compare_records(produced_records, expected_records)
+        
+        # Create test result
+        result = TestResult(
+            id=test_id,
+            is_passing=len(under_matches) == 0 and len(over_matches) == 0,
+            affiliation=affiliation,
+            matches=matches,
+            under_matches=under_matches,
+            over_matches=over_matches,
+            elapsed=elapsed
+        )
+        
+        # Calculate performance metrics for this test
+        precision = len(matches) / (len(matches) + len(over_matches)) if (len(matches) + len(over_matches)) > 0 else 0
+        recall = len(matches) / (len(matches) + len(under_matches)) if (len(matches) + len(under_matches)) > 0 else 0
+        f_score = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
+        
+        return {
+            "meta": {
+                "elapsed": round(elapsed, 3),
+                "performance": {
+                    "precision": round(precision, 3),
+                    "recall": round(recall, 3),
+                    "f_score": round(f_score, 3)
+                }
+            },
+            "result": result.to_dict()
+        }
+    except Exception as e:
+        return {
+            "error": f"Error running test {test_id}: {str(e)}"
+        }
+
 def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = None) -> Dict:
     """
     Run tests and return a summary of results.
@@ -56,7 +132,11 @@ def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = 
         Dict with meta information and test results
     """
     # Load test cases
-    with open("data/test_cases.json", "r") as f:
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    test_cases_path = os.path.join(project_root, 'data', 'test_cases.json')
+    
+    with open(test_cases_path, 'r') as f:
         test_cases = json.load(f)
     
     # Apply limit if specified

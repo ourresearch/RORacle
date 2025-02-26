@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from roracle.ror_matcher import find_ror_records
-from roracle.test_runner import run_tests
+from roracle.test_runner import run_tests, run_test_by_id
 from typing import Optional, Union
 
 app = FastAPI(title="RORacle API")
@@ -34,3 +34,13 @@ async def run_test_suite(limit: Optional[int] = None, sample: Optional[Union[boo
         sample: If True, randomizes test order. If int, uses it as random seed.
     """
     return run_tests(limit=limit, sample=sample)
+
+@app.get("/tests/{test_id}")
+async def run_single_test(test_id: int):
+    """
+    Run a single test case by ID and return the result.
+    
+    Args:
+        test_id: ID of the test case to run
+    """
+    return run_test_by_id(test_id=test_id)
