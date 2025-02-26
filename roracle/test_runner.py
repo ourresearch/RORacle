@@ -1,6 +1,6 @@
 import json
 import time
-from typing import List, Dict, Set
+from typing import List, Dict, Optional
 from dataclasses import dataclass, asdict
 import os
 from .ror_matcher import find_ror_records, RORRecord
@@ -10,20 +10,22 @@ class TestResult:
     is_passing: bool
     affiliation: str
     matches: List[RORRecord]
-    missing_records: List[RORRecord]
-    wrong_records: List[RORRecord]
+    under_matches: List[RORRecord]
+    over_matches: List[RORRecord]
+    elapsed: float  # time taken for this test
 
     def to_dict(self) -> Dict:
         return {
             "is_passing": self.is_passing,
             "affiliation": self.affiliation,
             "matches": [r.to_dict() for r in self.matches],
-            "missing_records": [r.to_dict() for r in self.missing_records],
-            "wrong_records": [r.to_dict() for r in self.wrong_records]
+            "under_matches": [r.to_dict() for r in self.under_matches],
+            "over_matches": [r.to_dict() for r in self.over_matches],
+            "elapsed": round(self.elapsed, 3)
         }
 
 def compare_records(produced_records: List[RORRecord], expected_records: List[RORRecord]) -> tuple[List[RORRecord], List[RORRecord], List[RORRecord]]:
-    """Compare produced and expected records, returning (matches, missing, wrong)"""
+    """Compare produced and expected records, returning (matches, under_matches, over_matches)"""
     produced_ids = {r.id for r in produced_records}
     expected_ids = {r.id for r in expected_records}
     
@@ -31,16 +33,21 @@ def compare_records(produced_records: List[RORRecord], expected_records: List[RO
     matching_ids = produced_ids & expected_ids
     matches = [r for r in produced_records if r.id in matching_ids]
     
-    # Find missing records (in expected but not in produced)
-    missing = [r for r in expected_records if r.id not in produced_ids]
+    # Find under_matches (in expected but not in produced)
+    under_matches = [r for r in expected_records if r.id not in produced_ids]
     
-    # Find wrong records (in produced but not in expected)
-    wrong = [r for r in produced_records if r.id not in expected_ids]
+    # Find over_matches (in produced but not in expected)
+    over_matches = [r for r in produced_records if r.id not in expected_ids]
     
-    return matches, missing, wrong
+    return matches, under_matches, over_matches
 
-def run_tests() -> Dict:
-    """Run all tests and return results summary"""
+def run_tests(limit: Optional[int] = None) -> Dict:
+    """
+    Run tests and return results summary.
+    
+    Args:
+        limit: Optional maximum number of tests to run
+    """
     # Load test cases
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(script_dir)
@@ -49,14 +56,28 @@ def run_tests() -> Dict:
     with open(test_cases_path, 'r') as f:
         test_cases = json.load(f)
     
+    if limit:
+        test_cases = test_cases[:limit]
+    
     start_time = time.time()
     results_passing = []
     results_failing = []
     num_error = 0
     
+    # Timing stats
+    times = []
+    
+    # Performance metrics
+    total_matches = 0
+    total_under_matches = 0
+    total_over_matches = 0
+    
     # Run each test
     for test_case in test_cases:
         try:
+            # Time this individual test
+            test_start = time.time()
+            
             # Get actual results from our matcher
             affiliation = test_case['affiliation_string']
             produced_records = find_ror_records(affiliation)
@@ -68,15 +89,25 @@ def run_tests() -> Dict:
             ]
             
             # Compare results
-            matches, missing, wrong = compare_records(produced_records, expected_records)
+            matches, under_matches, over_matches = compare_records(produced_records, expected_records)
+            
+            # Update performance metrics
+            total_matches += len(matches)
+            total_under_matches += len(under_matches)
+            total_over_matches += len(over_matches)
+            
+            # Calculate test time
+            test_elapsed = time.time() - test_start
+            times.append(test_elapsed)
             
             # Create test result
             result = TestResult(
-                is_passing=len(missing) == 0 and len(wrong) == 0,
+                is_passing=len(under_matches) == 0 and len(over_matches) == 0,
                 affiliation=affiliation,
                 matches=matches,
-                missing_records=missing,
-                wrong_records=wrong
+                under_matches=under_matches,
+                over_matches=over_matches,
+                elapsed=test_elapsed
             )
             
             # Add to appropriate list
@@ -89,17 +120,32 @@ def run_tests() -> Dict:
             num_error += 1
             print(f"Error running test for affiliation '{affiliation}': {str(e)}")
     
-    # Calculate timing
-    elapsed = time.time() - start_time
-    num_tests = len(test_cases)
+    # Calculate timing stats
+    total_elapsed = time.time() - start_time
+    avg_time = sum(times) / len(times) if times else 0
+    max_time = max(times) if times else 0
+    min_time = min(times) if times else 0
+    
+    # Calculate performance metrics
+    precision = total_matches / (total_matches + total_over_matches) if (total_matches + total_over_matches) > 0 else 0
+    recall = total_matches / (total_matches + total_under_matches) if (total_matches + total_under_matches) > 0 else 0
+    f_score = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
     
     return {
         "meta": {
             "num_passing": len(results_passing),
             "num_failing": len(results_failing),
             "num_error": num_error,
-            "elapsed": round(elapsed, 3),
-            "elapsed_per_test": round(elapsed / num_tests, 3) if num_tests > 0 else 0
+            "num_total": len(test_cases),
+            "elapsed": round(total_elapsed, 3),
+            "elapsed_per_test": round(avg_time, 3),
+            "elapsed_min": round(min_time, 3),
+            "elapsed_max": round(max_time, 3),
+            "performance": {
+                "precision": round(precision, 3),
+                "recall": round(recall, 3),
+                "f_score": round(f_score, 3)
+            }
         },
         "results_failing": [r.to_dict() for r in results_failing],
         "results_passing": [r.to_dict() for r in results_passing]
