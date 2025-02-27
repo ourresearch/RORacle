@@ -1,0 +1,193 @@
+Conversion started at 2025-02-27 14:09:57
+Reading from: data/insti_bench_openalex_ids.tsv
+Writing to: data/insti_bench.tsv
+Batch size: 50
+API pause: 1.0 seconds
+Max retries: 3
+Retry backoff: 2.0 seconds
+
+Read 2857 rows from input file
+Extracting OpenAlex IDs from labels...
+Found 2167 unique OpenAlex IDs
+
+Fetching ROR IDs in batches...
+Found 1 invalid OpenAlex IDs that will be skipped: -1
+
+Processing batch 1 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 2 of 44 (50 IDs)
+The following OpenAlex IDs were not found in the API response: 4210096815
+API URL: https://api.openalex.org/institutions?select=id,ror&filter=ids.openalex:I4210159946|I51158804|I142263535|I867280407|I4210096815|I4210135640|I203339264|I100532134|I3130805194|I151201029|I158248296|I4210104358|I204778367|I188973947|I4210137651|I2802328216|I76134821|I2802916955|I4210142901|I129774422|I1320133117|I5681781|I1320473756|I165779595|I1321649718|I4210150290|I1331142282|I1342782366|I56590836|I2799732068|I129604602|I2800079252|I2800479947|I78757542|I2800849109|I31746571|I2801350665|I2801688508|I2801814493|I165143802|I146584863|I2802692842|I177877127|I2803024705|I4210087110|I4210105949|I4210099777|I4210125633|I4210163497|I1315288073&per_page=50
+  Found ROR IDs for 49 out of 50 valid OpenAlex IDs in this batch
+  Could not map the following OpenAlex IDs: 4210096815
+  Trying individual request for OpenAlex ID: 4210096815
+    No results found for OpenAlex ID 4210096815 in individual request
+Processing batch 3 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 4 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 5 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 6 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 7 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 8 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 9 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 10 of 44 (50 IDs)
+The following OpenAlex IDs were not found in the API response: 4210092866
+API URL: https://api.openalex.org/institutions?select=id,ror&filter=ids.openalex:I2801463291|I2803066834|I4210087357|I189158943|I4210087773|I4210097083|I9360294|I122346577|I4210109058|I4210110840|I66752286|I45084792|I4210113625|I4210115393|I123338534|I4210119436|I172446870|I4210124799|I4210133214|I154387261|I4210153126|I4210138843|I4210146472|I25217355|I4210151645|I4210160172|I64189623|I31419693|I2801673063|I848706|I2802194831|I139264467|I2802835388|I2803058125|I4210092045|I87111246|I4210092866|I146824383|I4210104532|I4210106953|I104338594|I4210109935|I4210118617|I4210136447|I4210144108|I193775966|I4210148121|I111277659|I4210159787|I4210160997&per_page=50
+  Found ROR IDs for 49 out of 50 valid OpenAlex IDs in this batch
+  Could not map the following OpenAlex IDs: 4210092866
+  Trying individual request for OpenAlex ID: 4210092866
+    No results found for OpenAlex ID 4210092866 in individual request
+Processing batch 11 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 12 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 13 of 44 (50 IDs)
+The following OpenAlex IDs were not found in the API response: 4210125713
+API URL: https://api.openalex.org/institutions?select=id,ror&filter=ids.openalex:I4210108791|I4210164401|I145311948|I114832834|I2800269015|I185443292|I2800326109|I4210130818|I2800446032|I27804330|I2800640726|I2801671727|I201448701|I4210126198|I97018004|I2801935854|I4210094059|I2802060973|I2802697821|I2802789608|I173911158|I2802841970|I52357470|I3019308854|I2613432|I4210163050|I4210090317|I4210096275|I921990950|I4210097282|I170201317|I4210105015|I4210106595|I4210107726|I76835614|I27837315|I4210114445|I4210117038|I4210117453|I4210161994|I4210134579|I4210124175|I111979921|I4210125713|I4210127055|I4210130600|I1299725459|I204465549|I4210143084|I181547552&per_page=50
+  Found ROR IDs for 49 out of 50 valid OpenAlex IDs in this batch
+  Could not map the following OpenAlex IDs: 4210125713
+  Trying individual request for OpenAlex ID: 4210125713
+    No results found for OpenAlex ID 4210125713 in individual request
+Processing batch 14 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 15 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 16 of 44 (50 IDs)
+  Batch contains 1 invalid IDs that will be skipped
+  Found ROR IDs for 49 out of 49 valid OpenAlex IDs in this batch
+Processing batch 17 of 44 (50 IDs)
+The following OpenAlex IDs were not found in the API response: 4210159031
+API URL: https://api.openalex.org/institutions?select=id,ror&filter=ids.openalex:I17877952|I4210088483|I4210136182|I182212641|I4210123554|I4210132373|I139669409|I28290843|I4210105654|I43406934|I48843708|I177738480|I9617848|I1306686416|I37696226|I4210128284|I19820366|I106542073|I4210099681|I152031979|I101479585|I157773358|I2799998900|I80606768|I129043915|I4210126152|I4210165410|I86987016|I170215575|I2800235667|I4210146061|I63634437|I134820265|I11701301|I126307644|I139660479|I1286704778|I96580804|I162148367|I69737025|I134113660|I1313323035|I4210144781|I184558857|I37796252|I185652977|I16452829|I4210159031|I74801974|I165733156&per_page=50
+  Found ROR IDs for 49 out of 50 valid OpenAlex IDs in this batch
+  Could not map the following OpenAlex IDs: 4210159031
+  Trying individual request for OpenAlex ID: 4210159031
+    No results found for OpenAlex ID 4210159031 in individual request
+Processing batch 18 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 19 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 20 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 21 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 22 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 23 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 24 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 25 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 26 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 27 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 28 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 29 of 44 (50 IDs)
+The following OpenAlex IDs were not found in the API response: 4210092770, 4210124352, 4210136436
+API URL: https://api.openalex.org/institutions?select=id,ror&filter=ids.openalex:I4210153928|I4210138757|I4210139715|I165831266|I42405503|I70054679|I4210162705|I4210119095|I4210097806|I4210108471|I115592961|I4210108951|I13268429|I4210149451|I208086522|I4210152006|I12411659|I21160419|I4210121553|I1286583668|I4210092770|I67581229|I177828482|I202539009|I211433327|I4210100888|I4210131342|I2802334042|I133836048|I4210138501|I4210142396|I43218427|I50928471|I4210136436|I50760025|I177156846|I4210164952|I192507692|I56085075|I1314696892|I26120043|I64175962|I4210115246|I2799740997|I2799971621|I2801056593|I2801799315|I4210124352|I24571045|I192168892&per_page=50
+  Found ROR IDs for 47 out of 50 valid OpenAlex IDs in this batch
+  Could not map the following OpenAlex IDs: 4210092770, 4210136436, 4210124352
+  Trying individual request for OpenAlex ID: 4210092770
+    No results found for OpenAlex ID 4210092770 in individual request
+  Trying individual request for OpenAlex ID: 4210136436
+    No results found for OpenAlex ID 4210136436 in individual request
+  Trying individual request for OpenAlex ID: 4210124352
+    No results found for OpenAlex ID 4210124352 in individual request
+Processing batch 30 of 44 (50 IDs)
+The following OpenAlex IDs were not found in the API response: 4210144556
+API URL: https://api.openalex.org/institutions?select=id,ror&filter=ids.openalex:I102502594|I1336263701|I27469343|I158716096|I4210089990|I34077901|I132210918|I141962983|I130579109|I130823665|I4210148429|I4210151564|I4210123892|I111552434|I1318644421|I135705104|I4210144556|I4210164985|I102335020|I194184283|I4210115043|I67348948|I64663401|I155671955|I4210132734|I3132096736|I119878761|I4210088963|I37322517|I4210091499|I60342839|I24354313|I186246823|I177753169|I69356397|I70983195|I4210090760|I186359701|I127366699|I107139324|I60065076|I169046204|I5422934|I101100930|I120108168|I3018075036|I4210112013|I924318406|I9340077|I36080156&per_page=50
+  Found ROR IDs for 49 out of 50 valid OpenAlex IDs in this batch
+  Could not map the following OpenAlex IDs: 4210144556
+  Trying individual request for OpenAlex ID: 4210144556
+    No results found for OpenAlex ID 4210144556 in individual request
+Processing batch 31 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 32 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 33 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 34 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 35 of 44 (50 IDs)
+The following OpenAlex IDs were not found in the API response: 4210151925
+API URL: https://api.openalex.org/institutions?select=id,ror&filter=ids.openalex:I1340179700|I2801107848|I77443782|I4210104779|I188891513|I4210089918|I1288380561|I162706563|I129826125|I42766147|I4210098204|I895819238|I133533813|I40677808|I153157583|I98805295|I3130536658|I71209653|I177136067|I4210111147|I4210121996|I39481719|I4210111000|I4210104871|I4210151925|I1321067030|I123185442|I4210112595|I169689159|I79731167|I4210097536|I60138030|I4210120508|I101407740|I163793406|I189977406|I930072361|I123698207|I4210126992|I185492890|I1304378839|I94626330|I4210094678|I4210135186|I3129593361|I91041137|I4210113646|I123096312|I183898223|I30147112&per_page=50
+  Found ROR IDs for 49 out of 50 valid OpenAlex IDs in this batch
+  Could not map the following OpenAlex IDs: 4210151925
+  Trying individual request for OpenAlex ID: 4210151925
+    No results found for OpenAlex ID 4210151925 in individual request
+Processing batch 36 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 37 of 44 (50 IDs)
+The following OpenAlex IDs were not found in the API response: 4210088176
+API URL: https://api.openalex.org/institutions?select=id,ror&filter=ids.openalex:I4210146744|I4210108870|I4210098230|I4210160469|I4210104045|I904013037|I4210101845|I49663120|I63341726|I992397|I4210145600|I166722992|I4210145278|I154130895|I2802624667|I4210154057|I160013858|I4210109533|I160354188|I4210144860|I4210129936|I4210121532|I81605866|I182023848|I203899302|I193670377|I4210121526|I4210127856|I95023434|I4210096496|I932239252|I4210098619|I149851306|I4210133069|I4210088176|I39804081|I4210117495|I165745306|I130291710|I209244073|I139025015|I3017480383|I105140100|I2802543619|I4210127348|I869633025|I1334126862|I4210156791|I203088144|I8204097&per_page=50
+  Found ROR IDs for 49 out of 50 valid OpenAlex IDs in this batch
+  Could not map the following OpenAlex IDs: 4210088176
+  Trying individual request for OpenAlex ID: 4210088176
+    No results found for OpenAlex ID 4210088176 in individual request
+Processing batch 38 of 44 (50 IDs)
+The following OpenAlex IDs were not found in the API response: 4210150266
+API URL: https://api.openalex.org/institutions?select=id,ror&filter=ids.openalex:I1330342723|I4210158012|I114173286|I1340111290|I4210154814|I146500386|I4210153031|I2948394018|I183367347|I4210122652|I75390827|I3017690349|I165522056|I2802971700|I4210123715|I4210145422|I4210096862|I2699952|I130238516|I61544103|I125687163|I48714440|I4210122525|I107371206|I201480613|I170148708|I102555177|I4210146090|I4210152879|I158438070|I4210104355|I154481106|I4210165260|I4210094209|I4210096133|I4210111488|I4210087594|I70055295|I4210132167|I232641801|I4210150266|I4210113899|I4210123095|I4210101537|I4210117042|I4210149208|I2801795740|I4210097989|I143413998|I4210154927&per_page=50
+  Found ROR IDs for 49 out of 50 valid OpenAlex IDs in this batch
+  Could not map the following OpenAlex IDs: 4210150266
+  Trying individual request for OpenAlex ID: 4210150266
+    No results found for OpenAlex ID 4210150266 in individual request
+Processing batch 39 of 44 (50 IDs)
+The following OpenAlex IDs were not found in the API response: 4210127129, 4210139885
+API URL: https://api.openalex.org/institutions?select=id,ror&filter=ids.openalex:I10091056|I4210119943|I271893122|I66855515|I102962589|I4210102282|I4210146715|I1303153112|I2802540905|I84218800|I185852735|I4210098918|I4210103466|I4210127129|I4210140930|I4210153181|I4210167017|I1304082316|I166416128|I4210111419|I4210142374|I4210159495|I1296080982|I4210146328|I1311914864|I4210139885|I4210110652|I21360634|I1284762954|I4210161740|I2800484787|I4210120035|I4210156519|I4210166169|I4210134464|I4210122565|I4210167281|I32597200|I4210094129|I4210116847|I3132940433|I179331831|I184999862|I4210166979|I4210110181|I4210151610|I2800553677|I5716644|I142899784|I4210145151&per_page=50
+  Found ROR IDs for 48 out of 50 valid OpenAlex IDs in this batch
+  Could not map the following OpenAlex IDs: 4210127129, 4210139885
+  Trying individual request for OpenAlex ID: 4210127129
+    No results found for OpenAlex ID 4210127129 in individual request
+  Trying individual request for OpenAlex ID: 4210139885
+    No results found for OpenAlex ID 4210139885 in individual request
+Processing batch 40 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 41 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 42 of 44 (50 IDs)
+The following OpenAlex IDs were not found in the API response: 4210126337
+API URL: https://api.openalex.org/institutions?select=id,ror&filter=ids.openalex:I4210113491|I4210136288|I115752224|I4210144585|I4210136187|I3018176973|I52604927|I4210144652|I4210126337|I49332381|I8692664|I4210150798|I4210130497|I4210158387|I4210152696|I4210153365|I4210131280|I4210132567|I4210087978|I4210166036|I4210090124|I3130395211|I4210100607|I3131950811|I2802939634|I4210155267|I4210137004|I4210108684|I4210085980|I4210111113|I4210153132|I79156528|I4210137514|I4210161151|I4210105491|I1341640284|I4210105984|I4210148653|I161593684|I4210117686|I4210102955|I34809795|I58716616|I4210153351|I2802984365|I1307323311|I4210164623|I305801656|I34250744|I2802557943&per_page=50
+  Found ROR IDs for 49 out of 50 valid OpenAlex IDs in this batch
+  Could not map the following OpenAlex IDs: 4210126337
+  Trying individual request for OpenAlex ID: 4210126337
+    No results found for OpenAlex ID 4210126337 in individual request
+Processing batch 43 of 44 (50 IDs)
+  Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
+Processing batch 44 of 44 (17 IDs)
+  Found ROR IDs for 17 out of 17 valid OpenAlex IDs in this batch
+
+Updating labels with ROR IDs...
+No ROR ID found for OpenAlex ID 4210096815 (Southwestern Medical Center) in row 30
+No ROR ID found for OpenAlex ID 4210096815 (Southwestern Medical Center) in row 1526
+No ROR ID found for OpenAlex ID 4210092866 (Kangnam Sacred Heart Hospital) in row 546
+No ROR ID found for OpenAlex ID 4210092866 (Kangnam Sacred Heart Hospital) in row 547
+No ROR ID found for OpenAlex ID 4210092866 (Kangnam Sacred Heart Hospital) in row 2636
+No ROR ID found for OpenAlex ID 4210125713 (Lurie Children's Hospital) in row 800
+No ROR ID found for OpenAlex ID 4210125713 (Lurie Children's Hospital) in row 801
+No ROR ID found for OpenAlex ID 4210125713 (Lurie Children's Hospital) in row 802
+No ROR ID found for OpenAlex ID 4210159031 (The University of Texas Health Science Center) in row 1070
+No ROR ID found for OpenAlex ID 4210159031 (The University of Texas Health Science Center) in row 1071
+No ROR ID found for OpenAlex ID 4210092770 (Cracow University of Technology) in row 1810
+No ROR ID found for OpenAlex ID 4210136436 (Montpellier SupAgro) in row 1823
+No ROR ID found for OpenAlex ID 4210124352 (Antoni van Leeuwenhoek Hospital) in row 1838
+No ROR ID found for OpenAlex ID 4210144556 (Purdue University Northwest) in row 1856
+No ROR ID found for OpenAlex ID 4210151925 (University of Bío-Bío) in row 2151
+No ROR ID found for OpenAlex ID 4210088176 (North West Agriculture and Forestry University) in row 2259
+No ROR ID found for OpenAlex ID 4210150266 (Mahatma Gandhi Medical College and Research Institute) in row 2307
+No ROR ID found for OpenAlex ID 4210127129 (Mälardalen University) in row 2338
+No ROR ID found for OpenAlex ID 4210139885 (Shanxi Normal University) in row 2352
+No ROR ID found for OpenAlex ID 4210126337 (University of Campania "Luigi Vanvitelli") in row 2601
+Converted 3842 OpenAlex IDs to ROR IDs
+Could not find ROR IDs for 20 valid OpenAlex IDs
+Skipped 354 invalid OpenAlex IDs
+
+Conversion completed at 2025-02-27 14:11:20
+Output written to data/insti_bench.tsv
