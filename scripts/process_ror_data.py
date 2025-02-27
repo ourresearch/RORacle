@@ -2,87 +2,74 @@ import json
 import csv
 import os
 from pathlib import Path
+from collections import defaultdict
 
-INPUT_FILE = "/Users/jasonpriem/Downloads/v1.59-2025-01-23-ror-data/v1.59-2025-01-23-ror-data_schema_v2.json"
-OUTPUT_FILE = Path(__file__).parent.parent / "data" / "ror_organizations.csv"
+# Define file paths
+DATA_DIR = Path(__file__).parent.parent / "data"
+ORG_CSV_FILE = DATA_DIR / "ror_organizations.csv"
+NAME_TO_IDS_FILE = DATA_DIR / "ror_names_to_ids.csv"
 
-def extract_names_by_type(names, target_type):
-    """Extract name values of a specific type, removing duplicates."""
-    values = set()
-    for name in names:
-        if "types" in name and target_type in name["types"]:
-            values.add(name["value"])
-    return ";".join(sorted(values))
-
-def process_ror_data():
-    print("Reading and processing ROR data...")
-    with open(INPUT_FILE, 'r') as f:
-        data = json.load(f)
+def create_name_to_ids_mapping():
+    """
+    Create a CSV file mapping each unique name to a list of ROR IDs.
+    The CSV has two columns: name and ids, with ids being a pipe-separated list.
+    Names are sorted by length (longest first).
+    """
+    print("Creating name-to-ids mapping from existing ROR organizations data...")
     
-    print(f"Processing {len(data)} organizations...")
+    # Dictionary to map names to ROR IDs
+    name_to_ids = defaultdict(list)
     
-    # Open CSV file for writing
-    with open(OUTPUT_FILE, 'w', newline='', encoding='utf-8') as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=[
-            'id', 'acronyms', 'names', 'country_name', 
-            'country_subdivision_name', 'location_name'
-        ])
-        writer.writeheader()
-        
-        for item in data:
-            # Extract and clean ID
-            raw_id = item['id']
-            clean_id = raw_id.replace('https://ror.org/', '')
+    # Read the existing CSV file
+    with open(ORG_CSV_FILE, 'r', newline='', encoding='utf-8') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            ror_id = row['id']
+            
+            # Process acronyms
+            if row['acronyms']:
+                for acronym in row['acronyms'].split(';'):
+                    name_to_ids[acronym].append(ror_id)
             
             # Process names
-            acronyms = extract_names_by_type(item['names'], 'acronym')
-            
-            # Get all non-acronym names
-            other_names = set()
-            for name in item['names']:
-                if 'types' not in name or 'acronym' not in name['types']:
-                    other_names.add(name['value'])
-            names = ";".join(sorted(other_names))
-            
-            # Process location (using first location if multiple exist)
-            location_data = {
-                'country_name': '',
-                'country_subdivision_name': '',
-                'location_name': ''
-            }
-            
-            if item.get('locations') and len(item['locations']) > 0:
-                geonames = item['locations'][0].get('geonames_details', {})
-                location_data = {
-                    'country_name': geonames.get('country_name', ''),
-                    'country_subdivision_name': geonames.get('country_subdivision_name', ''),
-                    'location_name': geonames.get('name', '')
-                }
-            
-            # Write record to CSV
-            writer.writerow({
-                'id': clean_id,
-                'acronyms': acronyms,
-                'names': names,
-                'country_name': location_data['country_name'],
-                'country_subdivision_name': location_data['country_subdivision_name'],
-                'location_name': location_data['location_name']
-            })
+            if row['names']:
+                for name in row['names'].split(';'):
+                    name_to_ids[name].append(ror_id)
+    
+    print(f"Found {len(name_to_ids)} unique names across all ROR records.")
+    
+    # Sort names by length (longest first)
+    sorted_names = sorted(name_to_ids.keys(), key=len, reverse=True)
+    
+    # Write to CSV
+    with open(NAME_TO_IDS_FILE, 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(['name', 'ids'])  # Header
+        
+        for name in sorted_names:
+            # Join the IDs with pipe separators
+            ids_pipe_separated = "|".join(name_to_ids[name])
+            writer.writerow([name, ids_pipe_separated])
     
     # Print statistics
-    original_size = os.path.getsize(INPUT_FILE) / (1024 * 1024)  # MB
-    new_size = os.path.getsize(OUTPUT_FILE) / (1024 * 1024)  # MB
-    print(f"\nFile size comparison:")
-    print(f"Original JSON size: {original_size:.1f} MB")
-    print(f"New CSV size: {new_size:.1f} MB")
-    print(f"Size reduction: {((original_size - new_size) / original_size * 100):.1f}%")
+    names_size = os.path.getsize(NAME_TO_IDS_FILE) / (1024 * 1024)  # MB
+    print(f"\nNames to IDs CSV size: {names_size:.1f} MB")
     
     # Print sample of first few rows
-    print("\nSample of first 3 rows in new CSV file:")
-    with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
+    print("\nSample of first 5 rows in name-to-ids CSV file:")
+    with open(NAME_TO_IDS_FILE, 'r', encoding='utf-8') as f:
         for i, line in enumerate(f):
-            if i <= 3:  # header + 2 rows
+            if i <= 5:  # header + 4 rows
                 print(line.strip())
 
+def process_ror_data():
+    """
+    Original function to process ROR JSON data into a CSV.
+    This function assumes the original JSON file is available.
+    Currently not in use.
+    """
+    print("This function requires the original ROR JSON data file, which is not available.")
+    print("Please use create_name_to_ids_mapping() instead.")
+
 if __name__ == "__main__":
-    process_ror_data()
+    create_name_to_ids_mapping()
