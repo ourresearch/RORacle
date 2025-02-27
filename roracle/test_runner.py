@@ -62,8 +62,9 @@ def run_test_by_id(test_id: int) -> Dict:
         # Time this individual test
         test_start = time.time()
         
-        # Get affiliation and expected records from the TSV
+        # Get affiliation, dataset_name, and expected records from the TSV
         affiliation = test_case["affiliation_string"]
+        dataset_name = test_case["dataset_name"]
         
         # Extract ROR IDs from the labels column
         ror_ids = extract_ror_ids_from_labels(test_case["labels"])
@@ -91,7 +92,8 @@ def run_test_by_id(test_id: int) -> Dict:
             matches=matches,
             under_matches=under_matches,
             over_matches=over_matches,
-            elapsed=elapsed
+            elapsed=elapsed,
+            dataset_name=dataset_name
         )
         
         return {
@@ -101,6 +103,7 @@ def run_test_by_id(test_id: int) -> Dict:
             "test_id": test_id,
             "is_passing": result.is_passing,
             "affiliation": result.affiliation,
+            "dataset_name": result.dataset_name,
             "matches": [record.to_dict() for record in result.matches],
             "under_matches": [record.to_dict() for record in result.under_matches],
             "over_matches": [record.to_dict() for record in result.over_matches]
@@ -235,8 +238,9 @@ class TestResult:
     matches: List[RORRecord]
     under_matches: List[RORRecord]
     over_matches: List[RORRecord]
-    elapsed: float  # time taken for this test
-
+    elapsed: float
+    dataset_name: str = None
+    
     def to_dict(self) -> Dict:
         return {
             "id": self.id,
@@ -245,5 +249,6 @@ class TestResult:
             "matches": [r.to_dict() for r in self.matches],
             "under_matches": [r.to_dict() for r in self.under_matches],
             "over_matches": [r.to_dict() for r in self.over_matches],
-            "elapsed": round(self.elapsed, 3)
+            "elapsed": round(self.elapsed, 3),
+            "dataset_name": self.dataset_name
         }
