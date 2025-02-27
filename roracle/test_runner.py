@@ -5,27 +5,7 @@ from typing import List, Dict, Optional, Union
 from dataclasses import dataclass, asdict
 import os
 from .ror_matcher import find_ror_records, RORRecord
-
-@dataclass
-class TestResult:
-    id: int
-    is_passing: bool
-    affiliation: str
-    matches: List[RORRecord]
-    under_matches: List[RORRecord]
-    over_matches: List[RORRecord]
-    elapsed: float  # time taken for this test
-
-    def to_dict(self) -> Dict:
-        return {
-            "id": self.id,
-            "is_passing": self.is_passing,
-            "affiliation": self.affiliation,
-            "matches": [r.to_dict() for r in self.matches],
-            "under_matches": [r.to_dict() for r in self.under_matches],
-            "over_matches": [r.to_dict() for r in self.over_matches],
-            "elapsed": round(self.elapsed, 3)
-        }
+from .ror_utils import load_ror_names, create_ror_record
 
 def compare_records(produced_records: List[RORRecord], expected_records: List[RORRecord]) -> tuple[List[RORRecord], List[RORRecord], List[RORRecord]]:
     """Compare produced and expected records, returning (matches, under_matches, over_matches)"""
@@ -34,6 +14,8 @@ def compare_records(produced_records: List[RORRecord], expected_records: List[RO
     
     # Find matching records
     matching_ids = produced_ids & expected_ids
+    
+    # Use the produced records for matches, since they already have names populated from find_ror_records
     matches = [r for r in produced_records if r.id in matching_ids]
     
     # Find under_matches (in expected but not in produced)
@@ -77,7 +59,12 @@ def run_test_by_id(test_id: int) -> Dict:
         
         # Get affiliation and expected records
         affiliation = test_case["affiliation_string"]
-        expected_records = [RORRecord(r["id"], r["name"]) for r in test_case["ror_records"]]
+        
+        # Create expected records with names from the CSV
+        expected_records = [
+            create_ror_record(r["id"])
+            for r in test_case["ror_records"]
+        ]
         
         # Get produced records
         produced_records = find_ror_records(affiliation)
@@ -139,12 +126,9 @@ def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = 
     with open(test_cases_path, 'r') as f:
         test_cases = json.load(f)
     
-    # Apply limit if specified
-    if limit is not None and limit < len(test_cases):
-        test_cases = test_cases[:limit]
-    
-    # Handle sampling
+    # Handle sampling - do this BEFORE applying the limit
     seed = None
+    indices = None
     if sample is not None:
         # Create a list of (index, test_case) tuples to preserve original indices
         indexed_test_cases = list(enumerate(test_cases))
@@ -163,6 +147,14 @@ def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = 
             random.shuffle(indexed_test_cases)
             # Unpack the shuffled indexed test cases
             indices, test_cases = zip(*indexed_test_cases)
+            indices = list(indices)
+            test_cases = list(test_cases)
+    
+    # Apply limit AFTER shuffling if specified
+    if limit is not None and limit < len(test_cases):
+        test_cases = test_cases[:limit]
+        if indices is not None:
+            indices = indices[:limit]
     
     # Initialize metrics
     start_time = time.time()
@@ -183,7 +175,10 @@ def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = 
             
             # Get affiliation and expected records
             affiliation = test_case["affiliation_string"]
-            expected_records = [RORRecord(r["id"], r["name"]) for r in test_case["ror_records"]]
+            expected_records = [
+                create_ror_record(r["id"])
+                for r in test_case["ror_records"]
+            ]
             
             # Get produced records
             produced_records = find_ror_records(affiliation)
@@ -246,11 +241,32 @@ def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = 
             "elapsed_max": round(max_time, 3),
             "seed": seed,
             "performance": {
-                "precision": round(precision, 3),
-                "recall": round(recall, 3),
-                "f_score": round(f_score, 3)
+                "precision": round(precision, 2),
+                "recall": round(recall, 2),
+                "f_score": round(f_score, 2)
             }
         },
         "results_failing": [r.to_dict() for r in results_failing],
         "results_passing": [r.to_dict() for r in results_passing]
     }
+
+@dataclass
+class TestResult:
+    id: int
+    is_passing: bool
+    affiliation: str
+    matches: List[RORRecord]
+    under_matches: List[RORRecord]
+    over_matches: List[RORRecord]
+    elapsed: float  # time taken for this test
+
+    def to_dict(self) -> Dict:
+        return {
+            "id": self.id,
+            "is_passing": self.is_passing,
+            "affiliation": self.affiliation,
+            "matches": [r.to_dict() for r in self.matches],
+            "under_matches": [r.to_dict() for r in self.under_matches],
+            "over_matches": [r.to_dict() for r in self.over_matches],
+            "elapsed": round(self.elapsed, 3)
+        }

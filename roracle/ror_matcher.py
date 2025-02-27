@@ -1,31 +1,26 @@
 from typing import List, Dict
 from dataclasses import dataclass
 from .ror_data_manager import ror_data, normalize_text
+from .ror_utils import load_ror_names
 
 @dataclass
 class RORRecord:
     id: str
-    name: str
-    alternate_names: List[str] = None
-    matching_name: str = None
-    is_matching_name_unique: bool = None
+    names: List[str] = None
     location: str = None
 
     def __post_init__(self):
         # Add ROR URL prefix if not already present
         if not self.id.startswith('https://ror.org/'):
             self.id = f'https://ror.org/{self.id}'
-        # Initialize empty list for alternate_names if None
-        if self.alternate_names is None:
-            self.alternate_names = []
+        # Initialize empty list for names if None
+        if self.names is None:
+            self.names = []
 
     def to_dict(self) -> Dict:
         return {
             "id": self.id,
-            "name": self.name,
-            "alternate_names": self.alternate_names,
-            "matching_name": self.matching_name,
-            "is_matching_name_unique": self.is_matching_name_unique,
+            "names": self.names,
             "location": self.location
         }
 
@@ -59,6 +54,9 @@ def find_ror_records(affiliation_string: str) -> List[RORRecord]:
     4. Remove matched text and continue searching
     5. For all-uppercase alternate names, verify case-sensitive match
     """
+    # Load ROR names
+    ror_names = load_ror_names()
+    
     results = []
     # Store both normalized and original affiliation string
     original_affiliation = affiliation_string
@@ -99,12 +97,12 @@ def find_ror_records(affiliation_string: str) -> List[RORRecord]:
                     ]
                     location_string = ';'.join([part for part in location_parts if part])
                     
+                    # Get all names for this institution from the loaded names
+                    all_names = ror_names.get(inst.id, [])
+                    
                     record = RORRecord(
                         id=inst.id, 
-                        name=inst.name,
-                        alternate_names=inst.alternate_names,
-                        matching_name=name,
-                        is_matching_name_unique=True,
+                        names=all_names,
                         location=location_string
                     )
                     results.append(record)
@@ -133,12 +131,12 @@ def find_ror_records(affiliation_string: str) -> List[RORRecord]:
                         ]
                         location_string = ';'.join([part for part in location_parts if part])
                         
+                        # Get all names for this institution from the loaded names
+                        all_names = ror_names.get(inst.id, [])
+                        
                         record = RORRecord(
                             id=inst.id, 
-                            name=inst.name,
-                            alternate_names=inst.alternate_names,
-                            matching_name=name,
-                            is_matching_name_unique=False,
+                            names=all_names,
                             location=location_string
                         )
                         results.append(record)
