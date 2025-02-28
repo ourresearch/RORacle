@@ -69,11 +69,16 @@ def run_test_by_id(test_id: int) -> Dict:
         # Extract ROR IDs from the labels column
         ror_ids = extract_ror_ids_from_labels(test_case["labels"])
         
-        # Create expected records using the factory function
-        expected_records = [
-            create_ror_record(ror_id)
-            for ror_id in ror_ids
-        ]
+        # Special case: if the only ROR ID is "-1", it means no matches are expected
+        no_matches_expected = len(ror_ids) == 1 and ror_ids[0] == "-1"
+        
+        # Create expected records using the factory function, but only if not the special "-1" case
+        expected_records = []
+        if not no_matches_expected:
+            expected_records = [
+                create_ror_record(ror_id)
+                for ror_id in ror_ids
+            ]
         
         # Get produced records
         produced_records = find_ror_records(affiliation)
@@ -84,16 +89,24 @@ def run_test_by_id(test_id: int) -> Dict:
         # Compare produced and expected records
         matches, under_matches, over_matches = compare_records(produced_records, expected_records)
         
+        # Determine if the test is passing
+        # For the special "-1" case, the test passes if no records were produced
+        if no_matches_expected:
+            is_passing = len(produced_records) == 0
+        else:
+            is_passing = len(under_matches) == 0 and len(over_matches) == 0
+        
         # Create test result
         result = TestResult(
             id=test_id,
-            is_passing=len(under_matches) == 0 and len(over_matches) == 0,
+            is_passing=is_passing,
             affiliation=affiliation,
             matches=matches,
             under_matches=under_matches,
             over_matches=over_matches,
             elapsed=elapsed,
-            dataset_name=dataset_name
+            dataset_name=dataset_name,
+            no_matches_expected=no_matches_expected
         )
         
         return {
@@ -106,7 +119,8 @@ def run_test_by_id(test_id: int) -> Dict:
             "dataset_name": result.dataset_name,
             "matches": [record.to_dict() for record in result.matches],
             "under_matches": [record.to_dict() for record in result.under_matches],
-            "over_matches": [record.to_dict() for record in result.over_matches]
+            "over_matches": [record.to_dict() for record in result.over_matches],
+            "no_matches_expected": result.no_matches_expected
         }
     except Exception as e:
         # Handle any errors
@@ -188,9 +202,15 @@ def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = 
                 failing += 1
             
             # Update metrics for precision/recall calculations
-            total_matches += len(result["matches"])
-            total_under_matches += len(result["under_matches"])
-            total_over_matches += len(result["over_matches"])
+            # Special handling for "-1" case (no matches expected)
+            if "no_matches_expected" in result and result["no_matches_expected"] and len(result["matches"]) == 0:
+                # If no matches were expected and none were found, this is a true negative
+                # We don't count it in precision/recall calculations
+                pass
+            else:
+                total_matches += len(result["matches"])
+                total_under_matches += len(result["under_matches"])
+                total_over_matches += len(result["over_matches"])
                 
         # Add to results
         results.append(result)
@@ -244,6 +264,7 @@ class TestResult:
     over_matches: List[RORRecord]
     elapsed: float
     dataset_name: str = None
+    no_matches_expected: bool = False
     
     def to_dict(self) -> Dict:
         return {
@@ -254,5 +275,6 @@ class TestResult:
             "under_matches": [r.to_dict() for r in self.under_matches],
             "over_matches": [r.to_dict() for r in self.over_matches],
             "elapsed": round(self.elapsed, 3),
-            "dataset_name": self.dataset_name
+            "dataset_name": self.dataset_name,
+            "no_matches_expected": self.no_matches_expected
         }

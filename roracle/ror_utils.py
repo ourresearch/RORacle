@@ -120,6 +120,11 @@ def extract_ror_ids_from_labels(labels_str: str) -> List[str]:
         if (part.startswith("'") and part.endswith("'")) or (part.startswith('"') and part.endswith('"')):
             part = part[1:-1]
             
+        # Special case for "-1" which indicates no matches expected
+        if part == "-1" or part.startswith("-1 "):
+            ror_ids.append("-1")
+            continue
+            
         # Extract ID - it's the part before " - "
         if " - " in part:
             ror_id = part.split(" - ")[0].strip()
