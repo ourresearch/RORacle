@@ -1,0 +1,4714 @@
+name,normalized_name,frequency,type
+China,china,6390,country
+France,france,3194,country
+Germany,germany,2846,country
+Centre,centre,2652,subdivision
+Japan,japan,2481,country
+India,india,2269,country
+Italy,italy,2242,country
+Republic,republic,1973,location
+Canada,canada,1655,country
+Spain,spain,1523,country
+Australia,australia,1321,country
+United States,united states,1247,country
+Brazil,brazil,1241,country
+California,california,930,subdivision
+The Netherlands,the netherlands,832,country
+Texas,texas,738,subdivision
+West,west,736,subdivision
+Central,central,716,subdivision
+Beijing,beijing,711,location
+York,york,699,location
+Mexico,mexico,658,country
+Sweden,sweden,623,country
+New York,new york,622,subdivision
+Nacional,nacional,621,subdivision
+Russia,russia,607,country
+United Kingdom,united kingdom,605,country
+Iran,iran,595,country
+London,london,582,location
+Paris,paris,582,location
+Switzerland,switzerland,572,country
+Poland,poland,553,country
+Taiwan,taiwan,543,subdivision
+Belgium,belgium,542,country
+Shanghai,shanghai,532,location
+Tokyo,tokyo,494,location
+Massachusetts,massachusetts,459,subdivision
+Indonesia,indonesia,454,country
+Western,western,454,subdivision
+Denmark,denmark,432,country
+Washington,washington,430,location
+Harvard,harvard,429,location
+Portugal,portugal,406,country
+Normal,normal,405,location
+Pará,para,398,subdivision
+Israel,israel,397,country
+Nanjing,nanjing,373,location
+Carolina,carolina,351,location
+Zhejiang,zhejiang,345,subdivision
+Greece,greece,339,country
+Oral,oral,339,location
+Maryland,maryland,333,subdivision
+Pennsylvania,pennsylvania,330,subdivision
+Michigan,michigan,330,subdivision
+Ohio,ohio,325,subdivision
+Illinois,illinois,318,subdivision
+Egypt,egypt,306,country
+Malaysia,malaysia,305,country
+Columbia,columbia,301,location
+Austria,austria,296,country
+Finland,finland,294,country
+Seoul,seoul,290,location
+Argentina,argentina,283,country
+Shandong,shandong,275,subdivision
+Forest,forest,274,location
+South Korea,south korea,271,country
+Norway,norway,271,country
+North Carolina,north carolina,269,subdivision
+Jiangsu,jiangsu,267,subdivision
+Virginia,virginia,265,subdivision
+Guangdong,guangdong,258,subdivision
+Florida,florida,256,subdivision
+South Africa,south africa,250,country
+Singapore,singapore,237,location
+Wuhan,wuhan,235,location
+Guangzhou,guangzhou,234,location
+São Paulo,sao paulo,232,location
+Osaka,osaka,229,subdivision
+Hopkins,hopkins,227,location
+Colorado,colorado,222,subdivision
+Hungary,hungary,221,country
+England,england,217,subdivision
+Moscow,moscow,215,location
+Boston,boston,215,location
+Sichuan,sichuan,212,subdivision
+Ireland,ireland,206,country
+Pakistan,pakistan,204,country
+Saudi Arabia,saudi arabia,201,country
+Hong Kong,hong kong,199,country
+Chile,chile,196,country
+Romania,romania,190,country
+Zealand,zealand,188,subdivision
+Imperial,imperial,187,location
+New Zealand,new zealand,182,country
+Street,street,182,location
+Como,como,182,location
+Ukraine,ukraine,180,country
+Ontario,ontario,178,subdivision
+Stanford,stanford,177,location
+Tianjin,tianjin,177,location
+Nigeria,nigeria,175,country
+Taipei,taipei,174,location
+Northern,northern,167,subdivision
+Georgia,georgia,167,subdivision
+Kyoto,kyoto,167,location
+Superior,superior,166,location
+Quebec,quebec,166,subdivision
+Rio Grande,rio grande,163,location
+Iowa,iowa,161,subdivision
+Victoria,victoria,156,subdivision
+Colombia,colombia,156,country
+Thailand,thailand,155,country
+Porto,porto,155,subdivision
+Xi'an,xi'an,151,location
+Indiana,indiana,149,subdivision
+Cambridge,cambridge,148,location
+Chongqing,chongqing,147,location
+Berlin,berlin,147,location
+Anhui,anhui,147,subdivision
+Henan,henan,146,subdivision
+Shenzhen,shenzhen,144,location
+Eastern,eastern,144,subdivision
+Oxford,oxford,144,location
+Queensland,queensland,137,subdivision
+Santiago,santiago,136,location
+Harbin,harbin,136,location
+Fujian,fujian,136,subdivision
+Tennessee,tennessee,135,subdivision
+Salt,salt,135,location
+Union,union,132,location
+Jilin,jilin,132,subdivision
+Sydney,sydney,130,location
+Arizona,arizona,129,subdivision
+Montreal,montreal,128,location
+Chengdu,chengdu,128,location
+Wisconsin,wisconsin,127,subdivision
+Alabama,alabama,127,subdivision
+Hangzhou,hangzhou,126,location
+Shaanxi,shaanxi,126,subdivision
+Lyon,lyon,126,location
+Copenhagen,copenhagen,125,location
+Barcelona,barcelona,123,location
+Istanbul,istanbul,123,location
+Missouri,missouri,122,subdivision
+Hubei,hubei,122,subdivision
+Hebei,hebei,122,subdivision
+Naval,naval,122,location
+Wales,wales,121,subdivision
+Hunan,hunan,120,subdivision
+Jinan,jinan,118,location
+Iraq,iraq,117,country
+Kansas,kansas,116,subdivision
+Jersey,jersey,116,country
+Oregon,oregon,114,subdivision
+Minnesota,minnesota,112,subdivision
+Morocco,morocco,112,country
+Cleveland,cleveland,111,location
+Grenoble,grenoble,110,location
+Toronto,toronto,110,location
+Tunisia,tunisia,109,country
+Dalian,dalian,109,location
+Madrid,madrid,107,location
+Nagoya,nagoya,106,location
+Toulouse,toulouse,104,location
+Vietnam,vietnam,104,country
+Montpellier,montpellier,103,location
+Connecticut,connecticut,102,subdivision
+Pittsburgh,pittsburgh,102,location
+Serbia,serbia,101,country
+Utah,utah,101,subdivision
+New Jersey,new jersey,100,subdivision
+Melbourne,melbourne,100,location
+Emory,emory,100,location
+Rome,rome,100,location
+Anderson,anderson,99,location
+Amsterdam,amsterdam,98,location
+Algeria,algeria,98,country
+Tehran,tehran,98,location
+Bangladesh,bangladesh,97,country
+Northwest,northwest,97,subdivision
+Qingdao,qingdao,97,location
+Birmingham,birmingham,96,location
+David,david,96,location
+Pacific,pacific,95,location
+Ankara,ankara,95,location
+Zhengzhou,zhengzhou,94,location
+Newcastle,newcastle,93,location
+Pierre,pierre,93,location
+Chicago,chicago,92,location
+Aarhus,aarhus,92,location
+Manchester,manchester,91,location
+Hefei,hefei,90,location
+Delhi,delhi,90,subdivision
+Croatia,croatia,89,country
+Marseille,marseille,88,location
+Houston,houston,88,location
+Viale,viale,88,location
+San Francisco,san francisco,86,location
+Valley,valley,86,location
+Cincinnati,cincinnati,85,location
+Louisiana,louisiana,85,subdivision
+Ibaraki,ibaraki,85,subdivision
+Media,media,84,location
+Arab,arab,84,location
+Changchun,changchun,82,location
+Shenyang,shenyang,82,location
+Guangxi,guangxi,82,subdivision
+Cairo,cairo,82,location
+Ghent,ghent,82,location
+Los Angeles,los angeles,81,location
+Lund,lund,81,location
+Mary,mary,81,location
+Edinburgh,edinburgh,79,location
+Hokkaido,hokkaido,79,subdivision
+Heidelberg,heidelberg,78,location
+Yokohama,yokohama,78,location
+Bordeaux,bordeaux,78,location
+Lanzhou,lanzhou,78,location
+Uppsala,uppsala,78,location
+Zurich,zurich,78,subdivision
+Chiba,chiba,78,subdivision
+Helsinki,helsinki,77,location
+Liaoning,liaoning,77,subdivision
+Nottingham,nottingham,76,location
+Johnson,johnson,76,location
+Lawrence,lawrence,75,location
+Utrecht,utrecht,74,location
+Bristol,bristol,74,location
+Glasgow,glasgow,74,location
+Dublin,dublin,74,location
+Tel Aviv,tel aviv,73,location
+Rio de Janeiro,rio de janeiro,72,location
+Jiangxi,jiangxi,72,subdivision
+Leiden,leiden,72,location
+Türkiye,turkiye,71,country
+Wenzhou,wenzhou,71,location
+Leeds,leeds,71,location
+Wageningen,wageningen,70,location
+Oklahoma,oklahoma,70,subdivision
+Daejeon,daejeon,70,location
+Fukuoka,fukuoka,70,location
+British Columbia,british columbia,68,subdivision
+Rochester,rochester,68,location
+Kanagawa,kanagawa,68,subdivision
+Mestre,mestre,68,location
+Miami,miami,68,location
+Xi’an,xi’an,68,location
+Liverpool,liverpool,67,location
+Nebraska,nebraska,67,subdivision
+Kunming,kunming,67,location
+New South Wales,new south wales,66,subdivision
+Wake Forest,wake forest,66,location
+Maastricht,maastricht,66,location
+Stockholm,stockholm,66,location
+Jefferson,jefferson,66,location
+Changsha,changsha,66,location
+Davis,davis,66,location
+Kaohsiung,kaohsiung,65,location
+Frankfurt,frankfurt,65,location
+Philippines,philippines,64,country
+Baltimore,baltimore,64,location
+Berkeley,berkeley,64,location
+Shanxi,shanxi,64,subdivision
+Scotland,scotland,63,subdivision
+Martin,martin,63,location
+Yunnan,yunnan,63,subdivision
+New Mexico,new mexico,62,subdivision
+Bulgaria,bulgaria,62,country
+Ethiopia,ethiopia,62,country
+Jordan,jordan,62,country
+Suzhou,suzhou,62,location
+Wayne,wayne,62,location
+Maritime,maritime,61,subdivision
+Athens,athens,61,location
+Ottawa,ottawa,61,location
+Philadelphia,philadelphia,60,location
+Karlsruhe,karlsruhe,60,location
+Chennai,chennai,60,location
+Saitama,saitama,60,location
+Guizhou,guizhou,60,subdivision
+Xiamen,xiamen,60,location
+Oslo,oslo,60,location
+Kobe,kobe,60,location
+San Diego,san diego,59,location
+Hiroshima,hiroshima,59,subdivision
+Nanyang,nanyang,59,location
+Mississippi,mississippi,58,subdivision
+Budapest,budapest,58,location
+Cardiff,cardiff,58,location
+Kenya,kenya,58,country
+Petersburg,petersburg,57,location
+Slovenia,slovenia,57,country
+Auckland,auckland,57,location
+Temple,temple,57,location
+Rennes,rennes,57,location
+Lille,lille,57,location
+Kent,kent,57,location
+Northeast,northeast,56,subdivision
+Slovakia,slovakia,56,country
+Prague,prague,56,location
+Venezuela,venezuela,55,country
+Nanchang,nanchang,55,location
+Tsukuba,tsukuba,55,location
+United Arab Emirates,united arab emirates,54,country
+Campinas,campinas,54,location
+Ecuador,ecuador,54,country
+Alfred,alfred,54,location
+Taichung,taichung,53,location
+Xinjiang,xinjiang,53,subdivision
+Apartadó,apartado,53,location
+Jakarta,jakarta,53,location
+Changé,change,53,location
+Peru,peru,53,country
+Southampton,southampton,52,location
+Alberta,alberta,52,subdivision
+Denver,denver,52,location
+Poznan,poznan,52,location
+Ningbo,ningbo,52,location
+Sheffield,sheffield,51,location
+Elizabeth,elizabeth,51,location
+Seattle,seattle,51,location
+Durham,durham,51,location
+Nantes,nantes,51,location
+Aichi,aichi,51,subdivision
+Kentucky,kentucky,50,subdivision
+Lausanne,lausanne,50,location
+Munich,munich,50,location
+Paraná,parana,50,location
+Heilongjiang,heilongjiang,49,subdivision
+Warsaw,warsaw,49,location
+Aachen,aachen,49,location
+Austin,austin,49,location
+Fuzhou,fuzhou,49,location
+Minas Gerais,minas gerais,48,subdivision
+New Delhi,new delhi,48,location
+Adelaide,adelaide,48,location
+Vienna,vienna,47,location
+Hamburg,hamburg,46,location
+Trinity,trinity,46,location
+Naples,naples,46,location
+Georgetown,georgetown,45,location
+Jackson,jackson,45,location
+Geneva,geneva,45,location
+Sendai,sendai,45,location
+Nancy,nancy,45,location
+Grant,grant,45,location
+Bari,bari,45,location
+Buenos Aires,buenos aires,44,subdivision
+Princeton,princeton,44,location
+Mongolia,mongolia,44,country
+Laval,laval,44,location
+South Carolina,south carolina,43,subdivision
+Strasbourg,strasbourg,43,location
+Kanazawa,kanazawa,43,location
+Dresden,dresden,43,location
+Okayama,okayama,43,location
+Leuven,leuven,43,location
+Linköping,linkoping,42,location
+Aberdeen,aberdeen,41,location
+Mumbai,mumbai,41,location
+Shiraz,shiraz,41,location
+Kota,kota,41,location
+St. Petersburg,st. petersburg,40,location
+Brisbane,brisbane,40,location
+Auburn,auburn,40,location
+Bonn,bonn,40,location
+Novi,novi,40,location
+Inner Mongolia,inner mongolia,39,subdivision
+Kazakhstan,kazakhstan,39,country
+Hyderabad,hyderabad,39,location
+Leicester,leicester,39,location
+Dartmouth,dartmouth,39,location
+Nagasaki,nagasaki,39,subdivision
+Commerce,commerce,39,location
+Niigata,niigata,39,location
+Delft,delft,39,location
+Vancouver,vancouver,38,location
+Milan,milan,38,location
+Hyōgo,hyogo,38,subdivision
+Orsay,orsay,38,location
+Ford,ford,38,location
+Villeurbanne,villeurbanne,37,location
+Shijiazhuang,shijiazhuang,37,location
+Ho Chi Minh,ho chi minh,37,subdivision
+Los Alamos,los alamos,37,location
+Valencia,valencia,37,location
+Arkansas,arkansas,37,subdivision
+Yangzhou,yangzhou,37,location
+Punjab,punjab,37,subdivision
+Euclid,euclid,37,location
+Bahia,bahia,37,subdivision
+Pune,pune,37,location
+Cuba,cuba,37,country
+Eindhoven,eindhoven,36,location
+São José,sao jose,36,location
+Griffith,griffith,36,location
+Zagreb,zagreb,36,subdivision
+Gansu,gansu,36,subdivision
+West Virginia,west virginia,35,subdivision
+Portland,portland,35,location
+Alliance,alliance,35,location
+Madison,madison,35,location
+Lebanon,lebanon,35,country
+Tampere,tampere,35,location
+Hainan,hainan,35,subdivision
+Ghana,ghana,35,country
+Rio Grande do Sul,rio grande do sul,34,subdivision
+Stony Brook,stony brook,34,location
+Delaware,delaware,34,subdivision
+Kolkata,kolkata,34,location
+Yogyakarta,yogyakarta,33,location
+Kumamoto,kumamoto,33,subdivision
+Cameroon,cameroon,33,country
+Carnegie,carnegie,33,location
+Chaoyang,chaoyang,33,location
+Hsinchu,hsinchu,33,location
+Sofia,sofia,33,location
+Dhaka,dhaka,33,location
+Ulsan,ulsan,33,location
+Nepal,nepal,33,country
+Western Australia,western australia,32,subdivision
+South Australia,south australia,32,subdivision
+Lithuania,lithuania,32,country
+Brussels,brussels,32,location
+Northern Ireland,northern ireland,31,subdivision
+Santa Catarina,santa catarina,31,subdivision
+Tamil Nadu,tamil nadu,31,subdivision
+Oak Ridge,oak ridge,31,location
+Kettering,kettering,31,location
+Cape Town,cape town,31,location
+Oriental,oriental,31,location
+Bangkok,bangkok,31,location
+Gwangju,gwangju,31,location
+Atlanta,atlanta,31,location
+Albany,albany,31,location
+Riyadh,riyadh,31,location
+Gdansk,gdansk,31,location
+Fraser,fraser,31,location
+Largo,largo,31,location
+Delta,delta,31,subdivision
+Gifu,gifu,31,subdivision
+León,leon,31,location
+Rhode Island,rhode island,30,subdivision
+Mato Grosso,mato grosso,30,subdivision
+Santa Maria,santa maria,30,location
+Santa Cruz,santa cruz,30,location
+São Carlos,sao carlos,30,location
+Stuttgart,stuttgart,30,location
+Ann Arbor,ann arbor,30,location
+Kingston,kingston,30,location
+Nantong,nantong,30,location
+Orléans,orleans,30,location
+Regina,regina,30,location
+Busan,busan,30,location
+Izmir,izmir,30,location
+Asan,asan,30,location
+State College,state college,29,location
+Uzbekistan,uzbekistan,29,country
+Groningen,groningen,29,location
+Karnataka,karnataka,29,subdivision
+Hamilton,hamilton,29,location
+Aalborg,aalborg,29,location
+Coimbra,coimbra,29,location
+Incheon,incheon,29,location
+Taiyuan,taiyuan,29,location
+Clemson,clemson,29,location
+Murdoch,murdoch,29,location
+Cyprus,cyprus,29,country
+Lahore,lahore,29,location
+Milton,milton,29,location
+Victor,victor,29,location
+Surrey,surrey,29,location
+Hope,hope,29,location
+Novosibirsk,novosibirsk,28,location
+Columbus,columbus,28,location
+Canberra,canberra,28,location
+Tanzania,tanzania,28,country
+Sapporo,sapporo,28,location
+Leipzig,leipzig,28,location
+Modena,modena,28,location
+Alaska,alaska,28,subdivision
+Odense,odense,28,location
+Umeå,umea,28,location
+Chapel Hill,chapel hill,27,location
+Luxembourg,luxembourg,27,location
+Sherbrooke,sherbrooke,27,location
+Huntington,huntington,27,location
+Palmerston,palmerston,27,location
+Cattolica,cattolica,27,location
+Bedford,bedford,27,location
+Isfahan,isfahan,27,subdivision
+Belfast,belfast,27,location
+Mobile,mobile,27,location
+Xuzhou,xuzhou,27,location
+Qatar,qatar,27,country
+Mason,mason,27,location
+Bern,bern,27,location
+Nord,nord,27,subdivision
+Alexandria,alexandria,26,location
+Shizuoka,shizuoka,26,location
+Humboldt,humboldt,26,location
+Nijmegen,nijmegen,26,location
+Surabaya,surabaya,26,location
+Lincoln,lincoln,26,location
+Shantou,shantou,26,location
+Bandung,bandung,26,location
+Manipal,manipal,26,location
+Essen,essen,26,location
+Daegu,daegu,26,location
+Nara,nara,26,subdivision
+Innsbruck,innsbruck,25,location
+Middlesex,middlesex,25,location
+Concordia,concordia,25,location
+San Luis,san luis,25,location
+Selangor,selangor,25,subdivision
+Bologna,bologna,25,location
+Kuwait,kuwait,25,country
+Tabriz,tabriz,25,location
+Palmas,palmas,25,location
+Pohang,pohang,25,location
+Shiga,shiga,25,subdivision
+Allen,allen,25,location
+Gif-sur-Yvette,gif-sur-yvette,24,location
+North Dakota,north dakota,24,subdivision
+Stellenbosch,stellenbosch,24,location
+Pernambuco,pernambuco,24,subdivision
+Wellington,wellington,24,location
+Chandigarh,chandigarh,24,location
+Enterprise,enterprise,24,location
+Jerusalem,jerusalem,24,location
+Florence,florence,24,location
+Belgrade,belgrade,24,location
+La Jolla,la jolla,24,location
+Harrison,harrison,24,location
+Mission,mission,24,location
+Guiyang,guiyang,24,location
+Exeter,exeter,24,location
+Warren,warren,24,location
+Uganda,uganda,24,country
+Latvia,latvia,24,country
+Guilin,guilin,24,location
+Perth,perth,24,location
+Clark,clark,24,location
+Jena,jena,24,location
+Ames,ames,24,location
+Ribeirão Preto,ribeirao preto,23,location
+Frederiksberg,frederiksberg,23,location
+Mexico City,mexico city,23,location
+Lancaster,lancaster,23,location
+Antwerp,antwerp,23,location
+Reading,reading,23,location
+Hershey,hershey,23,location
+Montana,montana,23,subdivision
+Mashhad,mashhad,23,location
+Munster,munster,23,subdivision
+Wroclaw,wroclaw,23,location
+Hawaii,hawaii,23,subdivision
+Irving,irving,23,location
+Nevada,nevada,23,subdivision
+Miyagi,miyagi,23,subdivision
+Bochum,bochum,23,location
+Hassan,hassan,23,location
+Haifa,haifa,23,location
+Hanoi,hanoi,23,location
+Gunma,gunma,23,subdivision
+Lewis,lewis,23,location
+March,march,23,location
+Pisa,pisa,23,location
+Kyiv,kyiv,23,location
+Saga,saga,23,location
+Newcastle upon Tyne,newcastle upon tyne,22,location
+Rio Grande do Norte,rio grande do norte,22,subdivision
+Loughborough,loughborough,22,location
+Costa Rica,costa rica,22,country
+Yamaguchi,yamaguchi,22,subdivision
+Göttingen,gottingen,22,location
+Livermore,livermore,22,location
+Brasília,brasilia,22,location
+Semarang,semarang,22,location
+Vilnius,vilnius,22,location
+Kharkiv,kharkiv,22,location
+Ningxia,ningxia,22,subdivision
+Roswell,roswell,22,location
+Liberal,liberal,22,location
+Bogotá,bogota,22,location
+Huzhou,huzhou,22,location
+Yantai,yantai,22,location
+Idaho,idaho,22,subdivision
+Liège,liege,22,location
+Turku,turku,22,location
+Halle,halle,22,location
+Hines,hines,22,location
+Tōkai,tokai,22,location
+Oman,oman,22,country
+Caen,caen,22,location
+Providence,providence,21,location
+Loma Linda,loma linda,21,location
+Sri Lanka,sri lanka,21,country
+Roosevelt,roosevelt,21,location
+Manitoba,manitoba,21,subdivision
+Salvador,salvador,21,location
+Lucknow,lucknow,21,location
+Yaoundé,yaounde,21,location
+Uruguay,uruguay,21,country
+Goddard,goddard,21,location
+Zhuhai,zhuhai,21,location
+Tunis,tunis,21,location
+Tours,tours,21,location
+Jammu,jammu,21,location
+Basel,basel,21,location
+Kochi,kochi,21,location
+Bosnia and Herzegovina,bosnia and herzegovina,20,country
+Santiago de Compostela,santiago de compostela,20,location
+Indianapolis,indianapolis,20,location
+Minneapolis,minneapolis,20,location
+Bucharest,bucharest,20,location
+Bielefeld,bielefeld,20,location
+Ishikawa,ishikawa,20,subdivision
+Kawasaki,kawasaki,20,location
+San Juan,san juan,20,location
+Buffalo,buffalo,20,location
+Tottori,tottori,20,subdivision
+Talence,talence,20,location
+Rehovot,rehovot,20,location
+Lisbon,lisbon,20,subdivision
+Manila,manila,20,location
+Krakow,krakow,20,location
+Beirut,beirut,20,location
+Ulster,ulster,20,subdivision
+Carver,carver,20,location
+Burns,burns,20,location
+Pablo,pablo,20,location
+Alma,alma,20,location
+Kiel,kiel,20,location
+Salt Lake City,salt lake city,19,location
+Johannesburg,johannesburg,19,location
+Maharashtra,maharashtra,19,subdivision
+Gothenburg,gothenburg,19,location
+North-West,north-west,19,subdivision
+Chiang Mai,chiang mai,19,location
+Uberlândia,uberlandia,19,location
+Friendship,friendship,19,location
+Palo Alto,palo alto,19,location
+Islamabad,islamabad,19,location
+Lake City,lake city,19,location
+Brooklyn,brooklyn,19,location
+Syracuse,syracuse,19,location
+Erlangen,erlangen,19,location
+Campbell,campbell,19,location
+Xinxiang,xinxiang,19,location
+Senegal,senegal,19,country
+Taoyuan,taoyuan,19,location
+Qinghai,qinghai,19,subdivision
+Nanning,nanning,19,location
+Karachi,karachi,19,location
+Iceland,iceland,19,country
+Trieste,trieste,19,location
+Warwick,warwick,19,location
+Swansea,swansea,19,location
+Bremen,bremen,19,location
+Dallas,dallas,19,location
+Wilson,wilson,19,location
+Tomsk,tomsk,19,location
+Lagos,lagos,19,subdivision
+Sudan,sudan,19,country
+Benin,benin,19,country
+Nice,nice,19,location
+Bournemouth,bournemouth,18,location
+Hutchinson,hutchinson,18,location
+Rotterdam,rotterdam,18,location
+Catalonia,catalonia,18,subdivision
+Ljubljana,ljubljana,18,location
+Telangana,telangana,18,subdivision
+Changzhou,changzhou,18,location
+Peninsula,peninsula,18,location
+Estonia,estonia,18,country
+Vermont,vermont,18,subdivision
+Créteil,creteil,18,location
+Gujarat,gujarat,18,subdivision
+Shimane,shimane,18,subdivision
+Marburg,marburg,18,location
+Del Mar,del mar,18,location
+Plateau,plateau,18,subdivision
+Malawi,malawi,18,country
+Irvine,irvine,18,location
+Jülich,julich,18,location
+Ehime,ehime,18,subdivision
+Iwate,iwate,18,subdivision
+Suita,suita,18,location
+Reims,reims,18,location
+Malmo,malmo,18,location
+Rouen,rouen,18,location
+Brno,brno,18,location
+Wuxi,wuxi,18,location
+Alta,alta,18,location
+District of Columbia,district of columbia,17,subdivision
+Andhra Pradesh,andhra pradesh,17,subdivision
+Espírito Santo,espirito santo,17,subdivision
+Thessaloniki,thessaloniki,17,location
+Porto Alegre,porto alegre,17,location
+Burkina Faso,burkina faso,17,country
+Westminster,westminster,17,location
+Louisville,louisville,17,location
+Darmstadt,darmstadt,17,location
+Worcester,worcester,17,location
+Milwaukee,milwaukee,17,location
+Kagoshima,kagoshima,17,location
+Riverside,riverside,17,location
+Brighton,brighton,17,location
+Tashkent,tashkent,17,location
+Bethesda,bethesda,17,location
+Beaumont,beaumont,17,location
+San Jose,san jose,17,location
+Córdoba,cordoba,17,location
+Douglas,douglas,17,location
+Russell,russell,17,location
+Shihezi,shihezi,17,location
+Zagazig,zagazig,17,location
+Toyama,toyama,17,subdivision
+Orange,orange,17,location
+Kagawa,kagawa,17,subdivision
+Sidney,sidney,17,location
+Giza,giza,17,location
+Šaľa,sala,17,location
+Mill,mill,17,location
+South Dakota,south dakota,16,subdivision
+Saskatchewan,saskatchewan,16,subdivision
+Braunschweig,braunschweig,16,location
+Gyeonggi-do,gyeonggi-do,16,subdivision
+San Antonio,san antonio,16,location
+Puerto Rico,puerto rico,16,country
+Coimbatore,coimbatore,16,location
+Parkville,parkville,16,location
+Fukushima,fukushima,16,subdivision
+Rajasthan,rajasthan,16,subdivision
+Richmond,richmond,16,location
+Curitiba,curitiba,16,location
+Pretoria,pretoria,16,location
+Yamagata,yamagata,16,subdivision
+Plymouth,plymouth,16,location
+Tasmania,tasmania,16,subdivision
+Würzburg,wurzburg,16,location
+Poitiers,poitiers,16,location
+Dongguan,dongguan,16,location
+Yancheng,yancheng,16,location
+Haryana,haryana,16,subdivision
+Chester,chester,16,location
+Detroit,detroit,16,location
+Kocaeli,kocaeli,16,subdivision
+Taizhou,taizhou,16,location
+Higashi,higashi,16,location
+Urbana,urbana,16,location
+Ürümqi,urumqi,16,location
+Málaga,malaga,16,location
+Jeddah,jeddah,16,location
+Dundee,dundee,16,location
+Angers,angers,16,location
+Malang,malang,16,location
+Sussex,sussex,16,location
+Bengbu,bengbu,16,location
+Mainz,mainz,16,location
+Johor,johor,16,subdivision
+Zunyi,zunyi,16,location
+Lakes,lakes,16,subdivision
+Colón,colon,16,subdivision
+Gainesville,gainesville,15,location
+Rutherford,rutherford,15,location
+Rensselaer,rensselaer,15,location
+Rockville,rockville,15,location
+Fortaleza,fortaleza,15,location
+Lafayette,lafayette,15,location
+Nederland,nederland,15,location
+Coventry,coventry,15,location
+Campania,campania,15,subdivision
+Miyazaki,miyazaki,15,location
+Saarland,saarland,15,subdivision
+Huddinge,huddinge,15,location
+Dortmund,dortmund,15,location
+Marshall,marshall,15,location
+Stirling,stirling,15,location
+Clermont,clermont,15,location
+Belarus,belarus,15,country
+Calgary,calgary,15,location
+Baghdad,baghdad,15,location
+Hitachi,hitachi,15,location
+Paraíba,paraiba,15,subdivision
+Nemours,nemours,15,location
+Kowloon,kowloon,15,location
+Aragon,aragon,15,subdivision
+Morris,morris,15,location
+Girona,girona,15,location
+Kerman,kerman,15,subdivision
+Nelson,nelson,15,location
+Bogor,bogor,15,location
+Suwon,suwon,15,location
+Assam,assam,15,subdivision
+Akita,akita,15,subdivision
+Brest,brest,15,location
+Grove,grove,15,location
+Essex,essex,15,location
+Lima,lima,15,location
+Tema,tema,15,location
+Ho Chi Minh City,ho chi minh city,14,location
+Belo Horizonte,belo horizonte,14,location
+New Hampshire,new hampshire,14,subdivision
+Uttar Pradesh,uttar pradesh,14,subdivision
+Kansas City,kansas city,14,location
+Nova Scotia,nova scotia,14,subdivision
+Addis Ababa,addis ababa,14,location
+Gold Coast,gold coast,14,location
+St. John's,st. john's,14,location
+Binghamton,binghamton,14,location
+Kensington,kensington,14,location
+Brookhaven,brookhaven,14,location
+Lexington,lexington,14,location
+Tokushima,tokushima,14,subdivision
+Yamanashi,yamanashi,14,subdivision
+Iowa City,iowa city,14,location
+Hamamatsu,hamamatsu,14,location
+Frederick,frederick,14,location
+Brunswick,brunswick,14,location
+Trondheim,trondheim,14,location
+Mannheim,mannheim,14,location
+Appleton,appleton,14,location
+Highland,highland,14,location
+Giessen,giessen,14,location
+Vellore,vellore,14,location
+Phoenix,phoenix,14,location
+Bahrain,bahrain,14,country
+Weifang,weifang,14,location
+Zambia,zambia,14,country
+Eugene,eugene,14,location
+Golden,golden,14,location
+Murray,murray,14,location
+Khulna,khulna,14,location
+Bergen,bergen,14,location
+Sejong,sejong,14,location
+Sutton,sutton,14,location
+Taylor,taylor,14,location
+Salem,salem,14,location
+Maine,maine,14,subdivision
+Fukui,fukui,14,subdivision
+Skåne,skane,14,subdivision
+Beira,beira,14,location
+Bruce,bruce,14,location
+Lviv,lviv,14,subdivision
+Oulu,oulu,14,location
+Baja,baja,14,location
+University Park,university park,13,location
+Basque Country,basque country,13,subdivision
+College Park,college park,13,location
+Versailles,versailles,13,location
+Regensburg,regensburg,13,location
+St Andrews,st andrews,13,location
+Nashville,nashville,13,location
+Eskişehir,eskisehir,13,location
+Los Andes,los andes,13,location
+Edmonton,edmonton,13,location
+Hartford,hartford,13,location
+Evanston,evanston,13,location
+Changhua,changhua,13,location
+Zimbabwe,zimbabwe,13,country
+Garching,garching,13,location
+Cologne,cologne,13,location
+Augusta,augusta,13,location
+Palermo,palermo,13,location
+Okinawa,okinawa,13,subdivision
+Caracas,caracas,13,location
+Lansing,lansing,13,location
+Alameda,alameda,13,location
+Maringá,maringa,13,location
+Clifton,clifton,13,location
+Viçosa,vicosa,13,location
+Darwin,darwin,13,location
+Jeonju,jeonju,13,location
+Odisha,odisha,13,subdivision
+Panama,panama,13,country
+Toyota,toyota,13,location
+Padang,padang,13,location
+Plains,plains,13,location
+Duncan,duncan,13,location
+Mersin,mersin,13,subdivision
+Linden,linden,13,location
+Morgan,morgan,13,location
+Fuyang,fuyang,13,location
+Heping,heping,13,location
+Goiás,goias,13,subdivision
+Adana,adana,13,location
+Pavia,pavia,13,location
+Medan,medan,13,location
+Metro,metro,13,location
+Utara,utara,13,location
+Tanta,tanta,13,location
+Graz,graz,13,location
+Bath,bath,13,location
+Hull,hull,13,location
+Iasi,iasi,13,location
+New Brunswick,new brunswick,12,subdivision
+Kitakyushu,kitakyushu,12,location
+Azerbaijan,azerbaijan,12,country
+Māzandarān,mazandaran,12,subdivision
+Beltsville,beltsville,12,location
+North West,north west,12,subdivision
+Palestine,palestine,12,country
+Bengaluru,bengaluru,12,location
+Cranfield,cranfield,12,location
+Khon Kaen,khon kaen,12,location
+Villejuif,villejuif,12,location
+Mangalore,mangalore,12,location
+Akershus,akershus,12,subdivision
+Alicante,alicante,12,location
+Shaoxing,shaoxing,12,location
+Voronezh,voronezh,12,location
+Potsdam,potsdam,12,location
+Norwich,norwich,12,location
+Czechia,czechia,12,country
+Messina,messina,12,location
+Catania,catania,12,location
+Orlando,orlando,12,location
+Salford,salford,12,location
+Irkutsk,irkutsk,12,location
+Ignacio,ignacio,12,location
+Baoding,baoding,12,location
+Sakarya,sakarya,12,subdivision
+Luoyang,luoyang,12,location
+Thomson,thomson,12,location
+Durban,durban,12,location
+Hohhot,hohhot,12,location
+Tromsø,tromsø,12,location
+Bolton,bolton,12,location
+Örebro,orebro,12,location
+Latina,latina,12,location
+Marina,marina,12,location
+Samara,samara,12,location
+Graham,graham,12,location
+Spring,spring,12,location
+Grants,grants,12,location
+Ahvāz,ahvaz,12,location
+Padua,padua,12,location
+Otago,otago,12,subdivision
+Parma,parma,12,location
+Dijon,dijon,12,location
+Vista,vista,12,location
+Piauí,piaui,12,subdivision
+Riga,riga,12,location
+Chūō,chuo,12,location
+Lead,lead,12,location
+Suez,suez,12,location
+Kuala Lumpur,kuala lumpur,11,location
+Qinhuangdao,qinhuangdao,11,location
+Santa Clara,santa clara,11,location
+Bratislava,bratislava,11,location
+Burlington,burlington,11,location
+Canterbury,canterbury,11,location
+Oldenburg,oldenburg,11,location
+Liaocheng,liaocheng,11,location
+Manhattan,manhattan,11,location
+San Pedro,san pedro,11,location
+Zhenjiang,zhenjiang,11,location
+Hirosaki,hirosaki,11,location
+Bradford,bradford,11,location
+Amazonas,amazonas,11,subdivision
+Franklin,franklin,11,location
+Debrecen,debrecen,11,location
+Makassar,makassar,11,location
+Mianyang,mianyang,11,location
+Oakland,oakland,11,location
+Concord,concord,11,location
+Madurai,madurai,11,location
+Brescia,brescia,11,location
+Sanford,sanford,11,location
+Hamadan,hamadan,11,location
+Jiaxing,jiaxing,11,location
+Kerala,kerala,11,subdivision
+Tucson,tucson,11,location
+Anyang,anyang,11,location
+Kuopio,kuopio,11,location
+Murcia,murcia,11,location
+Bhopal,bhopal,11,location
+Santos,santos,11,location
+Kurume,kurume,11,location
+Dudley,dudley,11,location
+La Paz,la paz,11,location
+Haikou,haikou,11,location
+Jining,jining,11,location
+Helwan,helwan,11,location
+Rhodes,rhodes,11,location
+Turin,turin,11,location
+Plano,plano,11,location
+Amman,amman,11,location
+Palma,palma,11,location
+Babol,babol,11,location
+Ceará,ceara,11,subdivision
+Dubai,dubai,11,location
+Quito,quito,11,location
+Konya,konya,11,location
+Devon,devon,11,location
+Moore,moore,11,location
+Beni,beni,11,location
+Sophia Antipolis,sophia antipolis,10,location
+College Station,college station,10,location
+Springfield,springfield,10,location
+Krasnoyarsk,krasnoyarsk,10,location
+Centennial,centennial,10,location
+Valparaíso,valparaiso,10,location
+Kermanshah,kermanshah,10,location
+Portsmouth,portsmouth,10,location
+Wollongong,wollongong,10,location
+San Carlos,san carlos,10,location
+Greifswald,greifswald,10,location
+Abu Dhabi,abu dhabi,10,location
+Asahikawa,asahikawa,10,location
+San Pablo,san pablo,10,location
+Salamanca,salamanca,10,location
+Zaragoza,zaragoza,10,location
+Waterloo,waterloo,10,location
+Londrina,londrina,10,location
+Besançon,besancon,10,location
+Peshawar,peshawar,10,location
+Mulhouse,mulhouse,10,location
+Botswana,botswana,10,country
+Tübingen,tubingen,10,location
+Maranhão,maranhao,10,subdivision
+Botucatu,botucatu,10,location
+Trinidad,trinidad,10,location
+Cochrane,cochrane,10,location
+Xiangtan,xiangtan,10,location
+Nairobi,nairobi,10,location
+Boulder,boulder,10,location
+Keelung,keelung,10,location
+Clayton,clayton,10,location
+Abidjan,abidjan,10,location
+Antalya,antalya,10,location
+Limoges,limoges,10,location
+Tbilisi,tbilisi,10,location
+Hasselt,hasselt,10,location
+Kayseri,kayseri,10,location
+Raymond,raymond,10,location
+Gregory,gregory,10,location
+Stanley,stanley,10,location
+Oviedo,oviedo,10,location
+Manaus,manaus,10,location
+Arnold,arnold,10,location
+Pudong,pudong,10,location
+Subang,subang,10,location
+Jinhua,jinhua,10,location
+Mackay,mackay,10,location
+Baotou,baotou,10,location
+Derby,derby,10,location
+Niger,niger,10,country
+Bihar,bihar,10,subdivision
+Wŏnju,wonju,10,location
+Urmia,urmia,10,location
+Luleå,lulea,10,location
+Globe,globe,10,location
+Lenox,lenox,10,location
+Düzce,duzce,10,location
+Mali,mali,10,country
+Kano,kano,10,location
+Zibo,zibo,10,location
+Riau,riau,10,subdivision
+Sète,sete,10,location
+Chía,chia,10,location
+Pápa,papa,10,location
+Toda,toda,10,location
+Palmerston North,palmerston north,9,location
+East Lansing,east lansing,9,location
+Uttarakhand,uttarakhand,9,subdivision
+New Orleans,new orleans,9,location
+Ouagadougou,ouagadougou,9,location
+João Pessoa,joao pessoa,9,location
+Mudanjiang,mudanjiang,9,location
+Piracicaba,piracicaba,9,location
+Notre Dame,notre dame,9,location
+Sagamihara,sagamihara,9,location
+St. George,st. george,9,location
+New Haven,new haven,9,location
+Saskatoon,saskatoon,9,location
+Gaziantep,gaziantep,9,location
+Wellesley,wellesley,9,location
+Surakarta,surakarta,9,location
+Marquette,marquette,9,location
+Varanasi,varanasi,9,location
+La Plata,la plata,9,location
+Novi Sad,novi sad,9,location
+Somerset,somerset,9,location
+Pembroke,pembroke,9,location
+Longwood,longwood,9,location
+Hvidovre,hvidovre,9,location
+Bayreuth,bayreuth,9,location
+Tangshan,tangshan,9,location
+Erzincan,erzincan,9,location
+Tallinn,tallinn,9,location
+Armenia,armenia,9,location
+Memphis,memphis,9,location
+Amherst,amherst,9,location
+Ipswich,ipswich,9,location
+Fairfax,fairfax,9,location
+Dhahran,dhahran,9,location
+Okazaki,okazaki,9,location
+Granada,granada,9,location
+Rosario,rosario,9,location
+Tilburg,tilburg,9,location
+Le Mans,le mans,9,location
+Chelsea,chelsea,9,location
+Mataram,mataram,9,location
+Cumming,cumming,9,location
+Ganzhou,ganzhou,9,location
+Sergipe,sergipe,9,subdivision
+Can Tho,can tho,9,location
+Recife,recife,9,location
+Indore,indore,9,location
+Newton,newton,9,location
+McLean,mclean,9,location
+Guelph,guelph,9,location
+Aveiro,aveiro,9,location
+Toledo,toledo,9,location
+Jaipur,jaipur,9,location
+Herlev,herlev,9,location
+Kanpur,kanpur,9,location
+Maceió,maceio,9,location
+Sikkim,sikkim,9,subdivision
+Chieti,chieti,9,location
+Walnut,walnut,9,location
+Norman,norman,9,location
+Burnet,burnet,9,location
+Palmer,palmer,9,location
+Parker,parker,9,location
+Datong,datong,9,location
+Amparo,amparo,9,location
+Daqing,daqing,9,location
+Hazard,hazard,9,location
+Roslin,roslin,9,location
+Saclay,saclay,9,location
+Perlis,perlis,9,subdivision
+Genoa,genoa,9,location
+Linyi,linyi,9,location
+Bronx,bronx,9,location
+Adams,adams,9,location
+Alice,alice,9,location
+Vasco,vasco,9,location
+Arak,arak,9,location
+Oita,oita,9,subdivision
+Ōtsu,otsu,9,location
+Eden,eden,9,location
+Sumy,sumy,9,subdivision
+Gent,gent,9,location
+Campina Grande,campina grande,8,location
+KwaZulu-Natal,kwazulu-natal,8,subdivision
+Saint Joseph,saint joseph,8,location
+Christchurch,christchurch,8,location
+Mount Vernon,mount vernon,8,location
+Brandenburg,brandenburg,8,subdivision
+West Bengal,west bengal,8,subdivision
+Little Rock,little rock,8,location
+Albuquerque,albuquerque,8,location
+Blacksburg,blacksburg,8,location
+Flemington,flemington,8,location
+Montenegro,montenegro,8,country
+Woods Hole,woods hole,8,location
+Charlotte,charlotte,8,location
+Ingelheim,ingelheim,8,location
+Brookings,brookings,8,location
+Palaiseau,palaiseau,8,location
+Tangerang,tangerang,8,location
+Tocantins,tocantins,8,subdivision
+Augsburg,augsburg,8,location
+Sarajevo,sarajevo,8,location
+Pasadena,pasadena,8,location
+Paraguay,paraguay,8,country
+Pristina,pristina,8,location
+Española,espanola,8,location
+Fisciano,fisciano,8,location
+Sheridan,sheridan,8,location
+Fletcher,fletcher,8,location
+Jinzhong,jinzhong,8,location
+Woodland,woodland,8,location
+Bolivia,bolivia,8,country
+Belmont,belmont,8,location
+Wyoming,wyoming,8,subdivision
+Sarawak,sarawak,8,subdivision
+Aligarh,aligarh,8,location
+Galicia,galicia,8,subdivision
+Pelotas,pelotas,8,location
+Babylon,babylon,8,location
+Jiaozuo,jiaozuo,8,location
+Morelos,morelos,8,subdivision
+Lampung,lampung,8,subdivision
+Harwell,harwell,8,location
+Parsons,parsons,8,location
+Suffolk,suffolk,8,location
+Galilee,galilee,8,location
+Aurora,aurora,8,location
+Dayton,dayton,8,location
+Camden,camden,8,location
+Eunice,eunice,8,location
+Foshan,foshan,8,location
+Himeji,himeji,8,location
+Nagano,nagano,8,subdivision
+Bangor,bangor,8,location
+Brunei,brunei,8,country
+Lublin,lublin,8,subdivision
+Vernon,vernon,8,location
+Greene,greene,8,location
+Rostov,rostov,8,subdivision
+Norton,norton,8,location
+Duarte,duarte,8,location
+Akron,akron,8,location
+Udine,udine,8,location
+Jinju,jinju,8,location
+Enugu,enugu,8,location
+Sivas,sivas,8,location
+Tartu,tartu,8,location
+Namur,namur,8,location
+Nokia,nokia,8,location
+Price,price,8,location
+Asahi,asahi,8,location
+Rende,rende,8,location
+Cork,cork,8,location
+Vigo,vigo,8,location
+Bali,bali,8,subdivision
+West Lafayette,west lafayette,7,location
+Dnipropetrovsk,dnipropetrovsk,7,subdivision
+Saint-Etienne,saint-etienne,7,location
+Florianópolis,florianopolis,7,location
+Santa Barbara,santa barbara,7,location
+Reggio Emilia,reggio emilia,7,location
+Potchefstroom,potchefstroom,7,location
+Peterborough,peterborough,7,location
+Monterotondo,monterotondo,7,location
+Baton Rouge,baton rouge,7,location
+Vladivostok,vladivostok,7,location
+Saarbrücken,saarbrucken,7,location
+Westchester,westchester,7,location
+Guadalajara,guadalajara,7,location
+Düsseldorf,dusseldorf,7,location
+Des Moines,des moines,7,location
+Charleston,charleston,7,location
+Farmington,farmington,7,location
+Sacramento,sacramento,7,location
+Nuevo León,nuevo leon,7,subdivision
+Townsville,townsville,7,location
+San Miguel,san miguel,7,location
+Ramat Gan,ramat gan,7,location
+Chuncheon,chuncheon,7,location
+Arlington,arlington,7,location
+Heraklion,heraklion,7,location
+Toyohashi,toyohashi,7,location
+Kathmandu,kathmandu,7,location
+Zhanjiang,zhanjiang,7,location
+Cantabria,cantabria,7,subdivision
+Montclair,montclair,7,location
+Salisbury,salisbury,7,location
+Woodstock,woodstock,7,location
+Wadsworth,wadsworth,7,location
+Michoacán,michoacan,7,subdivision
+Bahir Dar,bahir dar,7,location
+Castellon,castellon,7,location
+Bariloche,bariloche,7,location
+Canakkale,canakkale,7,subdivision
+Honolulu,honolulu,7,location
+Changzhi,changzhi,7,location
+Mitchell,mitchell,7,location
+Golestan,golestan,7,subdivision
+Ludhiana,ludhiana,7,location
+Srīnagar,srinagar,7,location
+Fribourg,fribourg,7,location
+Nanchong,nanchong,7,location
+Guilford,guilford,7,location
+Chemnitz,chemnitz,7,location
+Westlake,westlake,7,location
+Marianna,marianna,7,location
+St. Paul,st. paul,7,location
+Quanzhou,quanzhou,7,location
+Szczecin,szczecin,7,location
+Dehradun,dehradun,7,location
+Cangzhou,cangzhou,7,location
+Zhoushan,zhoushan,7,location
+Fairview,fairview,7,location
+Robinson,robinson,7,location
+Winthrop,winthrop,7,location
+Maynooth,maynooth,7,location
+Xianning,xianning,7,location
+Yangling,yangling,7,location
+Lorraine,lorraine,7,location
+Frontera,frontera,7,location
+Roorkee,roorkee,7,location
+Watford,watford,7,location
+Chatham,chatham,7,location
+Saratov,saratov,7,location
+Albania,albania,7,country
+Cheonan,cheonan,7,location
+Tochigi,tochigi,7,subdivision
+Hanover,hanover,7,location
+Zhuzhou,zhuzhou,7,location
+Alagoas,alagoas,7,subdivision
+Chengde,chengde,7,location
+Dunedin,dunedin,7,location
+Erzurum,erzurum,7,location
+Perugia,perugia,7,location
+Marília,marilia,7,location
+Peabody,peabody,7,location
+Webster,webster,7,location
+Langley,langley,7,location
+Jinzhou,jinzhou,7,location
+Anambra,anambra,7,subdivision
+Binzhou,binzhou,7,location
+Kaifeng,kaifeng,7,location
+Isparta,isparta,7,location
+Bentley,bentley,7,location
+Vitória,vitoria,7,location
+Del Rio,del rio,7,location
+Shengli,shengli,7,location
+Zahedan,zahedan,7,location
+Aksaray,aksaray,7,location
+Odessa,odessa,7,subdivision
+Ithaca,ithaca,7,location
+Newark,newark,7,location
+Semnan,semnan,7,subdivision
+Ibadan,ibadan,7,location
+Samsun,samsun,7,location
+Košice,kosice,7,location
+Nagpur,nagpur,7,location
+Canton,canton,7,location
+Harvey,harvey,7,location
+Galway,galway,7,location
+Rwanda,rwanda,7,country
+Handan,handan,7,location
+Xining,xining,7,location
+Butler,butler,7,location
+Lenina,lenina,7,location
+Alpine,alpine,7,location
+Omaha,omaha,7,location
+Dakar,dakar,7,location
+Boise,boise,7,location
+Yemen,yemen,7,country
+Bauru,bauru,7,location
+Bursa,bursa,7,location
+Monza,monza,7,location
+Aydın,aydın,7,subdivision
+Gebze,gebze,7,location
+Altai,altai,7,subdivision
+Welch,welch,7,location
+Logan,logan,7,location
+Sanya,sanya,7,location
+Burke,burke,7,location
+Ariel,ariel,7,location
+Sinop,sinop,7,location
+Linz,linz,7,location
+Reno,reno,7,location
+Aceh,aceh,7,subdivision
+Lens,lens,7,location
+Povo,povo,7,location
+Fuji,fuji,7,location
+Mato Grosso do Sul,mato grosso do sul,6,location
+Charlottesville,charlottesville,6,location
+Madhya Pradesh,madhya pradesh,6,subdivision
+Northumberland,northumberland,6,location
+Afyonkarahisar,afyonkarahisar,6,location
+Mar del Plata,mar del plata,6,location
+Kahramanmaraş,kahramanmaras,6,location
+Lappeenranta,lappeenranta,6,location
+Independence,independence,6,location
+Ponta Grossa,ponta grossa,6,location
+Mississauga,mississauga,6,location
+Aberystwyth,aberystwyth,6,location
+East London,east london,6,location
+Cluj-Napoca,cluj-napoca,6,location
+Częstochowa,czestochowa,6,location
+Huntingdon,huntingdon,6,location
+Utsunomiya,utsunomiya,6,location
+Puducherry,puducherry,6,subdivision
+Santa Rosa,santa rosa,6,location
+Faisalabad,faisalabad,6,location
+Sunderland,sunderland,6,location
+Madagascar,madagascar,6,country
+San Donato,san donato,6,location
+Palm Beach,palm beach,6,location
+North East,north east,6,subdivision
+Rondebosch,rondebosch,6,location
+Magdeburg,magdeburg,6,location
+Galveston,galveston,6,location
+Tarragona,tarragona,6,location
+Guatemala,guatemala,6,subdivision
+Brookline,brookline,6,location
+Fairbanks,fairbanks,6,location
+Champaign,champaign,6,location
+Dickinson,dickinson,6,location
+Westfield,westfield,6,location
+Compiègne,compiegne,6,location
+Stavanger,stavanger,6,location
+Tavistock,tavistock,6,location
+Mauritius,mauritius,6,country
+Samarkand,samarkand,6,location
+Clarendon,clarendon,6,location
+San Paolo,san paolo,6,location
+Kharagpur,kharagpur,6,location
+Bathurst,bathurst,6,location
+Santa Fe,santa fe,6,subdivision
+Asturias,asturias,6,subdivision
+St Louis,st louis,6,location
+Maebashi,maebashi,6,location
+Gembloux,gembloux,6,location
+Changwon,changwon,6,location
+Medellín,medellin,6,location
+Yinchuan,yinchuan,6,location
+Jamshoro,jamshoro,6,location
+Salzburg,salzburg,6,location
+Songkhla,songkhla,6,location
+Calabria,calabria,6,subdivision
+Cagliari,cagliari,6,location
+Littoral,littoral,6,subdivision
+Monastir,monastir,6,location
+Cheshire,cheshire,6,location
+Duisburg,duisburg,6,location
+Mayfield,mayfield,6,location
+Hachiōji,hachioji,6,location
+Hopewell,hopewell,6,location
+Teresina,teresina,6,location
+Skolkovo,skolkovo,6,location
+Dongying,dongying,6,location
+Kamenice,kamenice,6,location
+Neijiang,neijiang,6,location
+Holland,holland,6,location
+Nagaoka,nagaoka,6,location
+Raleigh,raleigh,6,location
+Qiqihar,qiqihar,6,location
+Geelong,geelong,6,location
+Hayward,hayward,6,location
+Colombo,colombo,6,location
+Midland,midland,6,location
+Bradley,bradley,6,location
+Ferrara,ferrara,6,location
+Béthune,bethune,6,location
+Morelia,morelia,6,location
+Cirebon,cirebon,6,location
+Elmwood,elmwood,6,location
+Yueyang,yueyang,6,location
+Springs,springs,6,location
+Minhang,minhang,6,location
+Huainan,huainan,6,location
+Bohemia,bohemia,6,location
+Roraima,roraima,6,subdivision
+Aomori,aomori,6,subdivision
+Mérida,merida,6,location
+Verona,verona,6,location
+Franca,franca,6,location
+Osijek,osijek,6,location
+Edison,edison,6,location
+Penang,penang,6,subdivision
+Puebla,puebla,6,subdivision
+Tezpur,tezpur,6,location
+Carmel,carmel,6,location
+Marion,marion,6,location
+Nassau,nassau,6,location
+Jember,jember,6,location
+Canyon,canyon,6,location
+Luzhou,luzhou,6,location
+Siping,siping,6,location
+Lishui,lishui,6,location
+Burton,burton,6,location
+Minsk,minsk,6,location
+Odesa,odesa,6,location
+Tampa,tampa,6,location
+Sindh,sindh,6,subdivision
+Crete,crete,6,subdivision
+Rabat,rabat,6,location
+Fargo,fargo,6,location
+Sandy,sandy,6,location
+Solna,solna,6,location
+Homer,homer,6,location
+Evans,evans,6,location
+Mação,macao,6,location
+Ouest,ouest,6,subdivision
+Unity,unity,6,location
+Belém,belem,6,location
+Assis,assis,6,location
+Cisco,cisco,6,location
+Şişli,sisli,6,location
+Blida,blida,6,location
+Niğde,nigde,6,location
+Muğla,mugla,6,location
+Erie,erie,6,location
+Gary,gary,6,location
+Sfax,sfax,6,location
+Mesa,mesa,6,location
+Lodz,lodz,6,location
+Bron,bron,6,location
+Oran,oran,6,location
+Apex,apex,6,location
+Page,page,6,location
+Thiruvananthapuram,thiruvananthapuram,5,location
+Frankfurt am Main,frankfurt am main,5,location
+Himachal Pradesh,himachal pradesh,5,subdivision
+Distrito Federal,distrito federal,5,subdivision
+Clermont-Ferrand,clermont-ferrand,5,location
+Capital Region,capital region,5,subdivision
+Kaiserslautern,kaiserslautern,5,location
+St Petersburg,st petersburg,5,location
+Bowling Green,bowling green,5,location
+Winston-Salem,winston-salem,5,location
+Yekaterinburg,yekaterinburg,5,location
+Rivers State,rivers state,5,subdivision
+Fort Collins,fort collins,5,location
+Bedfordshire,bedfordshire,5,location
+Sioux Falls,sioux falls,5,location
+Tallahassee,tallahassee,5,location
+Bhubaneswar,bhubaneswar,5,location
+Thái Nguyên,thai nguyen,5,location
+Ekiti State,ekiti state,5,subdivision
+Chernivtsi,chernivtsi,5,subdivision
+Wilmington,wilmington,5,location
+Colchester,colchester,5,location
+Rawalpindi,rawalpindi,5,location
+Gloucester,gloucester,5,location
+Casablanca,casablanca,5,location
+Valladolid,valladolid,5,location
+La Tronche,la tronche,5,location
+Kyrgyzstan,kyrgyzstan,5,country
+Stillwater,stillwater,5,location
+Astrakhan,astrakhan,5,location
+Krasnodar,krasnodar,5,location
+West Java,west java,5,subdivision
+Corvallis,corvallis,5,location
+Imo State,imo state,5,subdivision
+Jönköping,jonkoping,5,location
+Monterrey,monterrey,5,location
+Fullerton,fullerton,5,location
+Yaroslavl,yaroslavl,5,location
+Jyväskylä,jyvaskyla,5,location
+Nicaragua,nicaragua,5,country
+Wuppertal,wuppertal,5,location
+Santander,santander,5,location
+Osnabrück,osnabruck,5,location
+Karaganda,karaganda,5,location
+Volgograd,volgograd,5,location
+Katherine,katherine,5,location
+Tonekābon,tonekabon,5,location
+Barreiras,barreiras,5,location
+Kırıkkale,kırıkkale,5,location
+Athabasca,athabasca,5,location
+Flanders,flanders,5,subdivision
+Piedmont,piedmont,5,subdivision
+Cambodia,cambodia,5,country
+Yokosuka,yokosuka,5,location
+Sterling,sterling,5,location
+Cornwall,cornwall,5,location
+Winnipeg,winnipeg,5,location
+Toyonaka,toyonaka,5,location
+Albacete,albacete,5,location
+Ioannina,ioannina,5,location
+Shillong,shillong,5,location
+Vestfold,vestfold,5,subdivision
+Amritsar,amritsar,5,location
+Pamplona,pamplona,5,location
+Nanterre,nanterre,5,location
+Khartoum,khartoum,5,location
+Fujisawa,fujisawa,5,location
+Guwahati,guwahati,5,location
+Bellevue,bellevue,5,location
+Enschede,enschede,5,location
+Konstanz,konstanz,5,location
+Shangqiu,shangqiu,5,location
+Xianyang,xianyang,5,location
+Lakeside,lakeside,5,location
+Junction,junction,5,location
+Jamaica,jamaica,5,country
+Moldova,moldova,5,country
+Plovdiv,plovdiv,5,location
+Yichang,yichang,5,location
+Donetsk,donetsk,5,subdivision
+Norfolk,norfolk,5,location
+Hammond,hammond,5,location
+Bolivar,bolivar,5,location
+Newport,newport,5,location
+Windsor,windsor,5,location
+Nicosia,nicosia,5,location
+Taishan,taishan,5,location
+Huizhou,huizhou,5,location
+Rostock,rostock,5,location
+Silesia,silesia,5,subdivision
+Myanmar,myanmar,5,country
+Lubbock,lubbock,5,location
+Edwards,edwards,5,location
+Manresa,manresa,5,location
+Ilmenau,ilmenau,5,location
+Formosa,formosa,5,location
+Adamawa,adamawa,5,subdivision
+Urayasu,urayasu,5,location
+Sharjah,sharjah,5,location
+Xicheng,xicheng,5,location
+Carlton,carlton,5,location
+Epworth,epworth,5,location
+Emerson,emerson,5,location
+Nanshan,nanshan,5,location
+Meishan,meishan,5,location
+Banting,banting,5,location
+Huangpu,huangpu,5,location
+Giresun,giresun,5,location
+Karabük,karabuk,5,location
+Trento,trento,5,location
+Veneto,veneto,5,subdivision
+Almaty,almaty,5,location
+Guntur,guntur,5,location
+Gorgan,gorgan,5,location
+Kosovo,kosovo,5,country
+Cuenca,cuenca,5,location
+Huelva,huelva,5,location
+Pessac,pessac,5,location
+Rimini,rimini,5,location
+Atsugi,atsugi,5,location
+Kumasi,kumasi,5,location
+Venice,venice,5,location
+Storrs,storrs,5,location
+Bishop,bishop,5,location
+Gdynia,gdynia,5,location
+Vicuña,vicuna,5,location
+Kaduna,kaduna,5,location
+Nashik,nashik,5,location
+Edmond,edmond,5,location
+Weihai,weihai,5,location
+Quzhou,quzhou,5,location
+Melaka,melaka,5,subdivision
+Manisa,manisa,5,location
+Steele,steele,5,location
+Buford,buford,5,location
+Kahoku,kahoku,5,location
+Dawson,dawson,5,location
+Hwasun,hwasun,5,location
+Bingöl,bingol,5,location
+Lavras,lavras,5,location
+Syria,syria,5,country
+Malta,malta,5,country
+Tyler,tyler,5,location
+Tempe,tempe,5,location
+Feira,feira,5,location
+Siena,siena,5,location
+Karaj,karaj,5,location
+Rasht,rasht,5,location
+Jimma,jimma,5,location
+Beppu,beppu,5,location
+Évora,evora,5,subdivision
+Noida,noida,5,location
+Accra,accra,5,location
+Colby,colby,5,location
+Donna,donna,5,location
+Flora,flora,5,location
+Mokpo,mokpo,5,location
+Surat,surat,5,location
+Macau,macau,5,subdivision
+Opole,opole,5,location
+Irbid,irbid,5,location
+Depok,depok,5,location
+Kuang,kuang,5,location
+Matão,matao,5,location
+Ajman,ajman,5,location
+Patos,patos,5,location
+Split,split,5,location
+Cadiz,cadiz,5,location
+Mosul,mosul,5,location
+Kofu,kofu,5,location
+Sari,sari,5,location
+Metz,metz,5,location
+Wise,wise,5,location
+Nome,nome,5,location
+Sand,sand,5,location
+Dunn,dunn,5,location
+Yazd,yazd,5,location
+Ordu,ordu,5,location
+Australian Capital Territory,australian capital territory,4,subdivision
+Presidente Prudente,presidente prudente,4,location
+São José dos Campos,sao jose dos campos,4,location
+Schleswig-Holstein,schleswig-holstein,4,subdivision
+Cold Spring Harbor,cold spring harbor,4,location
+Fontenay-aux-Roses,fontenay-aux-roses,4,location
+Alcalá de Henares,alcala de henares,4,location
+Nizhny Novgorod,nizhny novgorod,4,location
+San Luis Potosí,san luis potosi,4,subdivision
+Baja California,baja california,4,subdivision
+Aix-en-Provence,aix-en-provence,4,location
+Bento Gonçalves,bento goncalves,4,location
+Sankt Augustin,sankt augustin,4,location
+Oklahoma City,oklahoma city,4,location
+Port Harcourt,port harcourt,4,location
+Milton Keynes,milton keynes,4,location
+Wolverhampton,wolverhampton,4,location
+Prince George,prince george,4,location
+Jacksonville,jacksonville,4,location
+South Orange,south orange,4,location
+Hillsborough,hillsborough,4,location
+Pathum Thani,pathum thani,4,location
+Ebonyi State,ebonyi state,4,subdivision
+Kristiansand,kristiansand,4,location
+Zaporizhzhia,zaporizhzhia,4,subdivision
+Lincolnshire,lincolnshire,4,location
+Juiz de Fora,juiz de fora,4,location
+São Leopoldo,sao leopoldo,4,location
+Tainan City,tainan city,4,location
+Bloomington,bloomington,4,location
+Constantine,constantine,4,subdivision
+Scarborough,scarborough,4,location
+Northampton,northampton,4,location
+Banjarmasin,banjarmasin,4,location
+Navi Mumbai,navi mumbai,4,location
+Cold Spring,cold spring,4,location
+Passo Fundo,passo fundo,4,location
+Resistencia,resistencia,4,location
+Mozambique,mozambique,4,country
+Montgomery,montgomery,4,location
+Hackensack,hackensack,4,location
+Saint Paul,saint paul,4,location
+Marshfield,marshfield,4,location
+Khabarovsk,khabarovsk,4,location
+Kragujevac,kragujevac,4,location
+San Rafael,san rafael,4,location
+Montevideo,montevideo,4,location
+Las Cruces,las cruces,4,location
+Monserrato,monserrato,4,location
+Guanajuato,guanajuato,4,subdivision
+Concepción,concepcion,4,location
+Kogi State,kogi state,4,subdivision
+Terengganu,terengganu,4,subdivision
+Chesapeake,chesapeake,4,location
+Cuauhtémoc,cuauhtemoc,4,location
+Le Bourget,le bourget,4,location
+Knoxville,knoxville,4,location
+Greenwood,greenwood,4,location
+Middleton,middleton,4,location
+Vila Real,vila real,4,location
+Kurashiki,kurashiki,4,location
+Meghalaya,meghalaya,4,subdivision
+Querétaro,queretaro,4,subdivision
+Cartagena,cartagena,4,location
+Thanjavur,thanjavur,4,location
+Greenwich,greenwich,4,location
+Matsumoto,matsumoto,4,location
+Neuchâtel,neuchatel,4,location
+Ahmedabad,ahmedabad,4,location
+Bialystok,bialystok,4,location
+Jalandhar,jalandhar,4,location
+Takamatsu,takamatsu,4,location
+Henderson,henderson,4,location
+Karaikudi,karaikudi,4,location
+Wiesbaden,wiesbaden,4,location
+Blackburn,blackburn,4,location
+Timișoara,timisoara,4,location
+Vinnytsia,vinnytsia,4,location
+Americana,americana,4,location
+Gorontalo,gorontalo,4,location
+Panzhihua,panzhihua,4,location
+St John's,st john's,4,location
+Nagercoil,nagercoil,4,location
+Changning,changning,4,location
+Rodrigues,rodrigues,4,subdivision
+Pontianak,pontianak,4,location
+Henrietta,henrietta,4,location
+Petrolina,petrolina,4,location
+Koshigaya,koshigaya,4,location
+Zonguldak,zonguldak,4,location
+Vladimir,vladimir,4,location
+Stockton,stockton,4,location
+Huangshi,huangshi,4,location
+Tongliao,tongliao,4,location
+Hengyang,hengyang,4,location
+Katowice,katowice,4,location
+Rajshahi,rajshahi,4,location
+Paterson,paterson,4,location
+Candiolo,candiolo,4,location
+Hatfield,hatfield,4,location
+Richland,richland,4,location
+Frascati,frascati,4,location
+Freiberg,freiberg,4,location
+Murmansk,murmansk,4,location
+Monument,monument,4,location
+Warangal,warangal,4,location
+Buchanan,buchanan,4,location
+Chandler,chandler,4,location
+Kaposvár,kaposvar,4,location
+Jiujiang,jiujiang,4,location
+Veracruz,veracruz,4,subdivision
+Denpasar,denpasar,4,location
+Changshu,changshu,4,location
+Woodlawn,woodlawn,4,location
+Jiangmen,jiangmen,4,location
+Langfang,langfang,4,location
+Cromwell,cromwell,4,location
+Freising,freising,4,location
+Progreso,progreso,4,location
+Tallaght,tallaght,4,location
+Sherwood,sherwood,4,location
+Mayagüez,mayaguez,4,location
+Villigen,villigen,4,location
+Salatiga,salatiga,4,location
+Nevşehir,nevsehir,4,location
+Rzeszów,rzeszow,4,location
+Izhevsk,izhevsk,4,location
+El Paso,el paso,4,location
+Madeira,madeira,4,subdivision
+Ardabil,ardabil,4,location
+Birjand,birjand,4,location
+Hidalgo,hidalgo,4,subdivision
+Logroño,logrono,4,location
+Bobigny,bobigny,4,location
+Viterbo,viterbo,4,location
+Trabzon,trabzon,4,location
+Kushiro,kushiro,4,location
+Muroran,muroran,4,location
+Malatya,malatya,4,location
+Wheaton,wheaton,4,location
+Miranda,miranda,4,subdivision
+Mülheim,mulheim,4,location
+Hawkins,hawkins,4,location
+Danbury,danbury,4,location
+Liberty,liberty,4,location
+Seville,seville,4,location
+Salerno,salerno,4,location
+Gilbert,gilbert,4,location
+Rozzano,rozzano,4,location
+Maribor,maribor,4,location
+Bergamo,bergamo,4,location
+Avignon,avignon,4,location
+Goodman,goodman,4,location
+Namibia,namibia,4,country
+Østfold,østfold,4,subdivision
+Olomouc,olomouc,4,location
+Ostrava,ostrava,4,location
+Xinyang,xinyang,4,location
+Itajubá,itajuba,4,location
+Kendari,kendari,4,location
+Mbarara,mbarara,4,location
+Çankırı,cankırı,4,location
+Kunshan,kunshan,4,location
+Tongren,tongren,4,location
+Huai'an,huai'an,4,location
+Enfield,enfield,4,location
+Guthrie,guthrie,4,location
+Lisburn,lisburn,4,location
+Piastów,piastow,4,location
+Lāhījān,lahijan,4,location
+Arganda,arganda,4,location
+Cassino,cassino,4,location
+Réunion,reunion,4,subdivision
+Zhoukou,zhoukou,4,location
+Glossop,glossop,4,location
+Nangang,nangang,4,location
+Barnard,barnard,4,location
+Atlixco,atlixco,4,location
+Burwood,burwood,4,location
+Huairou,huairou,4,location
+Kaunas,kaunas,4,location
+Pomona,pomona,4,location
+Lowell,lowell,4,location
+Andong,andong,4,location
+Monroe,monroe,4,location
+Duluth,duluth,4,location
+Hadley,hadley,4,location
+Meerut,meerut,4,location
+Sylhet,sylhet,4,location
+Suzuka,suzuka,4,location
+Medina,medina,4,location
+Dammam,dammam,4,location
+Al Ain,al ain,4,location
+Toulon,toulon,4,location
+Tacoma,tacoma,4,location
+Summit,summit,4,location
+Iizuka,iizuka,4,location
+Kielce,kielce,4,location
+Viborg,viborg,4,location
+Wishaw,wishaw,4,location
+Weston,weston,4,location
+Novara,novara,4,location
+Lübeck,lubeck,4,location
+Astana,astana,4,location
+Becker,becker,4,location
+Dnipro,dnipro,4,location
+Angola,angola,4,country
+Sakura,sakura,4,location
+Potosí,potosi,4,location
+Dazhou,dazhou,4,location
+Kupang,kupang,4,location
+Banten,banten,4,subdivision
+Kediri,kediri,4,location
+Manado,manado,4,location
+Serang,serang,4,location
+Snyder,snyder,4,location
+Hobart,hobart,4,location
+Yangpu,yangpu,4,location
+Oliver,oliver,4,location
+Fushun,fushun,4,location
+Foggia,foggia,4,location
+Yonago,yonago,4,location
+Meudon,meudon,4,location
+Holden,holden,4,location
+Flores,flores,4,location
+Dingxi,dingxi,4,location
+Ultimo,ultimo,4,location
+Béjaïa,bejaia,4,location
+Tikrit,tikrit,4,location
+Mediaş,medias,4,location
+Caldas,caldas,4,location
+Rizhao,rizhao,4,location
+Hisar,hisar,4,location
+Penza,penza,4,location
+Hiram,hiram,4,location
+Wanju,wanju,4,location
+Ikeja,ikeja,4,location
+Libya,libya,4,country
+Iwata,iwata,4,location
+Abuja,abuja,4,location
+Cocoa,cocoa,4,location
+Ispra,ispra,4,location
+Kabul,kabul,4,location
+Sétif,setif,4,location
+Nîmes,nimes,4,location
+Perak,perak,4,subdivision
+Natal,natal,4,location
+Sohag,sohag,4,location
+Jambi,jambi,4,subdivision
+Corte,corte,4,location
+Anand,anand,4,location
+Kōnan,konan,4,location
+Zijin,zijin,4,location
+Craig,craig,4,location
+Yanta,yanta,4,location
+Vinča,vinca,4,location
+Durán,duran,4,location
+Troy,troy,4,location
+Sōja,soja,4,location
+Pécs,pecs,4,location
+Mold,mold,4,location
+Wuhu,wuhu,4,location
+Ondo,ondo,4,location
+Vinh,vinh,4,location
+Komi,komi,4,subdivision
+Fasa,fasa,4,location
+Enid,enid,4,location
+Īlām,ilam,4,location
+Las Palmas de Gran Canaria,las palmas de gran canaria,3,location
+Newfoundland and Labrador,newfoundland and labrador,3,subdivision
+L'Hospitalet de Llobregat,l'hospitalet de llobregat,3,location
+São José do Rio Preto,sao jose do rio preto,3,location
+Northwest Territories,northwest territories,3,subdivision
+San Michele all'Adige,san michele all'adige,3,location
+Wright-Patterson AFB,wright-patterson AFB,3,location
+Clausthal-Zellerfeld,clausthal-zellerfeld,3,location
+Trinidad and Tobago,trinidad and tobago,3,country
+Santiago del Estero,santiago del estero,3,location
+Northern Territory,northern territory,3,subdivision
+Sesto Fiorentino,sesto fiorentino,3,location
+Gyeongsangbuk-do,gyeongsangbuk-do,3,subdivision
+Châtenay-Malabry,chatenay-malabry,3,location
+Southern Region,southern region,3,subdivision
+Rueil-Malmaison,rueil-malmaison,3,location
+North Macedonia,north macedonia,3,country
+Banská Bystrica,banska bystrica,3,location
+Lázaro Cárdenas,lazaro cardenas,3,location
+Stoke-on-Trent,stoke-on-trent,3,location
+San Bernardino,san bernardino,3,location
+Trois-Rivières,trois-rivieres,3,location
+Castelo Branco,castelo branco,3,subdivision
+Patos de Minas,patos de minas,3,location
+Western Region,western region,3,subdivision
+Maisons-Alfort,maisons-alfort,3,location
+Sunshine Coast,sunshine coast,3,location
+Île-de-France,ile-de-france,3,subdivision
+Dar es Salaam,dar es salaam,3,location
+Liechtenstein,liechtenstein,3,country
+Fontainebleau,fontainebleau,3,location
+Várzea Grande,varzea grande,3,location
+Nakhon Pathom,nakhon pathom,3,location
+Visakhapatnam,visakhapatnam,3,location
+Puerto Madryn,puerto madryn,3,location
+Western Cape,western cape,3,subdivision
+Chhattisgarh,chhattisgarh,3,subdivision
+Cundinamarca,cundinamarca,3,subdivision
+Higashiosaka,higashiosaka,3,location
+Bloemfontein,bloemfontein,3,location
+Valenciennes,valenciennes,3,location
+Saint-Denis,saint-denis,3,location
+Bremerhaven,bremerhaven,3,location
+Quezon City,quezon city,3,location
+Wallingford,wallingford,3,location
+Leatherhead,leatherhead,3,location
+Chelyabinsk,chelyabinsk,3,location
+Ivory Coast,ivory coast,3,country
+Kilimanjaro,kilimanjaro,3,subdivision
+Chattanooga,chattanooga,3,location
+Alessandria,alessandria,3,location
+San Ignacio,san ignacio,3,location
+Bucaramanga,bucaramanga,3,location
+Zhangjiakou,zhangjiakou,3,location
+Casamassima,casamassima,3,location
+Sacré-Coeur,sacre-coeur,3,location
+La Rochelle,la rochelle,3,location
+Porto Velho,porto velho,3,location
+Probolinggo,probolinggo,3,location
+Pearl River,pearl river,3,location
+Lianyungang,lianyungang,3,location
+Thu Dau Mot,thu dau mot,3,location
+Puerto Real,puerto real,3,location
+Banja Luka,banja luka,3,location
+Gangwon-do,gangwon-do,3,subdivision
+Long Beach,long beach,3,location
+Shreveport,shreveport,3,location
+Greenville,greenville,3,location
+Pontypridd,pontypridd,3,location
+Osun State,osun state,3,subdivision
+Camperdown,camperdown,3,location
+Abbottabad,abbottabad,3,location
+Framingham,framingham,3,location
+The Gambia,the gambia,3,country
+Bellinzona,bellinzona,3,location
+Warrington,warrington,3,location
+Cumberland,cumberland,3,location
+Leverkusen,leverkusen,3,location
+Pennington,pennington,3,location
+Lethbridge,lethbridge,3,location
+San Marcos,san marcos,3,location
+Eagleville,eagleville,3,location
+Diepenbeek,diepenbeek,3,location
+Williamson,williamson,3,location
+Buckingham,buckingham,3,location
+Mandeville,mandeville,3,location
+Cuernavaca,cuernavaca,3,location
+Banda Aceh,banda aceh,3,location
+Torrington,torrington,3,location
+Pekalongan,pekalongan,3,location
+Fiorentino,fiorentino,3,location
+West Coast,west coast,3,subdivision
+Geisenheim,geisenheim,3,location
+Guyancourt,guyancourt,3,location
+Bhimavaram,bhimavaram,3,location
+Matsuyama,matsuyama,3,location
+Los Altos,los altos,3,location
+Claremont,claremont,3,location
+Bhavnagar,bhavnagar,3,location
+Guarulhos,guarulhos,3,location
+Dibrugarh,dibrugarh,3,location
+Guildford,guildford,3,location
+Zhangzhou,zhangzhou,3,location
+Rotherham,rotherham,3,location
+Hollywood,hollywood,3,location
+Jharkhand,jharkhand,3,subdivision
+Sundsvall,sundsvall,3,location
+Brentwood,brentwood,3,location
+Fairfield,fairfield,3,location
+Guimarães,guimaraes,3,location
+Daresbury,daresbury,3,location
+Elk Grove,elk grove,3,location
+Baronissi,baronissi,3,location
+Shah Alam,shah alam,3,location
+Chihuahua,chihuahua,3,subdivision
+Manizales,manizales,3,location
+Palembang,palembang,3,location
+Musashino,musashino,3,location
+Rafsanjān,rafsanjan,3,location
+Gorakhpur,gorakhpur,3,location
+Del Norte,del norte,3,location
+Rio Claro,rio claro,3,location
+Davangere,davangere,3,location
+Châtillon,chatillon,3,location
+Ghaziabad,ghaziabad,3,location
+Esslingen,esslingen,3,location
+Huanggang,huanggang,3,location
+Fremantle,fremantle,3,location
+Glenfield,glenfield,3,location
+Northland,northland,3,subdivision
+Kālpākkam,kalpakkam,3,location
+Guadalupe,guadalupe,3,location
+Kastamonu,kastamonu,3,location
+Balıkesir,balıkesir,3,subdivision
+Gümüşhane,gumushane,3,location
+Kurchatov,kurchatov,3,location
+Trujillo,trujillo,3,location
+Chisinau,chisinau,3,location
+Scranton,scranton,3,location
+Nedlands,nedlands,3,location
+Thessaly,thessaly,3,subdivision
+Benghazi,benghazi,3,location
+Vadodara,vadodara,3,location
+Buskerud,buskerud,3,subdivision
+Tirupati,tirupati,3,location
+Shaoguan,shaoguan,3,location
+La Rioja,la rioja,3,location
+Karlstad,karlstad,3,location
+Hastings,hastings,3,location
+Orenburg,orenburg,3,location
+Roskilde,roskilde,3,location
+Limerick,limerick,3,location
+Stamford,stamford,3,location
+Westwood,westwood,3,location
+Tuen Mun,tuen mun,3,location
+Valdivia,valdivia,3,location
+Elmhurst,elmhurst,3,location
+Carlsbad,carlsbad,3,location
+Rockland,rockland,3,location
+Charlton,charlton,3,location
+Houghton,houghton,3,location
+Rimouski,rimouski,3,location
+Davidson,davidson,3,location
+Yorktown,yorktown,3,location
+Măgurele,magurele,3,location
+Randolph,randolph,3,location
+Asunción,asuncion,3,location
+Kelantan,kelantan,3,subdivision
+Morehead,morehead,3,location
+Stafford,stafford,3,location
+Hanzhong,hanzhong,3,location
+Honduras,honduras,3,country
+Coahuila,coahuila,3,subdivision
+Guerrero,guerrero,3,subdivision
+Misiones,misiones,3,subdivision
+Jendouba,jendouba,3,location
+Bengkulu,bengkulu,3,subdivision
+Belgorod,belgorod,3,location
+Zhytomyr,zhytomyr,3,location
+Dongyang,dongyang,3,location
+Jingzhou,jingzhou,3,location
+Furukawa,furukawa,3,location
+Randwick,randwick,3,location
+Carthage,carthage,3,location
+Tongling,tongling,3,location
+Bundoora,bundoora,3,location
+Terrassa,terrassa,3,location
+Matthews,matthews,3,location
+Sukolilo,sukolilo,3,location
+Amravati,amravati,3,location
+Durgapur,durgapur,3,location
+Coyoacán,coyoacan,3,location
+Bragança,braganca,3,location
+Tuskegee,tuskegee,3,location
+Jincheng,jincheng,3,location
+Shaoyang,shaoyang,3,location
+Camerino,camerino,3,location
+Cárdenas,cardenas,3,location
+Mohanpur,mohanpur,3,location
+Fitzroy,fitzroy,3,location
+Joensuu,joensuu,3,location
+Paterna,paterna,3,location
+Ivanovo,ivanovo,3,location
+Burnaby,burnaby,3,location
+Daytona,daytona,3,location
+Wichita,wichita,3,location
+Hampton,hampton,3,location
+Malvern,malvern,3,location
+Halifax,halifax,3,location
+Ashford,ashford,3,location
+Morioka,morioka,3,location
+Calabar,calabar,3,location
+Dāmghān,damghan,3,location
+Yangsan,yangsan,3,location
+Penrith,penrith,3,location
+Kuantan,kuantan,3,location
+Banbury,banbury,3,location
+Brandon,brandon,3,location
+Fontana,fontana,3,location
+Kashiwa,kashiwa,3,location
+Piraeus,piraeus,3,location
+Preston,preston,3,location
+Vicenza,vicenza,3,location
+Taunton,taunton,3,location
+Corning,corning,3,location
+Wrexham,wrexham,3,location
+Beverly,beverly,3,location
+Latrobe,latrobe,3,location
+Bozeman,bozeman,3,location
+Newbury,newbury,3,location
+Laramie,laramie,3,location
+Grafton,grafton,3,location
+Jalisco,jalisco,3,subdivision
+Whiting,whiting,3,location
+Olsztyn,olsztyn,3,location
+Yakutsk,yakutsk,3,location
+Shipley,shipley,3,location
+Liuzhou,liuzhou,3,location
+Yucatán,yucatan,3,subdivision
+Chifeng,chifeng,3,location
+Mizoram,mizoram,3,subdivision
+Çankaya,cankaya,3,location
+Mankato,mankato,3,location
+Taiping,taiping,3,location
+Sheldon,sheldon,3,location
+Crolles,crolles,3,location
+Carroll,carroll,3,location
+Hat Yai,hat yai,3,location
+Longhua,longhua,3,location
+Huntley,huntley,3,location
+Lacombe,lacombe,3,location
+Aubière,aubiere,3,location
+Dharwad,dharwad,3,location
+Shikoku,shikoku,3,location
+Dhanbad,dhanbad,3,location
+Xuchang,xuchang,3,location
+Amiens,amiens,3,location
+Fresno,fresno,3,location
+Conway,conway,3,location
+Denton,denton,3,location
+Fulton,fulton,3,location
+Valais,valais,3,subdivision
+Ancona,ancona,3,location
+Owerri,owerri,3,location
+Matsue,matsue,3,location
+Miaoli,miaoli,3,location
+Zigong,zigong,3,location
+Muscat,muscat,3,location
+Varese,varese,3,location
+Sonora,sonora,3,subdivision
+Bilbao,bilbao,3,location
+Ranchi,ranchi,3,location
+Towson,towson,3,location
+Harare,harare,3,subdivision
+Oldham,oldham,3,location
+Multan,multan,3,location
+Laurel,laurel,3,location
+Zanjan,zanjan,3,location
+Skopje,skopje,3,location
+Antony,antony,3,location
+Powell,powell,3,location
+Bethel,bethel,3,location
+Tienen,tienen,3,location
+DeKalb,dekalb,3,location
+Szeged,szeged,3,location
+Carson,carson,3,location
+Écully,ecully,3,location
+Leoben,leoben,3,location
+Kassel,kassel,3,location
+Marino,marino,3,location
+Yeovil,yeovil,3,location
+Prešov,presov,3,location
+Welwyn,welwyn,3,location
+Futian,futian,3,location
+Troyes,troyes,3,location
+Guinea,guinea,3,country
+Hebron,hebron,3,location
+Ambāla,ambala,3,location
+Raipur,raipur,3,location
+Toluca,toluca,3,location
+Oaxaca,oaxaca,3,subdivision
+Xalapa,xalapa,3,location
+Maluku,maluku,3,subdivision
+Kāshān,kashan,3,location
+Sharon,sharon,3,location
+Kaluga,kaluga,3,location
+Yichun,yichun,3,location
+Shiyan,shiyan,3,location
+Ramsey,ramsey,3,location
+Passau,passau,3,location
+Penryn,penryn,3,location
+Wushan,wushan,3,location
+Itajaí,itajai,3,location
+Harper,harper,3,location
+Passos,passos,3,location
+Ilhéus,ilheus,3,location
+Blanes,blanes,3,location
+Bantul,bantul,3,location
+Yishan,yishan,3,location
+Putian,putian,3,location
+Artvin,artvin,3,location
+Bartın,bartın,3,location
+Guelma,guelma,3,location
+Tiaret,tiaret,3,location
+Lazio,lazio,3,subdivision
+Espoo,espoo,3,location
+Aiken,aiken,3,location
+Iksan,iksan,3,location
+Elche,elche,3,location
+Crato,crato,3,location
+Luton,luton,3,location
+Yibin,yibin,3,location
+Agder,agder,3,subdivision
+Ikeda,ikeda,3,location
+Ajmer,ajmer,3,location
+Ogden,ogden,3,location
+Msida,msida,3,location
+Sakai,sakai,3,location
+Wigan,wigan,3,location
+Orono,orono,3,location
+Alvin,alvin,3,location
+Baden,baden,3,location
+Frick,frick,3,location
+Xuhui,xuhui,3,location
+Eaton,eaton,3,location
+Trier,trier,3,location
+Haiti,haiti,3,country
+Hagen,hagen,3,location
+Frome,frome,3,location
+Tibet,tibet,3,subdivision
+Medea,medea,3,subdivision
+Diana,diana,3,subdivision
+Praia,praia,3,location
+Papua,papua,3,subdivision
+Batam,batam,3,location
+Torun,torun,3,location
+Rivne,rivne,3,subdivision
+Huron,huron,3,location
+Krems,krems,3,location
+Wāsiţ,wasit,3,subdivision
+Sadat,sadat,3,location
+Anton,anton,3,location
+Nitra,nitra,3,location
+Koper,koper,3,location
+Barra,barra,3,location
+Solan,solan,3,location
+Clyde,clyde,3,location
+Leigh,leigh,3,location
+Perry,perry,3,location
+Paoli,paoli,3,location
+Yulin,yulin,3,location
+Yasuj,yasuj,3,location
+Dokki,dokki,3,location
+Zarqa,zarqa,3,location
+Aswan,aswan,3,subdivision
+Safat,safat,3,location
+Ponce,ponce,3,location
+Berne,berne,3,location
+Kilis,kilis,3,location
+Wudil,wudil,3,location
+Perm,perm,3,location
+Gaza,gaza,3,location
+Dick,dick,3,location
+Baku,baku,3,location
+Doha,doha,3,location
+Lugo,lugo,3,location
+Kure,kure,3,location
+Fiji,fiji,3,country
+Rize,rize,3,location
+Saku,saku,3,location
+Gumi,gumi,3,location
+Vail,vail,3,location
+Weed,weed,3,location
+Avon,avon,3,location
+Acre,acre,3,subdivision
+Moss,moss,3,location
+Eloy,eloy,3,location
+Malé,male,3,location
+Most,most,3,location
+Rače,race,3,location
+Yiwu,yiwu,3,location
+Sōka,soka,3,location
+Qena,qena,3,subdivision
+Qufu,qufu,3,location
+Mila,mila,3,location
+Eggenstein-Leopoldshafen,eggenstein-leopoldshafen,2,location
+North Rhine-Westphalia,north rhine-westphalia,2,subdivision
+Campos dos Goytacazes,campos dos goytacazes,2,location
+Boulogne-Billancourt,boulogne-billancourt,2,location
+White River Junction,white river junction,2,location
+Villefranche-sur-Mer,villefranche-sur-mer,2,location
+Central Department,central department,2,subdivision
+Le Kremlin-Bicêtre,le kremlin-bicetre,2,location
+Dominican Republic,dominican republic,2,country
+Greater Manchester,greater manchester,2,location
+Baden-Wurttemberg,baden-wurttemberg,2,subdivision
+Juazeiro do Norte,juazeiro do norte,2,location
+Santa Cruz do Sul,santa cruz do sul,2,location
+Pays de la Loire,pays de la loire,2,subdivision
+Pietermaritzburg,pietermaritzburg,2,location
+Federal District,federal district,2,subdivision
+National Capital,national capital,2,subdivision
+Louvain-la-Neuve,louvain-la-neuve,2,location
+Castanet-Tolosan,castanet-tolosan,2,location
+Nogent-sur-Marne,nogent-sur-marne,2,location
+Feira de Santana,feira de santana,2,location
+Santiago de Cuba,santiago de cuba,2,location
+Mogi das Cruzes,mogi das cruzes,2,location
+Akwa Ibom State,akwa ibom state,2,subdivision
+Vitoria-Gasteiz,vitoria-gasteiz,2,location
+Fort Washington,fort washington,2,location
+Ivano-Frankivsk,ivano-frankivsk,2,location
+Bad Mergentheim,bad mergentheim,2,location
+Kongens Lyngby,kongens lyngby,2,location
+Alexandroupoli,alexandroupoli,2,location
+Central Region,central region,2,subdivision
+Bobo-Dioulasso,bobo-dioulasso,2,location
+Cergy-Pontoise,cergy-pontoise,2,location
+Bandar Lampung,bandar lampung,2,location
+North Khorasan,north khorasan,2,subdivision
+Kennett Square,kennett square,2,location
+Agia Paraskevi,agia paraskevi,2,location
+New Caledonia,new caledonia,2,country
+Slippery Rock,slippery rock,2,location
+Silver Spring,silver spring,2,location
+Mountain View,mountain view,2,location
+Middlesbrough,middlesbrough,2,location
+Staten Island,staten island,2,location
+Busto Arsizio,busto arsizio,2,location
+Elizabethtown,elizabethtown,2,location
+Aschaffenburg,aschaffenburg,2,location
+Rickmansworth,rickmansworth,2,location
+Swift Current,swift current,2,location
+Lower Austria,lower austria,2,subdivision
+Alderley Edge,alderley edge,2,location
+Ponta Delgada,ponta delgada,2,location
+Prince Edward,prince edward,2,location
+Benito Juárez,benito juarez,2,location
+Ciudad Juárez,ciudad juarez,2,location
+Pinar del Río,pinar del rio,2,location
+San Cristóbal,san cristobal,2,location
+Central Luzon,central luzon,2,subdivision
+Rostov-on-Don,rostov-on-don,2,location
+Montes Claros,montes claros,2,location
+Nova Friburgo,nova friburgo,2,location
+Santa Monica,santa monica,2,location
+Grand Rapids,grand rapids,2,location
+West Chester,west chester,2,location
+Collegeville,collegeville,2,location
+Fayetteville,fayetteville,2,location
+Millersville,millersville,2,location
+Prairie View,prairie view,2,location
+Jeollanam-do,jeollanam-do,2,subdivision
+Eastern Cape,eastern cape,2,subdivision
+Darlinghurst,darlinghurst,2,location
+Secunderabad,secunderabad,2,location
+Villaviciosa,villaviciosa,2,location
+San Salvador,san salvador,2,location
+Quintana Roo,quintana roo,2,subdivision
+Campo Grande,campo grande,2,location
+Magnitogorsk,magnitogorsk,2,location
+Bedford Park,bedford park,2,location
+Kristianstad,kristianstad,2,location
+Bahía Blanca,bahia blanca,2,location
+Saint-Pierre,saint-pierre,2,location
+Pingdingshan,pingdingshan,2,location
+Khorramshahr,khorramshahr,2,location
+Bridgewater,bridgewater,2,location
+Wilberforce,wilberforce,2,location
+Seongnam-si,seongnam-si,2,location
+Marlborough,marlborough,2,subdivision
+San Lorenzo,san lorenzo,2,location
+Kwara State,kwara state,2,subdivision
+Saint Cloud,saint cloud,2,location
+Basingstoke,basingstoke,2,location
+Santo André,santo andre,2,location
+Chula Vista,chula vista,2,location
+Farnborough,farnborough,2,location
+El Salvador,el salvador,2,country
+Gandhinagar,gandhinagar,2,location
+Scottsville,scottsville,2,location
+Saint-Louis,saint-louis,2,location
+Antofagasta,antofagasta,2,location
+Villa María,villa maria,2,location
+São Vicente,sao vicente,2,subdivision
+Canandaigua,canandaigua,2,location
+Muzaffarpur,muzaffarpur,2,location
+Gombe State,gombe state,2,subdivision
+Grahamstown,grahamstown,2,location
+Thoothukudi,thoothukudi,2,location
+Broken Hill,broken hill,2,location
+Black River,black river,2,subdivision
+Providencia,providencia,2,location
+Majadahonda,majadahonda,2,location
+Gatersleben,gatersleben,2,location
+Jacarezinho,jacarezinho,2,location
+Timor-Leste,timor-leste,2,country
+Phnom Penh,phnom penh,2,location
+Gaza Strip,gaza strip,2,subdivision
+Harrisburg,harrisburg,2,location
+Southfield,southfield,2,location
+Youngstown,youngstown,2,location
+El Segundo,el segundo,2,location
+West Haven,west haven,2,location
+Greensboro,greensboro,2,location
+Takarazuka,takarazuka,2,location
+Diamantina,diamantina,2,location
+Kano State,kano state,2,subdivision
+Aurangabad,aurangabad,2,location
+Diyarbakır,diyarbakır,2,location
+Benin City,benin city,2,location
+Cheltenham,cheltenham,2,location
+Abia State,abia state,2,subdivision
+Greenfield,greenfield,2,location
+Ahmednagar,ahmednagar,2,location
+Klagenfurt,klagenfurt,2,location
+Middletown,middletown,2,location
+Mymensingh,mymensingh,2,location
+Norrköping,norrkoping,2,location
+Tuscaloosa,tuscaloosa,2,location
+Södertälje,sodertalje,2,location
+Richardson,richardson,2,location
+Shrewsbury,shrewsbury,2,location
+Bloomfield,bloomfield,2,location
+Ingolstadt,ingolstadt,2,location
+Grugliasco,grugliasco,2,location
+Geesthacht,geesthacht,2,location
+Winterthur,winterthur,2,location
+South-West,south-west,2,subdivision
+Darlington,darlington,2,location
+Hartlepool,hartlepool,2,location
+Araraquara,araraquara,2,location
+Cabo Verde,cabo verde,2,country
+Arba Minch,arba minch,2,location
+Balikpapan,balikpapan,2,location
+Banyuwangi,banyuwangi,2,location
+Purwokerto,purwokerto,2,location
+Kremenchuk,kremenchuk,2,location
+Starkville,starkville,2,location
+Nový Jičín,novy jicin,2,location
+St. Pölten,st. polten,2,location
+Whitewater,whitewater,2,location
+Gettysburg,gettysburg,2,location
+Hammam-Lif,hammam-lif,2,location
+Primorskiy,primorskiy,2,location
+Plantation,plantation,2,location
+Ouro Preto,ouro preto,2,location
+Jingdezhen,jingdezhen,2,location
+Vogtareuth,vogtareuth,2,location
+La Defense,la defense,2,location
+Weingarten,weingarten,2,location
+Kırklareli,kırklareli,2,location
+Alba Iulia,alba iulia,2,location
+St Helens,st helens,2,location
+Stevenage,stevenage,2,location
+Paderborn,paderborn,2,location
+Grambling,grambling,2,location
+Khuzestan,khuzestan,2,subdivision
+Prayagraj,prayagraj,2,location
+Andalusia,andalusia,2,subdivision
+Edo State,edo state,2,subdivision
+Kashihara,kashihara,2,location
+Maiduguri,maiduguri,2,location
+Craigavon,craigavon,2,location
+Anchorage,anchorage,2,location
+Amagasaki,amagasaki,2,location
+Hiratsuka,hiratsuka,2,location
+Kalamazoo,kalamazoo,2,location
+Stavropol,stavropol,2,location
+Kishiwada,kishiwada,2,location
+Pushchino,pushchino,2,location
+San Bruno,san bruno,2,location
+Grapevine,grapevine,2,location
+Newbridge,newbridge,2,location
+Greenbelt,greenbelt,2,location
+Constanța,constanta,2,location
+Pontedera,pontedera,2,location
+Neubiberg,neubiberg,2,location
+Rockledge,rockledge,2,location
+Ellsworth,ellsworth,2,location
+Pocatello,pocatello,2,location
+Caulfield,caulfield,2,location
+Perpignan,perpignan,2,location
+Zacatecas,zacatecas,2,subdivision
+Cruz Alta,cruz alta,2,location
+Barbacena,barbacena,2,location
+El Jadida,el jadida,2,location
+Mojokerto,mojokerto,2,location
+Kawaguchi,kawaguchi,2,location
+Samarinda,samarinda,2,location
+Sambalpur,sambalpur,2,location
+Bydgoszcz,bydgoszcz,2,location
+Průhonice,pruhonice,2,location
+Songjiang,songjiang,2,location
+Zhumadian,zhumadian,2,location
+Limestone,limestone,2,location
+Morādābād,moradabad,2,location
+Toowoomba,toowoomba,2,location
+Kāsaragod,kasaragod,2,location
+Newington,newington,2,location
+Sylvester,sylvester,2,location
+Tongxiang,tongxiang,2,location
+Blacktown,blacktown,2,location
+Hormozgan,hormozgan,2,subdivision
+Dunstable,dunstable,2,location
+Jangheung,jangheung,2,location
+Marvdasht,marvdasht,2,location
+Nha Trang,nha trang,2,location
+Eisenberg,eisenberg,2,location
+Whangarei,whangarei,2,location
+Dongcheng,dongcheng,2,location
+Granville,granville,2,location
+Garanhuns,garanhuns,2,location
+Galápagos,galapagos,2,subdivision
+Raebareli,raebareli,2,location
+Woodville,woodville,2,location
+Caledonia,caledonia,2,location
+Westville,westville,2,location
+Bet Dagan,bet dagan,2,location
+Melitopol,melitopol,2,location
+Jiangning,jiangning,2,location
+Coleraine,coleraine,2,location
+Mitrovica,mitrovica,2,location
+Tachikawa,tachikawa,2,location
+Lombardy,lombardy,2,subdivision
+Veszprém,veszprem,2,subdivision
+Abingdon,abingdon,2,location
+Rijswijk,rijswijk,2,location
+Normandy,normandy,2,subdivision
+Savannah,savannah,2,location
+Marietta,marietta,2,location
+Tougaloo,tougaloo,2,location
+Beaufort,beaufort,2,location
+Keystone,keystone,2,location
+Santarém,santarem,2,subdivision
+Dourados,dourados,2,location
+Hirakata,hirakata,2,location
+Wakayama,wakayama,2,subdivision
+Thrissur,thrissur,2,location
+Dumfries,dumfries,2,location
+Hakodate,hakodate,2,location
+Västerås,vasteras,2,location
+Amersham,amersham,2,location
+Sarasota,sarasota,2,location
+Kōriyama,koriyama,2,location
+Marbella,marbella,2,location
+Blekinge,blekinge,2,subdivision
+Levanger,levanger,2,location
+Lilongwe,lilongwe,2,location
+Atlantis,atlantis,2,location
+Blantyre,blantyre,2,location
+Kamakura,kamakura,2,location
+Chertsey,chertsey,2,location
+Prescott,prescott,2,location
+Ümraniye,umraniye,2,location
+Kennesaw,kennesaw,2,location
+A Coruña,A coruna,2,location
+Kirtland,kirtland,2,location
+Palatine,palatine,2,location
+Thornton,thornton,2,location
+Valdosta,valdosta,2,location
+Damascus,damascus,2,location
+Plouzané,plouzane,2,location
+Basildon,basildon,2,location
+Grantham,grantham,2,location
+Windhoek,windhoek,2,location
+Saratoga,saratoga,2,location
+Rourkela,rourkela,2,location
+Dagestan,dagestan,2,subdivision
+Culiacán,culiacan,2,location
+Barretos,barretos,2,location
+Batangas,batangas,2,location
+Dushanbe,dushanbe,2,location
+Lamongan,lamongan,2,location
+Magelang,magelang,2,location
+Dindigul,dindigul,2,location
+Ternopil,ternopil,2,location
+Montrose,montrose,2,location
+Bathinda,bathinda,2,location
+Gimcheon,gimcheon,2,location
+Klaipėda,klaipeda,2,location
+Osmaniye,osmaniye,2,location
+Jiangyin,jiangyin,2,location
+Avondale,avondale,2,location
+Cascavel,cascavel,2,location
+Box Hill,box hill,2,location
+Ensenada,ensenada,2,location
+Kakogawa,kakogawa,2,location
+Tianshui,tianshui,2,location
+Schwerin,schwerin,2,location
+Macerata,macerata,2,location
+Koszalin,koszalin,2,location
+Belinsky,belinsky,2,location
+Sidoarjo,sidoarjo,2,location
+Kakegawa,kakegawa,2,location
+Yonezawa,yonezawa,2,location
+Blenheim,blenheim,2,location
+Werribee,werribee,2,location
+Tengzhou,tengzhou,2,location
+Bushland,bushland,2,location
+Malakand,malakand,2,location
+Blumenau,blumenau,2,location
+Qingyang,qingyang,2,location
+Zoucheng,zoucheng,2,location
+Chaozhou,chaozhou,2,location
+Galloway,galloway,2,location
+La Pampa,la pampa,2,subdivision
+Tokuyama,tokuyama,2,location
+Dahlgren,dahlgren,2,location
+Narbonne,narbonne,2,location
+Naranjos,naranjos,2,location
+Adıyaman,adıyaman,2,location
+Barcelos,barcelos,2,location
+Bandırma,bandırma,2,location
+Aarhus C,aarhus C,2,location
+Mazovia,mazovia,2,subdivision
+Liguria,liguria,2,subdivision
+Barnaul,barnaul,2,location
+Ashland,ashland,2,location
+Kenmore,kenmore,2,location
+Bemidji,bemidji,2,location
+Waltham,waltham,2,location
+Kelowna,kelowna,2,location
+Olympia,olympia,2,location
+Compton,compton,2,location
+Norwood,norwood,2,location
+Adelphi,adelphi,2,location
+Nobeoka,nobeoka,2,location
+Homburg,homburg,2,location
+Popayán,popayan,2,location
+Goiânia,goiania,2,location
+Pachuca,pachuca,2,location
+Treviso,treviso,2,location
+Pokhara,pokhara,2,location
+Cáceres,caceres,2,location
+Almería,almeria,2,location
+Limburg,limburg,2,subdivision
+Sha Tin,sha tin,2,subdivision
+Cuttack,cuttack,2,location
+Segovia,segovia,2,location
+Matsudo,matsudo,2,location
+Manipur,manipur,2,subdivision
+Bolzano,bolzano,2,location
+Salinas,salinas,2,location
+Rutland,rutland,2,location
+Potenza,potenza,2,location
+Walsall,walsall,2,location
+Tijuana,tijuana,2,location
+Ballari,ballari,2,location
+Mendoza,mendoza,2,location
+Sassari,sassari,2,location
+Porirua,porirua,2,location
+Lucerne,lucerne,2,location
+Bamberg,bamberg,2,location
+Milford,milford,2,location
+Gardner,gardner,2,location
+Sherman,sherman,2,location
+Lannion,lannion,2,location
+Krefeld,krefeld,2,location
+Kildare,kildare,2,location
+Oberlin,oberlin,2,location
+Brevard,brevard,2,location
+Redding,redding,2,location
+Grenada,grenada,2,country
+Roscoff,roscoff,2,location
+Liberia,liberia,2,country
+Bayside,bayside,2,location
+Addison,addison,2,location
+Oshkosh,oshkosh,2,location
+Oakwood,oakwood,2,location
+Crawley,crawley,2,location
+Wharton,wharton,2,location
+Blagnac,blagnac,2,location
+Shirley,shirley,2,location
+Cheadle,cheadle,2,location
+Kaiyuan,kaiyuan,2,location
+Cayenne,cayenne,2,location
+Chiapas,chiapas,2,subdivision
+Udaipur,udaipur,2,location
+Mossoró,mossoro,2,location
+Karelia,karelia,2,subdivision
+Changde,changde,2,location
+Tucuman,tucuman,2,subdivision
+Niterói,niteroi,2,location
+Pereira,pereira,2,location
+Tétouan,tetouan,2,location
+Red Sea,red sea,2,subdivision
+Meizhou,meizhou,2,location
+Jombang,jombang,2,location
+Merauke,merauke,2,location
+Jodhpur,jodhpur,2,location
+Andijan,andijan,2,location
+Lipetsk,lipetsk,2,location
+Pushkin,pushkin,2,location
+Hewlett,hewlett,2,location
+Cordova,cordova,2,location
+Ansbach,ansbach,2,location
+Kurnool,kurnool,2,location
+Kaithal,kaithal,2,location
+Eritrea,eritrea,2,country
+Manning,manning,2,location
+Craiova,craiova,2,location
+Jiamusi,jiamusi,2,location
+Seymour,seymour,2,location
+Limeira,limeira,2,location
+Audubon,audubon,2,location
+Sunrise,sunrise,2,location
+Terrace,terrace,2,location
+Covilha,covilha,2,location
+Ikorodu,ikorodu,2,location
+Bermuda,bermuda,2,country
+Griffin,griffin,2,location
+Üsküdar,uskudar,2,location
+Tavares,tavares,2,location
+Forsyth,forsyth,2,location
+Forrest,forrest,2,location
+Tlemcen,tlemcen,2,subdivision
+Cottbus,cottbus,2,location
+Mishima,mishima,2,location
+Huaibei,huaibei,2,location
+Xichang,xichang,2,location
+Bushehr,bushehr,2,subdivision
+Saronno,saronno,2,location
+Aracaju,aracaju,2,location
+Ciputat,ciputat,2,location
+Legnaro,legnaro,2,location
+El Oued,el oued,2,location
+Miryang,miryang,2,location
+Yachiyo,yachiyo,2,location
+Alfenas,alfenas,2,location
+Andorra,andorra,2,country
+Garches,garches,2,location
+Oullins,oullins,2,location
+Chiyoda,chiyoda,2,location
+Tunceli,tunceli,2,location
+Kütahya,kutahya,2,location
+Koganei,koganei,2,location
+Vantaa,vantaa,2,location
+Pilsen,pilsen,2,location
+Noumea,noumea,2,location
+Amhara,amhara,2,subdivision
+Lusaka,lusaka,2,location
+Tirana,tirana,2,location
+Morrow,morrow,2,location
+Quincy,quincy,2,location
+Oshawa,oshawa,2,location
+Reston,reston,2,location
+Hudson,hudson,2,location
+Yakima,yakima,2,location
+Cuiabá,cuiaba,2,location
+Mafraq,mafraq,2,subdivision
+Lleida,lleida,2,location
+Qazvin,qazvin,2,location
+Yozgat,yozgat,2,location
+Havana,havana,2,location
+Sousse,sousse,2,location
+Rohtak,rohtak,2,location
+Makkah,makkah,2,location
+Ujjain,ujjain,2,location
+Ilorin,ilorin,2,location
+Kadapa,kadapa,2,location
+Cairns,cairns,2,location
+Mysuru,mysuru,2,location
+Akashi,akashi,2,location
+Burgos,burgos,2,location
+Beaver,beaver,2,location
+Mohali,mohali,2,location
+Sasebo,sasebo,2,location
+Tanabe,tanabe,2,location
+Downey,downey,2,location
+Antrim,antrim,2,location
+Umbria,umbria,2,subdivision
+Lugano,lugano,2,location
+Kollam,kollam,2,location
+Clichy,clichy,2,location
+Aviano,aviano,2,location
+Tustin,tustin,2,location
+Peoria,peoria,2,location
+Pueblo,pueblo,2,location
+Troina,troina,2,location
+Didcot,didcot,2,location
+Adrian,adrian,2,location
+Lindau,lindau,2,location
+Huesca,huesca,2,location
+Canaan,canaan,2,location
+Tifton,tifton,2,location
+DuBois,dubois,2,location
+Albion,albion,2,location
+Kannur,kannur,2,location
+Arcola,arcola,2,location
+Fallon,fallon,2,location
+Azores,azores,2,subdivision
+Mieres,mieres,2,location
+Draper,draper,2,location
+Casper,casper,2,location
+Annecy,annecy,2,location
+Landau,landau,2,location
+Colima,colima,2,location
+Araras,araras,2,location
+Manabí,manabi,2,subdivision
+Bekasi,bekasi,2,location
+Malone,malone,2,location
+Muncie,muncie,2,location
+Jorhāt,jorhat,2,location
+Sīrjān,sirjan,2,location
+Qūchān,quchan,2,location
+Bouaké,bouake,2,location
+Haines,haines,2,location
+Qujing,qujing,2,location
+Daphne,daphne,2,location
+Žilina,zilina,2,location
+Stuart,stuart,2,location
+Lorena,lorena,2,location
+Anshan,anshan,2,location
+Oswego,oswego,2,location
+Amasya,amasya,2,location
+Cachan,cachan,2,location
+Urbino,urbino,2,location
+Elblag,elblag,2,location
+Kitami,kitami,2,location
+Calais,calais,2,location
+Linhai,linhai,2,location
+Benton,benton,2,location
+Bhutan,bhutan,2,country
+Barton,barton,2,location
+Benson,benson,2,location
+Kozani,kozani,2,location
+Norden,norden,2,location
+Oyster,oyster,2,location
+Harrow,harrow,2,location
+Chiari,chiari,2,location
+Kangar,kangar,2,location
+Batman,batman,2,location
+Bernal,bernal,2,location
+Gabon,gabon,2,country
+Salta,salta,2,location
+Varna,varna,2,location
+Luján,lujan,2,location
+Patna,patna,2,location
+Ya'an,ya'an,2,location
+Talca,talca,2,location
+Izumo,izumo,2,location
+Imizu,imizu,2,location
+Viseu,viseu,2,location
+Lewes,lewes,2,location
+Iwaki,iwaki,2,location
+Hofuf,hofuf,2,location
+Itami,itami,2,location
+Gyula,gyula,2,location
+Sabah,sabah,2,subdivision
+Crewe,crewe,2,location
+Olney,olney,2,location
+Ocala,ocala,2,location
+Terni,terni,2,location
+Vejle,vejle,2,location
+Rugby,rugby,2,location
+Yukon,yukon,2,subdivision
+Amaro,amaro,2,location
+Sibiu,sibiu,2,location
+Chico,chico,2,location
+Davie,davie,2,location
+Boone,boone,2,location
+Alton,alton,2,location
+Bryan,bryan,2,location
+Aydin,aydin,2,location
+Tulln,tulln,2,location
+Ávila,avila,2,location
+Massa,massa,2,location
+Poole,poole,2,location
+Lahti,lahti,2,location
+Pilar,pilar,2,location
+Kebbi,kebbi,2,subdivision
+Leyte,leyte,2,location
+Kirov,kirov,2,location
+Jičín,jicin,2,location
+Samoa,samoa,2,country
+Upton,upton,2,location
+Yanji,yanji,2,location
+Assen,assen,2,location
+Leduc,leduc,2,location
+Cergy,cergy,2,location
+Luohe,luohe,2,location
+Eluru,eluru,2,location
+Volta,volta,2,subdivision
+Sligo,sligo,2,location
+Keith,keith,2,location
+Gabès,gabes,2,location
+Crump,crump,2,location
+Gland,gland,2,location
+Buena,buena,2,location
+Ikoma,ikoma,2,location
+Leioa,leioa,2,location
+Eagle,eagle,2,location
+Coram,coram,2,location
+Zhuji,zhuji,2,location
+Enshi,enshi,2,location
+Arica,arica,2,location
+Batna,batna,2,subdivision
+Negev,negev,2,location
+Zabol,zabol,2,location
+Gombe,gombe,2,location
+Garut,garut,2,location
+Mitte,mitte,2,location
+Laiwu,laiwu,2,location
+Tomar,tomar,2,location
+Mandi,mandi,2,location
+Ha'il,ha'il,2,location
+Korla,korla,2,location
+Siirt,siirt,2,location
+Dubna,dubna,2,location
+Cary,cary,2,location
+Katō,kato,2,location
+Fars,fars,2,subdivision
+Bury,bury,2,location
+Zion,zion,2,location
+Køge,køge,2,location
+Bodø,bodø,2,location
+Bühl,buhl,2,location
+Beja,beja,2,location
+Åmål,amal,2,location
+Geel,geel,2,location
+Reus,reus,2,location
+Hays,hays,2,location
+Jimo,jimo,2,location
+Loja,loja,2,location
+Buea,buea,2,location
+Guna,guna,2,location
+Dale,dale,2,location
+Gulu,gulu,2,location
+Yuxi,yuxi,2,location
+Albi,albi,2,location
+Dali,dali,2,location
+Naka,naka,2,location
+Marl,marl,2,location
+Nyon,nyon,2,location
+Berg,berg,2,location
+Cody,cody,2,location
+Holt,holt,2,location
+Jixi,jixi,2,location
+Kōya,koya,2,location
+Guam,guam,2,country
+Foix,foix,2,location
+Uşak,usak,2,location
+Elon,elon,2,location
+Bolu,bolu,2,location
+Provence-Alpes-Côte d'Azur,provence-alpes-cote d'azur,1,subdivision
+Kellogg Biological Station,kellogg biological station,1,location
+Saint-Jean-sur-Richelieu,saint-jean-sur-richelieu,1,location
+San Nicolás de los Garza,san nicolas de los garza,1,location
+Saint-Étienne-du-Rouvray,saint-etienne-du-rouvray,1,location
+Bourgogne-Franche-Comté,bourgogne-franche-comte,1,subdivision
+Villingen-Schwenningen,villingen-schwenningen,1,location
+Szabolcs-Szatmár-Bereg,szabolcs-szatmar-bereg,1,subdivision
+Garmisch-Partenkirchen,garmisch-partenkirchen,1,location
+British Virgin Islands,british virgin islands,1,country
+Esplugues de Llobregat,esplugues de llobregat,1,location
+Ludwigshafen am Rhein,ludwigshafen am rhein,1,location
+Cerdanyola del Vallès,cerdanyola del valles,1,location
+Saint-Germain-en-Laye,saint-germain-en-laye,1,location
+Tepatitlán de Morelos,tepatitlan de morelos,1,location
+Prince Edward Island,prince edward island,1,subdivision
+Vitória da Conquista,vitoria da conquista,1,location
+San Giovanni Rotondo,san giovanni rotondo,1,location
+Sotteville-lès-Rouen,sotteville-les-rouen,1,location
+Saint-Martin-d'Hères,saint-martin-d'heres,1,location
+Verrières-le-Buisson,verrieres-le-buisson,1,location
+San Donato Milanese,san donato milanese,1,location
+Vandœuvre-lès-Nancy,vandœuvre-les-nancy,1,location
+Baja California Sur,baja california sur,1,subdivision
+Antigua and Barbuda,antigua and barbuda,1,country
+Hill Air Force Base,hill air force base,1,location
+Khyber Pakhtunkhwa,khyber pakhtunkhwa,1,subdivision
+Sutton in Ashfield,sutton in ashfield,1,location
+Welwyn Garden City,welwyn garden city,1,location
+Rionero in Vulture,rionero in vulture,1,location
+San Andrés Cholula,san andres cholula,1,location
+Naberezhnye Chelny,naberezhnye chelny,1,location
+Komsomolsk-on-Amur,komsomolsk-on-amur,1,location
+Vallabh Vidyanagar,vallabh vidyanagar,1,location
+Boadilla del Monte,boadilla del monte,1,location
+Southern District,southern district,1,subdivision
+Chungcheongnam-do,chungcheongnam-do,1,subdivision
+Vila Nova de Gaia,vila nova de gaia,1,location
+Cross River State,cross river state,1,subdivision
+Bragança Paulista,braganca paulista,1,location
+Jammu and Kashmir,jammu and kashmir,1,subdivision
+Nakhon Ratchasima,nakhon ratchasima,1,location
+Villeneuve-d'Ascq,villeneuve-d'ascq,1,location
+San Juan Bautista,san juan bautista,1,location
+Dubnica nad Váhom,dubnica nad vahom,1,location
+Excelsior Springs,excelsior springs,1,location
+Arunachal Pradesh,arunachal pradesh,1,subdivision
+Neuilly-sur-Seine,neuilly-sur-seine,1,location
+Mont-Saint-Aignan,mont-saint-aignan,1,location
+Civitanova Marche,civitanova marche,1,location
+Weston-super-Mare,weston-super-mare,1,location
+Torrejón de Ardoz,torrejon de ardoz,1,location
+Central District,central district,1,subdivision
+East Stroudsburg,east stroudsburg,1,location
+Sault Ste. Marie,sault ste. marie,1,location
+Colorado Springs,colorado springs,1,location
+South Burlington,south burlington,1,location
+Gyeongsangnam-do,gyeongsangnam-do,1,subdivision
+Balearic Islands,balearic islands,1,subdivision
+Dera Ismail Khan,dera ismail khan,1,location
+Eastern Province,eastern province,1,subdivision
+Ubon Ratchathani,ubon ratchathani,1,location
+Papua New Guinea,papua new guinea,1,country
+Limeil-Brévannes,limeil-brevannes,1,location
+French Polynesia,french polynesia,1,country
+Monheim am Rhein,monheim am rhein,1,location
+Schwäbisch Gmünd,schwabisch gmund,1,location
+Bagnols-sur-Cèze,bagnols-sur-ceze,1,location
+Kędzierzyn-Koźle,kedzierzyn-kozle,1,location
+La Tour-de-Peilz,la tour-de-peilz,1,location
+Kuala Terengganu,kuala terengganu,1,location
+Gloucester Point,gloucester point,1,location
+São João del Rei,sao joao del rei,1,location
+Eastern District,eastern district,1,subdivision
+Menzel Bourguiba,menzel bourguiba,1,location
+Rheinland-Pfalz,rheinland-pfalz,1,subdivision
+West Azerbaijan,west azerbaijan,1,subdivision
+Reggio Calabria,reggio calabria,1,location
+West Des Moines,west des moines,1,location
+West Palm Beach,west palm beach,1,location
+Port Washington,port washington,1,location
+Los Altos Hills,los altos hills,1,location
+Wiener Neustadt,wiener neustadt,1,location
+Plan-les-Ouates,plan-les-ouates,1,location
+South Lancaster,south lancaster,1,location
+Vitry-sur-Seine,vitry-sur-seine,1,location
+Sancti Spíritus,sancti spiritus,1,location
+South Tangerang,south tangerang,1,location
+West Kalimantan,west kalimantan,1,subdivision
+Pindamonhangaba,pindamonhangaba,1,location
+New Port Richey,new port richey,1,location
+North Melbourne,north melbourne,1,location
+Bourg-en-Bresse,bourg-en-bresse,1,location
+East Kazakhstan,east kazakhstan,1,subdivision
+Duque de Caxias,duque de caxias,1,location
+Upper Montclair,upper montclair,1,location
+Hohen Neuendorf,hohen neuendorf,1,location
+Solomon Islands,solomon islands,1,country
+Missouri Valley,missouri valley,1,location
+Sant Joan Despí,sant joan despi,1,location
+North Dartmouth,north dartmouth,1,location
+Fredericksburg,fredericksburg,1,location
+Dauphin Island,dauphin island,1,location
+Virginia Beach,virginia beach,1,location
+Greater Poland,greater poland,1,subdivision
+East Grinstead,east grinstead,1,location
+Chikushino-shi,chikushino-shi,1,location
+Hradec Králové,hradec kralove,1,location
+Merritt Island,merritt island,1,location
+North Bethesda,north bethesda,1,location
+Essex Junction,essex junction,1,location
+Agrate Brianza,agrate brianza,1,location
+Mladá Boleslav,mlada boleslav,1,location
+Ústí nad Labem,usti nad labem,1,location
+Barnard Castle,barnard castle,1,location
+Saffron Walden,saffron walden,1,location
+Port Elizabeth,port elizabeth,1,location
+Khemis Miliana,khemis miliana,1,location
+South Sulawesi,south sulawesi,1,subdivision
+West Vancouver,west vancouver,1,location
+West Melbourne,west melbourne,1,location
+Ionian Islands,ionian islands,1,subdivision
+Rahim Yar Khan,rahim yar khan,1,location
+Saint-Herblain,saint-herblain,1,location
+Blanchardstown,blanchardstown,1,location
+Fort-de-France,fort-de-france,1,location
+Kafr el-Sheikh,kafr el-sheikh,1,subdivision
+Nizhnevartovsk,nizhnevartovsk,1,location
+Cruz das Almas,cruz das almas,1,location
+American Samoa,american samoa,1,country
+Sidi Bel Abbès,sidi bel abbes,1,subdivision
+Seri Kembangan,seri kembangan,1,location
+Srivilliputhur,srivilliputhur,1,location
+North Karelia,north karelia,1,subdivision
+Charlottetown,charlottetown,1,location
+Thousand Oaks,thousand oaks,1,location
+Saint Andrews,saint andrews,1,location
+Plateau State,plateau state,1,subdivision
+East Kilbride,east kilbride,1,location
+West Bromwich,west bromwich,1,location
+South Karelia,south karelia,1,subdivision
+Bad Krozingen,bad krozingen,1,location
+Guinea-Bissau,guinea-bissau,1,country
+Chernogolovka,chernogolovka,1,location
+Santo Domingo,santo domingo,1,location
+The Woodlands,the woodlands,1,location
+Niagara Falls,niagara falls,1,location
+Friday Harbor,friday harbor,1,location
+Saint-Nazaire,saint-nazaire,1,location
+Gelsenkirchen,gelsenkirchen,1,location
+St. Augustine,st. augustine,1,location
+Sittingbourne,sittingbourne,1,location
+Great Malvern,great malvern,1,location
+French Guiana,french guiana,1,country
+Nueva Esparta,nueva esparta,1,subdivision
+Volta Redonda,volta redonda,1,location
+Velikiye Luki,velikiye luki,1,location
+Abomey-Calavi,abomey-calavi,1,location
+Murska Sobota,murska sobota,1,location
+Greater Noida,greater noida,1,location
+Sungai Petani,sungai petani,1,location
+Wilhelmshaven,wilhelmshaven,1,location
+Aubervilliers,aubervilliers,1,location
+Akademgorodok,akademgorodok,1,location
+Caxias do Sul,caxias do sul,1,location
+Nicholasville,nicholasville,1,location
+Mountain Home,mountain home,1,location
+West New York,west new york,1,location
+Waterlooville,waterlooville,1,location
+Novo Hamburgo,novo hamburgo,1,location
+Woolloongabba,woolloongabba,1,location
+Coffs Harbour,coffs harbour,1,location
+Pleasantville,pleasantville,1,location
+Pangkalpinang,pangkalpinang,1,location
+Saint Francis,saint francis,1,location
+Pino Torinese,pino torinese,1,location
+Bad Kreuznach,bad kreuznach,1,location
+Seri Iskandar,seri iskandar,1,location
+Ariano Irpino,ariano irpino,1,location
+Lliçà d'Amunt,llica d'amunt,1,location
+Lower Saxony,lower saxony,1,subdivision
+Gyeongsan-si,gyeongsan-si,1,location
+Gaithersburg,gaithersburg,1,location
+Jeollabuk-do,jeollabuk-do,1,subdivision
+High Wycombe,high wycombe,1,location
+Azad Kashmir,azad kashmir,1,subdivision
+Chesterfield,chesterfield,1,location
+Saint Gallen,saint gallen,1,location
+Port Moresby,port moresby,1,location
+New Rochelle,new rochelle,1,location
+Macclesfield,macclesfield,1,location
+Chengalpattu,chengalpattu,1,location
+South Euclid,south euclid,1,location
+Reynoldsburg,reynoldsburg,1,location
+Herzogenrath,herzogenrath,1,location
+Wolfenbüttel,wolfenbuttel,1,location
+Södermanland,sodermanland,1,subdivision
+Coral Gables,coral gables,1,location
+Palm Springs,palm springs,1,location
+Old Westbury,old westbury,1,location
+San Fernando,san fernando,1,location
+Poughkeepsie,poughkeepsie,1,location
+Boucherville,boucherville,1,location
+Sindelfingen,sindelfingen,1,location
+West Liberty,west liberty,1,location
+Petrozavodsk,petrozavodsk,1,location
+Santiniketan,santiniketan,1,location
+Bartlesville,bartlesville,1,location
+Buenaventura,buenaventura,1,location
+Sierra Leone,sierra leone,1,country
+Western Area,western area,1,subdivision
+Taraba State,taraba state,1,subdivision
+Angeles City,angeles city,1,location
+West Sumatra,west sumatra,1,subdivision
+Lubuklinggau,lubuklinggau,1,location
+Kanchanaburi,kanchanaburi,1,location
+North Maluku,north maluku,1,subdivision
+Heves County,heves county,1,subdivision
+Provincetown,provincetown,1,location
+Fort Belvoir,fort belvoir,1,location
+Sulaymaniyah,sulaymaniyah,1,subdivision
+Neu-Isenburg,neu-isenburg,1,location
+Tolna County,tolna county,1,subdivision
+Pirassununga,pirassununga,1,location
+Zduńska Wola,zdunska wola,1,location
+Campbelltown,campbelltown,1,location
+Debre Berhan,debre berhan,1,location
+Mount Carmel,mount carmel,1,location
+Kakamigahara,kakamigahara,1,location
+Bandar Abbas,bandar abbas,1,location
+Santa Isabel,santa isabel,1,location
+Yamoussoukro,yamoussoukro,1,location
+Stara Zagora,stara zagora,1,location
+Notting Hill,notting hill,1,location
+Bloomingdale,bloomingdale,1,location
+Zhangjiagang,zhangjiagang,1,location
+Azcapotzalco,azcapotzalco,1,location
+Kleinostheim,kleinostheim,1,location
+Little Falls,little falls,1,location
+Sakon Nakhon,sakon nakhon,1,location
+Santa Teresa,santa teresa,1,location
+Centre-Ouest,centre-ouest,1,subdivision
+Villetaneuse,villetaneuse,1,location
+Boca del Rio,boca del rio,1,location
+Valley Forge,valley forge,1,location
+Zielona Góra,zielona gora,1,location
+Shippensburg,shippensburg,1,location
+Rondonópolis,rondonopolis,1,location
+Shizuoka-shi,shizuoka-shi,1,location
+Rockhampton,rockhampton,1,location
+La Libertad,la libertad,1,subdivision
+Saint-Aubin,saint-aubin,1,location
+New Britain,new britain,1,location
+Garden City,garden city,1,location
+Arkadelphia,arkadelphia,1,location
+Jersey City,jersey city,1,location
+Grand Forks,grand forks,1,location
+Ciudad Real,ciudad real,1,location
+Chidambaram,chidambaram,1,location
+Phitsanulok,phitsanulok,1,location
+Chiayi City,chiayi city,1,location
+Bogota D.C.,bogota D.C.,1,subdivision
+Arkhangelsk,arkhangelsk,1,location
+Borno State,borno state,1,subdivision
+Balochistan,balochistan,1,subdivision
+Enugu State,enugu state,1,subdivision
+Petah Tikva,petah tikva,1,location
+Extremadura,extremadura,1,subdivision
+Johor Bahru,johor bahru,1,location
+Londonderry,londonderry,1,location
+Västmanland,vastmanland,1,subdivision
+Nishinomiya,nishinomiya,1,location
+East Orange,east orange,1,location
+Saint-Cloud,saint-cloud,1,location
+Brazzaville,brazzaville,1,location
+Panama City,panama city,1,location
+Celebration,celebration,1,location
+Shimonoseki,shimonoseki,1,location
+Subang Jaya,subang jaya,1,location
+Franceville,franceville,1,location
+North Wales,north wales,1,location
+Morrisville,morrisville,1,location
+Lake Oswego,lake oswego,1,location
+Fredericton,fredericton,1,location
+Seibersdorf,seibersdorf,1,location
+Catonsville,catonsville,1,location
+Afghanistan,afghanistan,1,country
+Fond du Lac,fond du lac,1,location
+Terre Haute,terre haute,1,location
+Nova Gorica,nova gorica,1,location
+Stroudsburg,stroudsburg,1,location
+Rheinfelden,rheinfelden,1,location
+Frankenthal,frankenthal,1,location
+Chêne-Bourg,chene-bourg,1,location
+Saint James,saint james,1,location
+Târgu Mureş,targu mures,1,location
+Center City,center city,1,location
+Ross on Wye,ross on wye,1,location
+Cramlington,cramlington,1,location
+Peloponnese,peloponnese,1,subdivision
+North Korea,north korea,1,country
+Tegucigalpa,tegucigalpa,1,location
+Nova Iguaçu,nova iguacu,1,location
+Benue State,benue state,1,subdivision
+Phetchaburi,phetchaburi,1,location
+Surat Thani,surat thani,1,location
+Vladikavkaz,vladikavkaz,1,location
+Blagoevgrad,blagoevgrad,1,location
+Centerville,centerville,1,location
+Green River,green river,1,location
+Worthington,worthington,1,location
+Charlestown,charlestown,1,location
+Santa Marta,santa marta,1,location
+Jaboticabal,jaboticabal,1,location
+Mount Royal,mount royal,1,location
+Wagga Wagga,wagga wagga,1,location
+Kanchipuram,kanchipuram,1,location
+Butterworth,butterworth,1,location
+Shaftesbury,shaftesbury,1,location
+Rhinelander,rhinelander,1,location
+Tirunelveli,tirunelveli,1,location
+St Leonards,st leonards,1,location
+Brownsville,brownsville,1,location
+Greenslopes,greenslopes,1,location
+Saint Marys,saint marys,1,location
+Montbéliard,montbeliard,1,location
+Musselburgh,musselburgh,1,location
+Bulandshahr,bulandshahr,1,location
+Khorramabad,khorramabad,1,location
+Romainville,romainville,1,location
+Lubuk Pakam,lubuk pakam,1,location
+Dolgoprudny,dolgoprudny,1,location
+Debre Tabor,debre tabor,1,location
+Delmenhorst,delmenhorst,1,location
+Martinsried,martinsried,1,location
+Yenimahalle,yenimahalle,1,location
+Cedar Falls,cedar falls,1,location
+Indian Head,indian head,1,location
+Saint-Mandé,saint-mande,1,location
+Kurukshetra,kurukshetra,1,location
+Marawi City,marawi city,1,location
+Salvatierra,salvatierra,1,location
+Birmensdorf,birmensdorf,1,location
+Gelderland,gelderland,1,subdivision
+Orangeburg,orangeburg,1,location
+Bloomsburg,bloomsburg,1,location
+Waterville,waterville,1,location
+San Isidro,san isidro,1,location
+Fort Wayne,fort wayne,1,location
+Montevallo,montevallo,1,location
+Livingston,livingston,1,location
+Belleville,belleville,1,location
+Brookfield,brookfield,1,location
+Huntsville,huntsville,1,location
+Northridge,northridge,1,location
+Campobasso,campobasso,1,location
+North Savo,north savo,1,subdivision
+Carbondale,carbondale,1,location
+Boca Raton,boca raton,1,location
+Chiang Rai,chiang rai,1,location
+Ishinomaki,ishinomaki,1,location
+Kodaikānāl,kodaikanal,1,location
+Guarapuava,guarapuava,1,location
+Seropédica,seropedica,1,location
+Winchester,winchester,1,location
+Simferopol,simferopol,1,location
+Morgantown,morgantown,1,location
+Vorarlberg,vorarlberg,1,subdivision
+Cottingham,cottingham,1,location
+Nonthaburi,nonthaburi,1,location
+Lower Hutt,lower hutt,1,location
+Morristown,morristown,1,location
+Dorchester,dorchester,1,location
+Chittagong,chittagong,1,location
+Guadeloupe,guadeloupe,1,subdivision
+Bellflower,bellflower,1,location
+Pontevedra,pontevedra,1,location
+Carmichael,carmichael,1,location
+Scunthorpe,scunthorpe,1,location
+Kungsbacka,kungsbacka,1,location
+Port Blair,port blair,1,location
+Twin Falls,twin falls,1,location
+Saint John,saint john,1,location
+Tokorozawa,tokorozawa,1,location
+Whitehaven,whitehaven,1,location
+Menlo Park,menlo park,1,location
+Emeryville,emeryville,1,location
+Barrington,barrington,1,location
+Great Neck,great neck,1,location
+Scottsdale,scottsdale,1,location
+Ridgefield,ridgefield,1,location
+Kenilworth,kenilworth,1,location
+New London,new london,1,location
+Shawinigan,shawinigan,1,location
+Grove City,grove city,1,location
+Montserrat,montserrat,1,country
+Chippenham,chippenham,1,location
+Zanesville,zanesville,1,location
+Broomfield,broomfield,1,location
+Windermere,windermere,1,location
+Kirksville,kirksville,1,location
+Rotondella,rotondella,1,location
+Plochingen,plochingen,1,location
+Denkendorf,denkendorf,1,location
+Mill Creek,mill creek,1,location
+Whitehouse,whitehouse,1,location
+Hermosillo,hermosillo,1,location
+Bedminster,bedminster,1,location
+High Point,high point,1,location
+Greenbrier,greenbrier,1,location
+Grandville,grandville,1,location
+Middelfart,middelfart,1,location
+Senigallia,senigallia,1,location
+Gig Harbor,gig harbor,1,location
+Trowbridge,trowbridge,1,location
+Leominster,leominster,1,location
+North York,north york,1,location
+Ngaoundéré,ngaoundere,1,location
+Tamaulipas,tamaulipas,1,subdivision
+Entre Rios,entre rios,1,subdivision
+Corrientes,corrientes,1,location
+San Felipe,san felipe,1,location
+Vila Velha,vila velha,1,location
+White Nile,white nile,1,subdivision
+Mauritania,mauritania,1,country
+Cordillera,cordillera,1,subdivision
+Bojonegoro,bojonegoro,1,location
+Tajikistan,tajikistan,1,country
+Kryvyi Rih,kryvyi rih,1,location
+Pyatigorsk,pyatigorsk,1,location
+Sand Point,sand point,1,location
+Ichinomiya,ichinomiya,1,location
+Chitrakoot,chitrakoot,1,location
+Seychelles,seychelles,1,country
+Atlantique,atlantique,1,subdivision
+Whitesburg,whitesburg,1,location
+Hässleholm,hassleholm,1,location
+Free State,free state,1,subdivision
+North Ryde,north ryde,1,location
+Jilin City,jilin city,1,location
+Eschweiler,eschweiler,1,location
+Ga-Rankuwa,ga-rankuwa,1,location
+Ridgecrest,ridgecrest,1,location
+Statesboro,statesboro,1,location
+Smithfield,smithfield,1,location
+Centro Sur,centro sur,1,subdivision
+Nouadhibou,nouadhibou,1,location
+Parramatta,parramatta,1,location
+Shrivenham,shrivenham,1,location
+Kannapolis,kannapolis,1,location
+Teoloyucan,teoloyucan,1,location
+Heidenheim,heidenheim,1,location
+Heslington,heslington,1,location
+Middlebury,middlebury,1,location
+Swarthmore,swarthmore,1,location
+Middlewich,middlewich,1,location
+Rapperswil,rapperswil,1,location
+Dzerzhinsk,dzerzhinsk,1,location
+Nové Hrady,nove hrady,1,location
+Cape Coast,cape coast,1,location
+Mpumalanga,mpumalanga,1,subdivision
+Haslingden,haslingden,1,location
+Willoughby,willoughby,1,location
+Perryville,perryville,1,location
+Granollers,granollers,1,location
+Bangkinang,bangkinang,1,location
+West Papua,west papua,1,subdivision
+Río Cuarto,rio cuarto,1,location
+Bouguenais,bouguenais,1,location
+Martinique,martinique,1,subdivision
+Xiangcheng,xiangcheng,1,location
+Falāvarjān,falavarjan,1,location
+Allen Park,allen park,1,location
+Quảng Ninh,quang ninh,1,subdivision
+New Valley,new valley,1,subdivision
+Valledupar,valledupar,1,location
+Échirolles,echirolles,1,location
+Rockingham,rockingham,1,location
+China Lake,china lake,1,location
+Mostaganem,mostaganem,1,location
+Shizuishan,shizuishan,1,location
+Hurlingham,hurlingham,1,location
+İskenderun,iskenderun,1,location
+Patuakhali,patuakhali,1,location
+Gujranwala,gujranwala,1,location
+Thiruvarur,thiruvarur,1,location
+Târgovişte,targoviste,1,location
+Valenzuela,valenzuela,1,location
+Tissemsilt,tissemsilt,1,location
+Makinohara,makinohara,1,location
+Doncaster,doncaster,1,location
+The Hague,the hague,1,location
+West Bank,west bank,1,subdivision
+Grand Est,grand est,1,subdivision
+Ulyanovsk,ulyanovsk,1,subdivision
+Longueuil,longueuil,1,location
+Pawtucket,pawtucket,1,location
+Flagstaff,flagstaff,1,location
+Kozhikode,kozhikode,1,location
+Escondido,escondido,1,location
+Narashino,narashino,1,location
+La Grande,la grande,1,location
+Frostburg,frostburg,1,location
+Mansfield,mansfield,1,location
+Allentown,allentown,1,location
+Las Vegas,las vegas,1,location
+Davenport,davenport,1,location
+Billerica,billerica,1,location
+Watertown,watertown,1,location
+Shibukawa,shibukawa,1,location
+Barakaldo,barakaldo,1,location
+Al Mafraq,al mafraq,1,location
+Gangneung,gangneung,1,location
+Takahashi,takahashi,1,location
+Oyo State,oyo state,1,subdivision
+Abakaliki,abakaliki,1,location
+Mogadishu,mogadishu,1,location
+Anantapur,anantapur,1,location
+Newmarket,newmarket,1,location
+Inverness,inverness,1,location
+Southport,southport,1,location
+Aylesbury,aylesbury,1,location
+Feldkirch,feldkirch,1,location
+Englewood,englewood,1,location
+Aldershot,aldershot,1,location
+Araucanía,araucania,1,subdivision
+Reykjavik,reykjavik,1,location
+Pichincha,pichincha,1,subdivision
+Innlandet,innlandet,1,subdivision
+Harrogate,harrogate,1,location
+Annapolis,annapolis,1,location
+Hachinohe,hachinohe,1,location
+Occitanie,occitanie,1,subdivision
+Bay Pines,bay pines,1,location
+Greenland,greenland,1,country
+Chon Buri,chon buri,1,location
+Holstebro,holstebro,1,location
+Bryn Mawr,bryn mawr,1,location
+Johnstown,johnstown,1,location
+Wakefield,wakefield,1,location
+Funabashi,funabashi,1,location
+Gerlingen,gerlingen,1,location
+Apeldoorn,apeldoorn,1,location
+Pensacola,pensacola,1,location
+Bethlehem,bethlehem,1,location
+Nuremberg,nuremberg,1,location
+Waterbury,waterbury,1,location
+Svendborg,svendborg,1,location
+Tomakomai,tomakomai,1,location
+Takatsuki,takatsuki,1,location
+Santa Ana,santa ana,1,location
+Hillsboro,hillsboro,1,location
+Roseville,roseville,1,location
+Harpenden,harpenden,1,location
+Merelbeke,merelbeke,1,location
+Sunnyvale,sunnyvale,1,location
+Weybridge,weybridge,1,location
+Jamestown,jamestown,1,location
+Stonewall,stonewall,1,location
+Sackville,sackville,1,location
+Hawthorne,hawthorne,1,location
+Covington,covington,1,location
+Pendleton,pendleton,1,location
+Pickering,pickering,1,location
+Riverview,riverview,1,location
+Avon Lake,avon lake,1,location
+Zhukovsky,zhukovsky,1,location
+Friesland,friesland,1,subdivision
+Vimercate,vimercate,1,location
+Veldhoven,veldhoven,1,location
+Calenzano,calenzano,1,location
+Flensburg,flensburg,1,location
+Podgorica,podgorica,1,location
+Brugherio,brugherio,1,location
+Oberursel,oberursel,1,location
+Faringdon,faringdon,1,location
+Templeton,templeton,1,location
+El Centro,el centro,1,location
+Bay Shore,bay shore,1,location
+Patchogue,patchogue,1,location
+Bhaktapur,bhaktapur,1,location
+Hurricane,hurricane,1,location
+Sandpoint,sandpoint,1,location
+Evergreen,evergreen,1,location
+El Dorado,el dorado,1,location
+Roscommon,roscommon,1,location
+Galesburg,galesburg,1,location
+Montauban,montauban,1,location
+Solothurn,solothurn,1,subdivision
+North Bay,north bay,1,location
+Burgstall,burgstall,1,location
+Dübendorf,dubendorf,1,location
+Cornelius,cornelius,1,location
+Mars Hill,mars hill,1,location
+Selargius,selargius,1,location
+La Marque,la marque,1,location
+Morecambe,morecambe,1,location
+Driffield,driffield,1,location
+Zaozhuang,zaozhuang,1,location
+Port Said,port said,1,location
+Tapachula,tapachula,1,location
+Florencia,florencia,1,location
+Joinville,joinville,1,location
+Araçatuba,aracatuba,1,location
+Boumerdes,boumerdes,1,subdivision
+Kyzylorda,kyzylorda,1,location
+Moriguchi,moriguchi,1,location
+Yongin-si,yongin-si,1,location
+Pekanbaru,pekanbaru,1,location
+Darbhanga,darbhanga,1,location
+Syktyvkar,syktyvkar,1,location
+Tahlequah,tahlequah,1,location
+Pittsburg,pittsburg,1,location
+Pikeville,pikeville,1,location
+Highlands,highlands,1,location
+Dire Dawa,dire dawa,1,location
+Bijeljina,bijeljina,1,location
+Southlake,southlake,1,location
+Waterford,waterford,1,location
+Laxenburg,laxenburg,1,location
+Östersund,ostersund,1,location
+Karlshamn,karlshamn,1,location
+Gibraltar,gibraltar,1,location
+Pingxiang,pingxiang,1,location
+Camarillo,camarillo,1,location
+Ituverava,ituverava,1,location
+Catanzaro,catanzaro,1,location
+Medinīpur,medinipur,1,location
+Lidköping,lidkoping,1,location
+Schleswig,schleswig,1,location
+Wentworth,wentworth,1,location
+Koulikoro,koulikoro,1,location
+Rishikesh,rishikesh,1,location
+Kamchatka,kamchatka,1,subdivision
+Benavente,benavente,1,location
+Clarkston,clarkston,1,location
+Albemarle,albemarle,1,location
+Stokesley,stokesley,1,location
+Kawanishi,kawanishi,1,location
+Gameleira,gameleira,1,location
+Heilbronn,heilbronn,1,location
+Starnberg,starnberg,1,location
+Ottignies,ottignies,1,location
+Altenburg,altenburg,1,location
+Bubendorf,bubendorf,1,location
+Épalinges,epalinges,1,location
+Los Pinos,los pinos,1,location
+Dumbarton,dumbarton,1,location
+Hermiston,hermiston,1,location
+Schofield,schofield,1,location
+Bentleigh,bentleigh,1,location
+Bundaberg,bundaberg,1,location
+Sandy Bay,sandy bay,1,location
+Cherkessk,cherkessk,1,location
+Yangzhong,yangzhong,1,location
+Westbrook,westbrook,1,location
+Kimbolton,kimbolton,1,location
+Coyhaique,coyhaique,1,location
+Neyshabur,neyshabur,1,location
+Prestwich,prestwich,1,location
+Wolfsburg,wolfsburg,1,location
+Firestone,firestone,1,location
+Āzādshahr,azadshahr,1,location
+Empangeni,empangeni,1,location
+Bondowoso,bondowoso,1,location
+New Cairo,new cairo,1,location
+Rio Maior,rio maior,1,location
+La Mirada,la mirada,1,location
+Arapiraca,arapiraca,1,location
+Rio Negro,rio negro,1,subdivision
+Ado-Ekiti,ado-ekiti,1,location
+Bale Robe,bale robe,1,location
+Palisades,palisades,1,location
+Boa Vista,boa vista,1,location
+White Oak,white oak,1,location
+Petroşani,petrosani,1,location
+Drohobych,drohobych,1,location
+Treviglio,treviglio,1,location
+Seocho-gu,seocho-gu,1,location
+Minato-ku,minato-ku,1,location
+Gradignan,gradignan,1,location
+Redbridge,redbridge,1,location
+La Virgen,la virgen,1,location
+Los Reyes,los reyes,1,location
+New Paltz,new paltz,1,location
+Guarapari,guarapari,1,location
+Eyvānekey,eyvanekey,1,location
+Courtenay,courtenay,1,location
+Purworejo,purworejo,1,location
+Nawabshah,nawabshah,1,location
+Pátzcuaro,patzcuaro,1,location
+Shirakawa,shirakawa,1,location
+Kemerovo,kemerovo,1,location
+Gurugram,gurugram,1,location
+Caldwell,caldwell,1,location
+Portales,portales,1,location
+Lakewood,lakewood,1,location
+Moorhead,moorhead,1,location
+Billings,billings,1,location
+Magnolia,magnolia,1,location
+Dearborn,dearborn,1,location
+Bismarck,bismarck,1,location
+Manassas,manassas,1,location
+Valhalla,valhalla,1,location
+Oakville,oakville,1,location
+Longmont,longmont,1,location
+Nainital,nainital,1,location
+Kırşehir,kırsehir,1,location
+Beyrouth,beyrouth,1,subdivision
+Qalyubia,qalyubia,1,subdivision
+Dakahlia,dakahlia,1,subdivision
+Tongshan,tongshan,1,location
+Jabalpur,jabalpur,1,location
+Sargodha,sargodha,1,location
+Tønsberg,tønsberg,1,location
+Campeche,campeche,1,location
+Takasaki,takasaki,1,location
+Barnsley,barnsley,1,location
+Matanzas,matanzas,1,location
+Orihuela,orihuela,1,location
+Halmstad,halmstad,1,location
+Finnmark,finnmark,1,subdivision
+Vestland,vestland,1,subdivision
+Piacenza,piacenza,1,location
+Amarillo,amarillo,1,location
+Nazareth,nazareth,1,location
+Metairie,metairie,1,location
+Galdakao,galdakao,1,location
+Morogoro,morogoro,1,location
+Greenock,greenock,1,location
+Abeokuta,abeokuta,1,location
+Kamaishi,kamaishi,1,location
+Sylvania,sylvania,1,location
+Fukuyama,fukuyama,1,location
+Gaborone,gaborone,1,location
+Sardinia,sardinia,1,subdivision
+Nordland,nordland,1,subdivision
+Nagahama,nagahama,1,location
+Kilkenny,kilkenny,1,location
+Tamworth,tamworth,1,location
+Missoula,missoula,1,location
+Tauranga,tauranga,1,location
+Worthing,worthing,1,location
+Brindisi,brindisi,1,location
+Rosemead,rosemead,1,location
+Armidale,armidale,1,location
+Carlisle,carlisle,1,location
+Brittany,brittany,1,subdivision
+Le Havre,le havre,1,location
+Loveland,loveland,1,location
+Genolier,genolier,1,location
+Rochdale,rochdale,1,location
+L’Aquila,l’aquila,1,location
+Pozzilli,pozzilli,1,location
+Martinez,martinez,1,location
+Fairmont,fairmont,1,location
+Newberry,newberry,1,location
+Monterey,monterey,1,location
+Solihull,solihull,1,location
+Browning,browning,1,location
+Limassol,limassol,1,location
+Bartlett,bartlett,1,location
+Kortrijk,kortrijk,1,location
+Svalbard,svalbard,1,subdivision
+Colombes,colombes,1,location
+Herzliya,herzliya,1,location
+Meridian,meridian,1,location
+Brinkley,brinkley,1,location
+Seabrook,seabrook,1,location
+Hercules,hercules,1,location
+Seminole,seminole,1,location
+Faridkot,faridkot,1,location
+Cherokee,cherokee,1,location
+Cashmere,cashmere,1,location
+Westbury,westbury,1,location
+Hilliard,hilliard,1,location
+New City,new city,1,location
+Canfield,canfield,1,location
+Woodbury,woodbury,1,location
+Roseburg,roseburg,1,location
+Edgewood,edgewood,1,location
+Hinsdale,hinsdale,1,location
+Archbold,archbold,1,location
+Badalona,badalona,1,location
+Tenerife,tenerife,1,location
+Alcester,alcester,1,location
+Saguenay,saguenay,1,location
+Auerbach,auerbach,1,location
+Tirrenia,tirrenia,1,location
+Weinheim,weinheim,1,location
+Dornbirn,dornbirn,1,location
+Bobadela,bobadela,1,location
+Karlsbad,karlsbad,1,location
+Ramallah,ramallah,1,location
+Harriman,harriman,1,location
+Tekirdağ,tekirdag,1,location
+Midhurst,midhurst,1,location
+Byurakan,byurakan,1,location
+Mandalay,mandalay,1,location
+Ayacucho,ayacucho,1,subdivision
+Redenção,redencao,1,location
+Móstoles,mostoles,1,location
+Camagüey,camaguey,1,location
+Irapuato,irapuato,1,location
+Arequipa,arequipa,1,location
+Envigado,envigado,1,location
+Chimbote,chimbote,1,location
+Huancayo,huancayo,1,location
+Pucallpa,pucallpa,1,location
+Rionegro,rionegro,1,location
+Los Ríos,los rios,1,subdivision
+Coquimbo,coquimbo,1,location
+Riobamba,riobamba,1,location
+Sorocaba,sorocaba,1,location
+Zanzibar,zanzibar,1,location
+Baturaja,baturaja,1,location
+Boyolali,boyolali,1,location
+Baicheng,baicheng,1,location
+Karawang,karawang,1,location
+Pavlodar,pavlodar,1,location
+Gyeongju,gyeongju,1,location
+Pasuruan,pasuruan,1,location
+Saraburi,saraburi,1,subdivision
+Ponorogo,ponorogo,1,location
+Sukabumi,sukabumi,1,location
+Namangan,namangan,1,location
+Parbhani,parbhani,1,location
+Khairpur,khairpur,1,location
+Nowshera,nowshera,1,location
+Siauliai,siauliai,1,subdivision
+Taganrog,taganrog,1,location
+Brewster,brewster,1,location
+Beatrice,beatrice,1,location
+McKenzie,mckenzie,1,location
+Paradise,paradise,1,location
+Woodward,woodward,1,location
+Marathon,marathon,1,location
+Hengshui,hengshui,1,location
+Maldives,maldives,1,country
+Bareilly,bareilly,1,location
+Bilāspur,bilaspur,1,location
+Damāvand,damavand,1,location
+Jūnāgadh,junagadh,1,location
+Varennes,varennes,1,location
+Strassen,strassen,1,location
+Washburn,washburn,1,location
+Trumbull,trumbull,1,location
+Chenzhou,chenzhou,1,location
+Sunagawa,sunagawa,1,location
+Nagaland,nagaland,1,subdivision
+Kolhāpur,kolhapur,1,location
+Banchory,banchory,1,location
+La Palma,la palma,1,location
+Vineland,vineland,1,location
+Altamira,altamira,1,location
+Gardanne,gardanne,1,location
+Shangrao,shangrao,1,location
+Haridwar,haridwar,1,location
+Rondônia,rondonia,1,subdivision
+Marāgheh,maragheh,1,location
+Gonzales,gonzales,1,location
+Chuxiong,chuxiong,1,location
+Liaoyang,liaoyang,1,location
+Cangshan,cangshan,1,location
+Bellaire,bellaire,1,location
+Gamagōri,gamagori,1,location
+Anápolis,anapolis,1,location
+Laikipia,laikipia,1,subdivision
+Sabadell,sabadell,1,location
+New Town,new town,1,location
+Smithers,smithers,1,location
+Tsushima,tsushima,1,location
+Chehalis,chehalis,1,location
+Montague,montague,1,location
+Moratuwa,moratuwa,1,location
+Hazleton,hazleton,1,location
+Benidorm,benidorm,1,location
+Shuozhou,shuozhou,1,location
+Solingen,solingen,1,location
+Cadillac,cadillac,1,location
+Müllheim,mullheim,1,location
+Wayville,wayville,1,location
+Beauvais,beauvais,1,location
+Woodside,woodside,1,location
+Verbania,verbania,1,location
+Anadarko,anadarko,1,location
+Overland,overland,1,location
+New Hope,new hope,1,location
+Morrison,morrison,1,location
+Pinheiro,pinheiro,1,location
+Sullivan,sullivan,1,location
+Slagelse,slagelse,1,location
+Caesarea,caesarea,1,location
+Pfronten,pfronten,1,location
+Hawthorn,hawthorn,1,location
+Iggesund,iggesund,1,location
+São Tomé,sao tome,1,location
+Karamsad,karamsad,1,location
+Longford,longford,1,location
+Pollachi,pollachi,1,location
+Watchung,watchung,1,location
+Mazatlán,mazatlan,1,location
+Kelaniya,kelaniya,1,location
+Zhaoqing,zhaoqing,1,location
+Ishikari,ishikari,1,location
+Puchheim,puchheim,1,location
+Arnesano,arnesano,1,location
+Wuyishan,wuyishan,1,location
+Rosedale,rosedale,1,location
+Rockwood,rockwood,1,location
+Kimberly,kimberly,1,location
+Goldberg,goldberg,1,location
+Cotopaxi,cotopaxi,1,subdivision
+Flushing,flushing,1,location
+Eastlake,eastlake,1,location
+Ackerman,ackerman,1,location
+Trà Vinh,tra vinh,1,location
+Bağcılar,bagcılar,1,location
+Dunwoody,dunwoody,1,location
+Damietta,damietta,1,location
+Yuncheng,yuncheng,1,location
+Phagwāra,phagwara,1,location
+Buraidah,buraidah,1,location
+Navrongo,navrongo,1,location
+Gatchina,gatchina,1,location
+Lalitpur,lalitpur,1,location
+Wickford,wickford,1,location
+Bennekom,bennekom,1,location
+Ballarat,ballarat,1,location
+Havelock,havelock,1,location
+Delicias,delicias,1,location
+Rotkreuz,rotkreuz,1,location
+Kotabaru,kotabaru,1,location
+Pānskura,panskura,1,location
+Bābolsar,babolsar,1,location
+Chinhoyi,chinhoyi,1,location
+La Garde,la garde,1,location
+Chambéry,chambery,1,location
+Ghardaia,ghardaia,1,subdivision
+Chandpur,chandpur,1,location
+Laghouat,laghouat,1,location
+Palakkad,palakkad,1,location
+Semenyih,semenyih,1,location
+Figueres,figueres,1,location
+Ogbomoso,ogbomoso,1,location
+Umuarama,umuarama,1,location
+Boothbay,boothbay,1,location
+Newtown,newtown,1,location
+Uusimaa,uusimaa,1,subdivision
+Bavaria,bavaria,1,subdivision
+Brøndby,brøndby,1,location
+Yerevan,yerevan,1,location
+Fayette,fayette,1,location
+Oakdale,oakdale,1,location
+Needham,needham,1,location
+Clinton,clinton,1,location
+Findlay,findlay,1,location
+Redmond,redmond,1,location
+Paianía,paiania,1,location
+Fremont,fremont,1,location
+Mineola,mineola,1,location
+Bothell,bothell,1,location
+Markham,markham,1,location
+Larissa,larissa,1,location
+Maywood,maywood,1,location
+Silchar,silchar,1,location
+Bijapur,bijapur,1,location
+Ōtawara,otawara,1,location
+Jalgaon,jalgaon,1,location
+Neuquen,neuquen,1,subdivision
+Taubaté,taubate,1,location
+Patiāla,patiala,1,location
+Somalia,somalia,1,country
+Gauteng,gauteng,1,subdivision
+Wingate,wingate,1,location
+Burnley,burnley,1,location
+Mantova,mantova,1,location
+Gosford,gosford,1,location
+Horsham,horsham,1,location
+Gwalior,gwalior,1,location
+Swindon,swindon,1,location
+Navarre,navarre,1,subdivision
+Hickory,hickory,1,location
+Spokane,spokane,1,location
+Clamart,clamart,1,location
+Modesto,modesto,1,location
+Drammen,drammen,1,location
+Manouba,manouba,1,location
+Horsens,horsens,1,location
+Algiers,algiers,1,location
+Passaic,passaic,1,location
+Ifakara,ifakara,1,location
+Umuahia,umuahia,1,location
+Obninsk,obninsk,1,location
+Subiaco,subiaco,1,location
+Takaoka,takaoka,1,location
+Margate,margate,1,location
+Obihiro,obihiro,1,location
+Locarno,locarno,1,location
+Kampala,kampala,1,location
+Shimada,shimada,1,location
+Entebbe,entebbe,1,location
+Gangtok,gangtok,1,location
+Moncton,moncton,1,location
+Khammam,khammam,1,location
+Nambour,nambour,1,location
+Niihama,niihama,1,location
+Torquay,torquay,1,location
+Toyooka,toyooka,1,location
+Kasauli,kasauli,1,location
+Randers,randers,1,location
+Chitose,chitose,1,location
+Frimley,frimley,1,location
+Ourense,ourense,1,location
+Moncada,moncada,1,location
+Cotonou,cotonou,1,location
+Meldola,meldola,1,location
+Portici,portici,1,location
+Koblenz,koblenz,1,location
+Detmold,detmold,1,location
+Managua,managua,1,location
+Wooster,wooster,1,location
+Danvers,danvers,1,location
+Vaughan,vaughan,1,location
+Yankton,yankton,1,location
+Sudbury,sudbury,1,location
+Altoona,altoona,1,location
+Miramar,miramar,1,location
+Pullman,pullman,1,location
+Waverly,waverly,1,location
+Laplace,laplace,1,location
+Antibes,antibes,1,location
+Wantage,wantage,1,location
+Trikala,trikala,1,location
+Gauting,gauting,1,location
+Valence,valence,1,location
+Velenje,velenje,1,location
+Gliwice,gliwice,1,location
+Moreira,moreira,1,location
+Sogndal,sogndal,1,location
+Bollate,bollate,1,location
+Elkhart,elkhart,1,location
+Mesilla,mesilla,1,location
+Holyoke,holyoke,1,location
+Bahamas,bahamas,1,country
+Branson,branson,1,location
+Ketchum,ketchum,1,location
+Calhoun,calhoun,1,location
+Segrate,segrate,1,location
+Mombasa,mombasa,1,location
+LaPorte,laporte,1,location
+Malling,malling,1,location
+Tremont,tremont,1,location
+Windber,windber,1,location
+McHenry,mchenry,1,location
+Arcadia,arcadia,1,location
+Quimper,quimper,1,location
+Béziers,beziers,1,location
+Mölndal,molndal,1,location
+Shannon,shannon,1,location
+Carrara,carrara,1,location
+Falkirk,falkirk,1,location
+Planegg,planegg,1,location
+De Bilt,de bilt,1,location
+Crumlin,crumlin,1,location
+Solymár,solymar,1,location
+Hancock,hancock,1,location
+Sokolov,sokolov,1,location
+Troitsk,troitsk,1,location
+St Ives,st ives,1,location
+Brixham,brixham,1,location
+Liestal,liestal,1,location
+Tsuruga,tsuruga,1,location
+Xingtai,xingtai,1,location
+Tuusula,tuusula,1,location
+Sanremo,sanremo,1,location
+Kasugai,kasugai,1,location
+Toliara,toliara,1,location
+Conakry,conakry,1,location
+Sanming,sanming,1,location
+Cypress,cypress,1,location
+Torreón,torreon,1,location
+Tabasco,tabasco,1,subdivision
+Reynosa,reynosa,1,location
+Sinaloa,sinaloa,1,subdivision
+Erechim,erechim,1,location
+Chillán,chillan,1,location
+Ouargla,ouargla,1,location
+Katsina,katsina,1,location
+Khujand,khujand,1,location
+Isehara,isehara,1,location
+Kalasin,kalasin,1,location
+Bishkek,bishkek,1,subdivision
+Nisshin,nisshin,1,location
+Ternate,ternate,1,location
+Fergana,fergana,1,subdivision
+Ungaran,ungaran,1,location
+Elbasan,elbasan,1,location
+Vologda,vologda,1,location
+Kolomna,kolomna,1,location
+Kherson,kherson,1,location
+Rybinsk,rybinsk,1,location
+Magadan,magadan,1,location
+Bryansk,bryansk,1,location
+Liberec,liberec,1,location
+Seaside,seaside,1,location
+Freedom,freedom,1,location
+Asansol,asansol,1,location
+Yuanlin,yuanlin,1,location
+Da Nang,da nang,1,location
+Urgench,urgench,1,location
+Radford,radford,1,location
+Nanaimo,nanaimo,1,location
+Ludvika,ludvika,1,location
+Miskolc,miskolc,1,location
+Portage,portage,1,location
+Gaffney,gaffney,1,location
+Maynard,maynard,1,location
+Crofton,crofton,1,location
+Diadema,diadema,1,location
+Itapeva,itapeva,1,location
+Ålesund,alesund,1,location
+Harstad,harstad,1,location
+Maoming,maoming,1,location
+Guigang,guigang,1,location
+Malacca,malacca,1,location
+Ile-Ife,ile-ife,1,location
+Mthatha,mthatha,1,location
+Isabela,isabela,1,location
+Hanford,hanford,1,location
+Brechin,brechin,1,location
+Willard,willard,1,location
+Shazhou,shazhou,1,location
+Nunavut,nunavut,1,subdivision
+Siedlce,siedlce,1,location
+Itabira,itabira,1,location
+Denison,denison,1,location
+Makurdi,makurdi,1,location
+Görlitz,gorlitz,1,location
+Quitman,quitman,1,location
+Komatsu,komatsu,1,location
+Kusatsu,kusatsu,1,location
+Toyoake,toyoake,1,location
+Iwanuma,iwanuma,1,location
+Kāzerūn,kazerun,1,location
+Varāmīn,varamin,1,location
+Caruaru,caruaru,1,location
+Barroso,barroso,1,location
+Mödling,modling,1,location
+Camilla,camilla,1,location
+Ajalvir,ajalvir,1,location
+Kontich,kontich,1,location
+Palamós,palamos,1,location
+Lorient,lorient,1,location
+Kearney,kearney,1,location
+Gaozhou,gaozhou,1,location
+Tlalpan,tlalpan,1,location
+Gharbia,gharbia,1,subdivision
+Noisiel,noisiel,1,location
+Baldock,baldock,1,location
+Sempach,sempach,1,location
+Leganés,leganes,1,location
+Muttenz,muttenz,1,location
+Heywood,heywood,1,location
+Komárov,komarov,1,location
+Wimpole,wimpole,1,location
+Hoboken,hoboken,1,location
+Badajoz,badajoz,1,location
+Garbsen,garbsen,1,location
+Staples,staples,1,location
+Tam Đảo,tam đao,1,location
+Baishan,baishan,1,location
+Fanyang,fanyang,1,location
+Licheng,licheng,1,location
+Mathura,mathura,1,location
+Redfern,redfern,1,location
+Mildura,mildura,1,location
+Elkhorn,elkhorn,1,location
+Overath,overath,1,location
+Xianlin,xianlin,1,location
+Nankoku,nankoku,1,location
+Xinghua,xinghua,1,location
+Āshtīān,ashtian,1,location
+Gonābād,gonabad,1,location
+Nineveh,nineveh,1,subdivision
+Kendall,kendall,1,location
+Jingmen,jingmen,1,location
+Dickson,dickson,1,location
+Croydon,croydon,1,location
+Haining,haining,1,location
+Arecibo,arecibo,1,location
+Hinxton,hinxton,1,location
+Bārāsat,barasat,1,location
+Raritan,raritan,1,location
+Karbala,karbala,1,location
+Huaihua,huaihua,1,location
+Longkou,longkou,1,location
+Granger,granger,1,location
+Antioch,antioch,1,location
+Athlone,athlone,1,location
+Birzeit,birzeit,1,location
+Hetauda,hetauda,1,location
+Texcoco,texcoco,1,location
+Wyckoff,wyckoff,1,location
+Sandton,sandton,1,location
+Borstel,borstel,1,location
+Bayamón,bayamon,1,location
+Agassiz,agassiz,1,location
+Tarakan,tarakan,1,location
+Armilla,armilla,1,location
+Nicolet,nicolet,1,location
+Machado,machado,1,location
+Legnano,legnano,1,location
+Jung-gu,jung-gu,1,location
+Fulwood,fulwood,1,location
+Wayland,wayland,1,location
+Parakou,parakou,1,location
+Calamba,calamba,1,location
+Gazipur,gazipur,1,location
+Giheung,giheung,1,location
+Bornova,bornova,1,location
+Estoril,estoril,1,location
+Bilecik,bilecik,1,location
+Ardahan,ardahan,1,location
+Hakkâri,hakkari,1,location
+Chizhou,chizhou,1,location
+Caserta,caserta,1,location
+Chuzhou,chuzhou,1,location
+Karaman,karaman,1,location
+Longyan,longyan,1,location
+Kenitra,kenitra,1,location
+Karatay,karatay,1,location
+Socorro,socorro,1,location
+Sahiwal,sahiwal,1,location
+Chapecó,chapeco,1,location
+Cianjur,cianjur,1,location
+Machala,machala,1,location
+Ōfunato,ofunato,1,location
+Miyoshi,miyoshi,1,location
+Sakurai,sakurai,1,location
+Attica,attica,1,subdivision
+Saxony,saxony,1,subdivision
+Nablus,nablus,1,location
+Bamako,bamako,1,location
+Arnhem,arnhem,1,location
+Srpska,srpska,1,subdivision
+Lawton,lawton,1,location
+Bexley,bexley,1,location
+Helena,helena,1,location
+Woburn,woburn,1,location
+Nashua,nashua,1,location
+Molise,molise,1,subdivision
+Gongju,gongju,1,location
+Osogbo,osogbo,1,location
+Canoas,canoas,1,location
+Pleven,pleven,1,location
+Epirus,epirus,1,subdivision
+Jhānsi,jhansi,1,location
+Douliu,douliu,1,location
+Shimla,shimla,1,location
+Falcón,falcon,1,subdivision
+Sagamu,sagamu,1,location
+Namwon,namwon,1,location
+Arusha,arusha,1,location
+Quetta,quetta,1,location
+Aargau,aargau,1,subdivision
+Edirne,edirne,1,location
+Pahang,pahang,1,subdivision
+Kalmar,kalmar,1,subdivision
+Dalton,dalton,1,location
+Meknes,meknes,1,location
+Holbæk,holbæk,1,location
+Elazığ,elazıg,1,subdivision
+Cesena,cesena,1,location
+Ticino,ticino,1,subdivision
+Shatin,shatin,1,location
+Najrān,najran,1,location
+Tajimi,tajimi,1,location
+Yangon,yangon,1,location
+Motala,motala,1,location
+Jōetsu,joetsu,1,location
+Racine,racine,1,location
+Slough,slough,1,location
+Tucker,tucker,1,location
+Rivoli,rivoli,1,location
+Faenza,faenza,1,location
+Kigali,kigali,1,location
+Minato,minato,1,location
+Bourne,bourne,1,location
+Zabrze,zabrze,1,location
+Karnāl,karnal,1,location
+Mentor,mentor,1,location
+Chania,chania,1,location
+Buxton,buxton,1,location
+Jessup,jessup,1,location
+Cobham,cobham,1,location
+Folsom,folsom,1,location
+Harlow,harlow,1,location
+Hamlet,hamlet,1,location
+Savage,savage,1,location
+Meylan,meylan,1,location
+Colmar,colmar,1,location
+Zwolle,zwolle,1,location
+Kiruna,kiruna,1,location
+Brande,brande,1,location
+Boxtel,boxtel,1,location
+Langen,langen,1,location
+Mandan,mandan,1,location
+Eureka,eureka,1,location
+Keller,keller,1,location
+Hardin,hardin,1,location
+Sparta,sparta,1,location
+Köthen,kothen,1,location
+Merced,merced,1,location
+Elkton,elkton,1,location
+Putnam,putnam,1,location
+Arcata,arcata,1,location
+Macomb,macomb,1,location
+Lenoir,lenoir,1,location
+Weldon,weldon,1,location
+Colfax,colfax,1,location
+Tralee,tralee,1,location
+Loures,loures,1,location
+Upland,upland,1,location
+Vienne,vienne,1,location
+Witten,witten,1,location
+Matera,matera,1,location
+Humble,humble,1,location
+Luanda,luanda,1,location
+Groton,groton,1,location
+Guyane,guyane,1,subdivision
+Mardan,mardan,1,location
+Loreto,loreto,1,location
+Dezhou,dezhou,1,location
+Ambato,ambato,1,location
+Ebetsu,ebetsu,1,location
+Celaya,celaya,1,location
+Chalco,chalco,1,location
+Ibagué,ibague,1,location
+Osasco,osasco,1,location
+Nariño,narino,1,subdivision
+Valera,valera,1,location
+Sobral,sobral,1,location
+Kirkuk,kirkuk,1,location
+Ashiya,ashiya,1,location
+Aktobe,aktobe,1,location
+Klaten,klaten,1,location
+Madiun,madiun,1,location
+Batumi,batumi,1,location
+Phuket,phuket,1,location
+Haenam,haenam,1,location
+Sleman,sleman,1,location
+Qarshi,qarshi,1,location
+Navoiy,navoiy,1,location
+Kurgan,kurgan,1,location
+Ryazan,ryazan,1,location
+Maykop,maykop,1,location
+Galati,galati,1,location
+Oradea,oradea,1,location
+Monaco,monaco,1,location
+Grozny,grozny,1,location
+Midway,midway,1,location
+Kladno,kladno,1,location
+Bitlis,bitlis,1,location
+Gimhae,gimhae,1,location
+Ajloun,ajloun,1,location
+Midori,midori,1,location
+Bhilai,bhilai,1,location
+Madaba,madaba,1,location
+Ntcheu,ntcheu,1,location
+Somali,somali,1,location
+Hikone,hikone,1,location
+Maysan,maysan,1,subdivision
+Hoover,hoover,1,location
+Sopron,sopron,1,location
+Tai’an,tai’an,1,location
+Olivet,olivet,1,location
+Clovis,clovis,1,location
+Corona,corona,1,location
+Saline,saline,1,location
+Loomis,loomis,1,location
+Suzano,suzano,1,location
+Agudos,agudos,1,location
+Narvik,narvik,1,location
+Mandal,mandal,1,location
+Kleppe,kleppe,1,location
+Chaohu,chaohu,1,location
+Kangra,kangra,1,location
+Weiden,weiden,1,location
+Leshan,leshan,1,location
+Raszyn,raszyn,1,location
+Tamale,tamale,1,location
+Diyālá,diyala,1,subdivision
+Skudai,skudai,1,location
+Jaffna,jaffna,1,location
+Pilāni,pilani,1,location
+Jubail,jubail,1,location
+Biskra,biskra,1,location
+Satara,satara,1,location
+Vechta,vechta,1,location
+Mataró,mataro,1,location
+Cacoal,cacoal,1,location
+Warner,warner,1,location
+Pitman,pitman,1,location
+Kohler,kohler,1,location
+Nakano,nakano,1,location
+Malārd,malard,1,location
+Wexham,wexham,1,location
+Dessau,dessau,1,location
+Sequim,sequim,1,location
+Chatou,chatou,1,location
+Lachen,lachen,1,location
+Ankang,ankang,1,location
+Lingen,lingen,1,location
+Wuzhou,wuzhou,1,location
+Coburg,coburg,1,location
+Prilly,prilly,1,location
+Houdan,houdan,1,location
+Poissy,poissy,1,location
+Olivos,olivos,1,location
+Timaru,timaru,1,location
+Easley,easley,1,location
+Howrah,howrah,1,location
+Mandya,mandya,1,location
+Linfen,linfen,1,location
+Bègles,begles,1,location
+Deyang,deyang,1,location
+Tarbes,tarbes,1,location
+Gubkin,gubkin,1,location
+Yixing,yixing,1,location
+Weinan,weinan,1,location
+Nanded,nanded,1,location
+Serock,serock,1,location
+Merate,merate,1,location
+Binche,binche,1,location
+Huaraz,huaraz,1,location
+Gandia,gandia,1,location
+Sepang,sepang,1,location
+Xingyi,xingyi,1,location
+Conrad,conrad,1,location
+Hokuto,hokuto,1,location
+Hyères,hyeres,1,location
+Tigray,tigray,1,subdivision
+Tarsus,tarsus,1,location
+Munger,munger,1,location
+Mequon,mequon,1,location
+Blitar,blitar,1,location
+Narita,narita,1,location
+Gujrat,gujrat,1,location
+Harlem,harlem,1,location
+Lin’an,lin’an,1,location
+Yiyang,yiyang,1,location
+Dunbar,dunbar,1,location
+Dessie,dessie,1,location
+Bauchi,bauchi,1,subdivision
+Wissen,wissen,1,location
+Messel,messel,1,location
+Chubut,chubut,1,subdivision
+Esquel,esquel,1,location
+Antigo,antigo,1,location
+Murree,murree,1,location
+Jepara,jepara,1,location
+Lemont,lemont,1,location
+Tandil,tandil,1,location
+Saipan,saipan,1,location
+Gurabo,gurabo,1,location
+Ramadi,ramadi,1,location
+Morden,morden,1,location
+Kavala,kavala,1,location
+Thiais,thiais,1,location
+Nagaon,nagaon,1,location
+Sceaux,sceaux,1,location
+Palopo,palopo,1,location
+Jakkūr,jakkur,1,location
+Gandra,gandra,1,location
+Tobruk,tobruk,1,location
+Dwārka,dwarka,1,location
+Borgou,borgou,1,subdivision
+Kourou,kourou,1,location
+Nsugbe,nsugbe,1,location
+Guarda,guarda,1,location
+Ningde,ningde,1,location
+Mardin,mardin,1,location
+Kampar,kampar,1,location
+Burdur,burdur,1,location
+Shumen,shumen,1,location
+M'Sila,m'sila,1,location
+Ifrane,ifrane,1,location
+Jobner,jobner,1,location
+Termez,termez,1,location
+Annaba,annaba,1,location
+Sukkur,sukkur,1,location
+Ninohe,ninohe,1,location
+Akaiwa,akaiwa,1,location
+Ascot,ascot,1,location
+Tyrol,tyrol,1,subdivision
+Flint,flint,1,location
+Nukus,nukus,1,location
+Vaxjo,vaxjo,1,location
+Oryol,oryol,1,location
+Lisle,lisle,1,location
+Bowie,bowie,1,location
+Dover,dover,1,location
+Tulsa,tulsa,1,location
+Selma,selma,1,location
+Butte,butte,1,location
+Braga,braga,1,location
+Kohat,kohat,1,location
+Banhā,banha,1,location
+Erbil,erbil,1,location
+Truro,truro,1,location
+Cuneo,cuneo,1,location
+Zaria,zaria,1,location
+Aarau,aarau,1,location
+Desio,desio,1,location
+Vevey,vevey,1,location
+Holon,holon,1,location
+Gijón,gijon,1,location
+Moshi,moshi,1,location
+Patan,patan,1,location
+Molde,molde,1,location
+Utica,utica,1,location
+Tabuk,tabuk,1,location
+Kandy,kandy,1,location
+Garda,garda,1,location
+Vaasa,vaasa,1,location
+Wesel,wesel,1,location
+Kista,kista,1,location
+Sayre,sayre,1,location
+Egham,egham,1,location
+Rolla,rolla,1,location
+Lévis,levis,1,location
+Fleet,fleet,1,location
+Savoy,savoy,1,location
+Macon,macon,1,location
+Havre,havre,1,location
+Berea,berea,1,location
+Volos,volos,1,location
+Celle,celle,1,location
+Hanau,hanau,1,location
+Worms,worms,1,location
+Venlo,venlo,1,location
+Ilfov,ilfov,1,subdivision
+Brick,brick,1,location
+Hurst,hurst,1,location
+Crema,crema,1,location
+Otley,otley,1,location
+Barby,barby,1,location
+Louth,louth,1,location
+Sakha,sakha,1,subdivision
+Selby,selby,1,location
+Visby,visby,1,location
+Davos,davos,1,location
+Yanbu,yanbu,1,location
+Loudi,loudi,1,location
+Ōgaki,ogaki,1,location
+Junin,junin,1,subdivision
+Lages,lages,1,location
+Tunja,tunja,1,location
+Minna,minna,1,location
+Bogra,bogra,1,location
+Yaizu,yaizu,1,location
+Chōfu,chofu,1,location
+Solok,solok,1,location
+Hannō,hanno,1,location
+Akola,akola,1,location
+Tegal,tegal,1,location
+Oyama,oyama,1,location
+Sohar,sohar,1,location
+Pskov,pskov,1,location
+Bacau,bacau,1,location
+Biysk,biysk,1,location
+Tábor,tabor,1,location
+Tanga,tanga,1,subdivision
+Tuzla,tuzla,1,location
+Mbeya,mbeya,1,location
+Lafia,lafia,1,location
+Kedah,kedah,1,subdivision
+Irwin,irwin,1,location
+Štore,store,1,location
+Çorum,corum,1,location
+Sopot,sopot,1,location
+Adria,adria,1,location
+Fermo,fermo,1,location
+Horta,horta,1,location
+Lamar,lamar,1,location
+Onoda,onoda,1,location
+Nnewi,nnewi,1,location
+Pully,pully,1,location
+Miura,miura,1,location
+Basra,basra,1,location
+Duhok,duhok,1,subdivision
+Ropar,ropar,1,location
+Soest,soest,1,location
+Viken,viken,1,location
+Vitré,vitre,1,location
+Dusit,dusit,1,location
+Cento,cento,1,location
+Imola,imola,1,location
+Perai,perai,1,location
+Fürth,furth,1,location
+Borne,borne,1,location
+Baoji,baoji,1,location
+Borna,borna,1,location
+Dubbo,dubbo,1,location
+Yuyao,yuyao,1,location
+Byron,byron,1,location
+Chino,chino,1,location
+Atami,atami,1,location
+Udupi,udupi,1,location
+Xinyu,xinyu,1,location
+Nandi,nandi,1,subdivision
+Nizwá,nizwa,1,location
+Górki,gorki,1,location
+Oxley,oxley,1,location
+Uzwil,uzwil,1,location
+Chlef,chlef,1,location
+Baohe,baohe,1,location
+Najaf,najaf,1,location
+Bangi,bangi,1,location
+Hatay,hatay,1,subdivision
+Afula,afula,1,location
+Cahul,cahul,1,location
+Marks,marks,1,location
+Gunpo,gunpo,1,location
+Manly,manly,1,location
+Lugoj,lugoj,1,location
+Pemba,pemba,1,location
+Taipa,taipa,1,location
+Crane,crane,1,location
+Savar,savar,1,location
+Duyun,duyun,1,location
+Fuxin,fuxin,1,location
+Soran,soran,1,location
+Saida,saida,1,subdivision
+Paola,paola,1,location
+Huíla,huila,1,subdivision
+Iğdır,igdır,1,location
+Shima,shima,1,location
+Mutsu,mutsu,1,location
+Ōmura,omura,1,location
+Mons,mons,1,location
+Togo,togo,1,country
+Lomé,lome,1,location
+Elda,elda,1,location
+Omsk,omsk,1,location
+Hilo,hilo,1,location
+Sion,sion,1,location
+Aden,aden,1,location
+Naju,naju,1,location
+Lara,lara,1,subdivision
+Laos,laos,1,country
+Abhā,abha,1,location
+Bono,bono,1,subdivision
+Pori,pori,1,location
+Agra,agra,1,location
+Bend,bend,1,location
+Suwa,suwa,1,location
+Noda,noda,1,location
+Zlín,zlin,1,location
+Lodi,lodi,1,location
+Thun,thun,1,location
+Brea,brea,1,location
+Taiz,taiz,1,location
+Maun,maun,1,location
+Gera,gera,1,location
+Leek,leek,1,location
+Tena,tena,1,location
+Tete,tete,1,subdivision
+Kara,kara,1,location
+Chad,chad,1,country
+Ueda,ueda,1,location
+Naga,naga,1,location
+Ende,ende,1,location
+Hino,hino,1,location
+Palu,palu,1,location
+Āmol,amol,1,location
+Dang,dang,1,location
+Bled,bled,1,location
+Arad,arad,1,location
+Hama,hama,1,location
+Lira,lira,1,location
+Meru,meru,1,location
+Heze,heze,1,location
+Lena,lena,1,location
+Ibri,ibri,1,location
+Rifu,rifu,1,location
+Hale,hale,1,location
+Sibu,sibu,1,location
+Taft,taft,1,location
+Bruz,bruz,1,location
+Mati,mati,1,location
+Anjo,anjo,1,location
+Anan,anan,1,location
+Koga,koga,1,location
+Bida,bida,1,location
+Goes,goes,1,location
+Paro,paro,1,location
+Katy,katy,1,location
+Hebi,hebi,1,location
+Jaén,jaen,1,location
+Enna,enna,1,location
+Dili,dili,1,location
+Kadi,kadi,1,location
+Arar,arar,1,location
+Puli,puli,1,location
+Bagh,bagh,1,location
+Tito,tito,1,location
+Saba,saba,1,subdivision
+Kars,kars,1,location
+Topi,topi,1,location
+Yame,yame,1,location
