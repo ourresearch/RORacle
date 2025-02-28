@@ -114,13 +114,14 @@ def run_test_by_id(test_id: int) -> Dict:
             "error": f"Error running test {test_id}: {str(e)}"
         }
 
-def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = None) -> Dict:
+def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = None, dataset_name: Optional[str] = None) -> Dict:
     """
     Run tests and return a summary of results.
     
     Args:
         limit: Optional maximum number of tests to run
         sample: If True, randomizes test order. If int, uses it as random seed.
+        dataset_name: Optional filter to only run tests from a specific dataset
     
     Returns:
         Dict with meta information and test results
@@ -137,19 +138,22 @@ def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = 
         for row in reader:
             test_cases.append(row)
     
-    # Generate test indices
-    test_indices = list(range(len(test_cases)))
+    # Filter by dataset_name if specified
+    if dataset_name:
+        filtered_indices = [i for i, test in enumerate(test_cases) if test.get("dataset_name") == dataset_name]
+    else:
+        filtered_indices = list(range(len(test_cases)))
     
     # Handle sampling if requested
     if sample:
         if isinstance(sample, int):
             # Use as random seed
             random.seed(sample)
-        random.shuffle(test_indices)
+        random.shuffle(filtered_indices)
     
     # Apply limit if specified
-    if limit and limit < len(test_indices):
-        test_indices = test_indices[:limit]
+    if limit and limit < len(filtered_indices):
+        filtered_indices = filtered_indices[:limit]
     
     # Run tests
     results = []
@@ -166,7 +170,7 @@ def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = 
     start_time = time.time()
     all_times = []
     
-    for i, test_idx in enumerate(test_indices):
+    for i, test_idx in enumerate(filtered_indices):
         # Run the test
         test_start = time.time()
         result = run_test_by_id(test_idx)

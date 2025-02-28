@@ -25,15 +25,16 @@ async def get_ror_records(affiliation: str):
     }
 
 @app.get("/tests")
-async def run_test_suite(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = None):
+async def run_test_suite(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = None, dataset_name: Optional[str] = None):
     """
     Run test suite and return results.
     
     Args:
         limit: Optional maximum number of tests to run
         sample: If True, randomizes test order. If int, uses it as random seed.
+        dataset_name: Optional filter to only run tests from a specific dataset
     """
-    return run_tests(limit=limit, sample=sample)
+    return run_tests(limit=limit, sample=sample, dataset_name=dataset_name)
 
 @app.get("/tests/{test_id}")
 async def run_single_test(test_id: int):
