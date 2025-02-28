@@ -1,5 +1,6 @@
 import csv
 import os
+import ast
 from typing import Dict, List, Optional
 
 # Importing here to avoid circular imports
@@ -82,52 +83,25 @@ def extract_ror_ids_from_labels(labels_str: str) -> List[str]:
     Returns:
         List of ROR IDs extracted from the labels
     """
-    # Clean up the string to handle both formats seen in the TSV
-    # Some have escaped quotes, some don't
-    labels_str = labels_str.strip()
-    
-    # Handle the case where it's already properly formatted
-    if labels_str.startswith('[') and labels_str.endswith(']'):
-        # Remove the outer brackets
-        labels_str = labels_str[1:-1]
-    
-    # Handle the case with escaped quotes
-    labels_str = labels_str.replace('\\"', '"').replace('""', '"')
-    
-    # Split the string by commas, considering the quotes
-    parts = []
-    in_quotes = False
-    current_part = ""
-    
-    for char in labels_str:
-        if char == '"' or char == "'":
-            in_quotes = not in_quotes
-            current_part += char
-        elif char == ',' and not in_quotes:
-            parts.append(current_part.strip())
-            current_part = ""
-        else:
-            current_part += char
-    
-    if current_part:
-        parts.append(current_part.strip())
-    
-    # Extract IDs from each part - they are before the " - " separator
-    ror_ids = []
-    for part in parts:
-        # Remove outer quotes if present
-        part = part.strip()
-        if (part.startswith("'") and part.endswith("'")) or (part.startswith('"') and part.endswith('"')):
-            part = part[1:-1]
-            
-        # Special case for "-1" which indicates no matches expected
-        if part == "-1" or part.startswith("-1 "):
-            ror_ids.append("-1")
-            continue
-            
-        # Extract ID - it's the part before " - "
-        if " - " in part:
-            ror_id = part.split(" - ")[0].strip()
-            ror_ids.append(ror_id)
-    
-    return ror_ids
+    try:
+        # Use ast.literal_eval to safely parse the string representation of a list
+        labels = ast.literal_eval(labels_str)
+        
+        # Extract IDs from each label
+        ror_ids = []
+        for label in labels:
+            # Special case for "-1"
+            if label == "-1" or label.startswith("-1 "):
+                ror_ids.append("-1")
+                continue
+                
+            # Extract ID - it's the part before " - "
+            if " - " in label:
+                ror_id = label.split(" - ")[0].strip()
+                ror_ids.append(ror_id)
+                
+        return ror_ids
+    except (SyntaxError, ValueError) as e:
+        # If parsing fails, log the error and return an empty list
+        print(f"Error parsing labels: {e} for string: {labels_str}")
+        return []
