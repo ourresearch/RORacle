@@ -6,39 +6,18 @@ from typing import List, Dict, Optional, Union
 from dataclasses import dataclass, asdict
 import os
 from .ror_matcher import find_ror_records, RORRecord
-from .ror_utils import load_ror_names, create_ror_record, extract_ror_ids_from_labels, extract_ror_ids_from_google_sheet_labels, download_google_sheet_tests
-
-# Global variable to store test cases after loading once
-_TEST_CASES = None
+from .ror_utils import load_ror_names, create_ror_record, extract_ror_ids_from_labels, extract_ror_ids_from_google_sheet_labels, get_test_cases_from_google_sheet
 
 def _load_test_cases():
     """
-    Load test cases from Google Sheets CSV.
-    Downloads the CSV if needed and caches the results.
+    Load test cases directly from Google Sheets.
+    Does not cache results or save to disk.
     
     Returns:
         List of test case dictionaries
     """
-    global _TEST_CASES
-    
-    # If already loaded, return the cached version
-    if _TEST_CASES is not None:
-        return _TEST_CASES
-    
-    # Download the latest test cases from Google Sheets
-    csv_path = download_google_sheet_tests()
-    
-    # Read the CSV file and store test cases
-    test_cases = []
-    with open(csv_path, 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            test_cases.append(row)
-    
-    # Cache the results
-    _TEST_CASES = test_cases
-    
-    return test_cases
+    # Fetch test cases directly from Google Sheets
+    return get_test_cases_from_google_sheet()
 
 def compare_records(produced_records: List[RORRecord], expected_records: List[RORRecord]) -> tuple[List[RORRecord], List[RORRecord], List[RORRecord]]:
     """Compare produced and expected records, returning (matches, under_matches, over_matches)"""
