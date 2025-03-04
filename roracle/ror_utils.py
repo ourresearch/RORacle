@@ -105,3 +105,58 @@ def extract_ror_ids_from_labels(labels_str: str) -> List[str]:
         # If parsing fails, log the error and return an empty list
         print(f"Error parsing labels: {e} for string: {labels_str}")
         return []
+
+def extract_ror_ids_from_google_sheet_labels(labels_str: str) -> List[str]:
+    """
+    Extract ROR IDs from labels string in Google Sheet format.
+    The format is a string with space-separated URLs like:
+    'https://ror.org/01pxwe438 https://ror.org/056jjra10'
+    
+    Args:
+        labels_str: String of space-separated ROR IDs from Google Sheet
+        
+    Returns:
+        List of ROR IDs extracted from the labels
+    """
+    # If the string is empty, return an empty list
+    if not labels_str:
+        return ["-1"]  # Use -1 to indicate no matches expected
+        
+    # Split by spaces to get individual ROR IDs
+    ror_ids = labels_str.split()
+    return ror_ids
+
+def download_google_sheet_tests() -> str:
+    """
+    Download the latest version of the test cases from Google Sheets.
+    
+    Returns:
+        Path to the downloaded CSV file
+    """
+    import requests
+    from datetime import datetime
+    
+    # Google Sheet URL
+    url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR_sVx4ts9ndZJ6UP8mPqKd-Rw_v-_A_ShaIvgIE4QhmdPeNb5H7GUPZIBZiMEXvLax1iAChlH6Mk6W/pub?output=csv"
+    
+    # Get the absolute path
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    csv_path = os.path.join(project_root, 'data', 'google_sheet_tests.csv')
+    
+    try:
+        # Download the CSV
+        response = requests.get(url)
+        response.raise_for_status()  # Raise an exception for HTTP errors
+        
+        # Write the content to file
+        with open(csv_path, 'wb') as f:
+            f.write(response.content)
+            
+        print(f"Successfully downloaded test cases from Google Sheet at {datetime.now()}")
+        return csv_path
+        
+    except Exception as e:
+        print(f"Error downloading test cases from Google Sheet: {e}")
+        # If download fails, return the path anyway (it might exist from previous downloads)
+        return csv_path

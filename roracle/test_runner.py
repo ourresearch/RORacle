@@ -6,7 +6,39 @@ from typing import List, Dict, Optional, Union
 from dataclasses import dataclass, asdict
 import os
 from .ror_matcher import find_ror_records, RORRecord
-from .ror_utils import load_ror_names, create_ror_record, extract_ror_ids_from_labels
+from .ror_utils import load_ror_names, create_ror_record, extract_ror_ids_from_labels, extract_ror_ids_from_google_sheet_labels, download_google_sheet_tests
+
+# Global variable to store test cases after loading once
+_TEST_CASES = None
+
+def _load_test_cases():
+    """
+    Load test cases from Google Sheets CSV.
+    Downloads the CSV if needed and caches the results.
+    
+    Returns:
+        List of test case dictionaries
+    """
+    global _TEST_CASES
+    
+    # If already loaded, return the cached version
+    if _TEST_CASES is not None:
+        return _TEST_CASES
+    
+    # Download the latest test cases from Google Sheets
+    csv_path = download_google_sheet_tests()
+    
+    # Read the CSV file and store test cases
+    test_cases = []
+    with open(csv_path, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            test_cases.append(row)
+    
+    # Cache the results
+    _TEST_CASES = test_cases
+    
+    return test_cases
 
 def compare_records(produced_records: List[RORRecord], expected_records: List[RORRecord]) -> tuple[List[RORRecord], List[RORRecord], List[RORRecord]]:
     """Compare produced and expected records, returning (matches, under_matches, over_matches)"""
@@ -37,39 +69,32 @@ def run_test_by_id(test_id: int) -> Dict:
     Returns:
         Dict with test result or error message
     """
-    # Load test cases from insti_bench.tsv
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
-    tsv_path = os.path.join(project_root, 'data', 'insti_bench.tsv')
+    # Load test cases (will use cached version if already loaded)
+    test_cases = _load_test_cases()
     
-    # Read the TSV file and convert to a list of test cases
-    test_cases = []
-    with open(tsv_path, 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f, delimiter='\t')
-        for row in reader:
-            test_cases.append(row)
+    # Find the test case with the matching ID
+    matching_test_cases = [tc for tc in test_cases if int(tc["id"]) == test_id]
     
-    # Check if test_id is valid
-    if test_id < 0 or test_id >= len(test_cases):
+    if not matching_test_cases:
         return {
-            "error": f"Invalid test ID: {test_id}. Valid IDs range from 0 to {len(test_cases) - 1}."
+            "error": f"Invalid test ID: {test_id}. Test ID not found in test cases."
         }
     
     # Get the test case
-    test_case = test_cases[test_id]
+    test_case = matching_test_cases[0]
     
     try:
         # Time this individual test
         test_start = time.time()
         
-        # Get affiliation, dataset_name, and expected records from the TSV
+        # Get affiliation, dataset_name, and expected records from the CSV
         affiliation = test_case["affiliation_string"]
         dataset_name = test_case["dataset_name"]
         
-        # Extract ROR IDs from the labels column
-        ror_ids = extract_ror_ids_from_labels(test_case["labels"])
+        # Extract ROR IDs from the labels column using new format
+        ror_ids = extract_ror_ids_from_google_sheet_labels(test_case["labels"])
         
-        # Special case: if the only ROR ID is "-1", it means no matches are expected
+        # Special case: if the only ROR ID is "-1" or labels is empty, it means no matches are expected
         no_matches_expected = len(ror_ids) == 1 and ror_ids[0] == "-1"
         
         # Create expected records using the factory function, but only if not the special "-1" case
@@ -96,9 +121,10 @@ def run_test_by_id(test_id: int) -> Dict:
         else:
             is_passing = len(under_matches) == 0 and len(over_matches) == 0
         
-        # Create test result
+        # Create test result using the actual ID from the sheet
+        actual_id = int(test_case["id"])
         result = TestResult(
-            id=test_id,
+            id=actual_id,
             is_passing=is_passing,
             affiliation=affiliation,
             matches=matches,
@@ -113,7 +139,7 @@ def run_test_by_id(test_id: int) -> Dict:
             "meta": {
                 "elapsed": round(elapsed, 3)
             },
-            "test_id": test_id,
+            "test_id": actual_id,
             "is_passing": result.is_passing,
             "affiliation": result.affiliation,
             "dataset_name": result.dataset_name,
@@ -140,34 +166,30 @@ def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = 
     Returns:
         Dict with meta information and test results
     """
-    # Load test cases from insti_bench.tsv
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.dirname(script_dir)
-    tsv_path = os.path.join(project_root, 'data', 'insti_bench.tsv')
-    
-    # Read the TSV file
-    test_cases = []
-    with open(tsv_path, 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f, delimiter='\t')
-        for row in reader:
-            test_cases.append(row)
+    # Load test cases (will use cached version if already loaded)
+    print("Loading test cases from Google Sheets...")
+    test_cases = _load_test_cases()
+    print(f"Loaded {len(test_cases)} test cases.")
     
     # Filter by dataset_name if specified
     if dataset_name:
-        filtered_indices = [i for i, test in enumerate(test_cases) if test.get("dataset_name") == dataset_name]
+        filtered_test_cases = [tc for tc in test_cases if tc.get("dataset_name") == dataset_name]
     else:
-        filtered_indices = list(range(len(test_cases)))
+        filtered_test_cases = test_cases
     
     # Handle sampling if requested
     if sample:
         if isinstance(sample, int):
             # Use as random seed
             random.seed(sample)
-        random.shuffle(filtered_indices)
+        random.shuffle(filtered_test_cases)
     
     # Apply limit if specified
-    if limit and limit < len(filtered_indices):
-        filtered_indices = filtered_indices[:limit]
+    if limit and limit < len(filtered_test_cases):
+        filtered_test_cases = filtered_test_cases[:limit]
+    
+    # Get the actual test IDs from the filtered cases
+    test_ids = [int(tc["id"]) for tc in filtered_test_cases]
     
     # Run tests
     results = []
@@ -184,10 +206,17 @@ def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = 
     start_time = time.time()
     all_times = []
     
-    for i, test_idx in enumerate(filtered_indices):
+    total_tests = len(test_ids)
+    print(f"Running {total_tests} tests...")
+    
+    for i, test_id in enumerate(test_ids):
+        # Show progress
+        if i % 100 == 0 or i == total_tests - 1:
+            print(f"Progress: {i+1}/{total_tests} tests completed ({((i+1)/total_tests)*100:.1f}%)")
+        
         # Run the test
         test_start = time.time()
-        result = run_test_by_id(test_idx)
+        result = run_test_by_id(test_id)
         test_elapsed = time.time() - test_start
         all_times.append(test_elapsed)
         
@@ -200,47 +229,46 @@ def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = 
                 passing += 1
             else:
                 failing += 1
-            
-            # Update metrics for precision/recall calculations
-            # Special handling for "-1" case (no matches expected)
-            if "no_matches_expected" in result and result["no_matches_expected"] and len(result["matches"]) == 0:
-                # If no matches were expected and none were found, this is a true negative
-                # We don't count it in precision/recall calculations
-                pass
-            else:
-                total_matches += len(result["matches"])
-                total_under_matches += len(result["under_matches"])
-                total_over_matches += len(result["over_matches"])
                 
+            # Add to metrics
+            total_matches += len(result["matches"])
+            total_under_matches += len(result["under_matches"])
+            total_over_matches += len(result["over_matches"])
+        
         # Add to results
         results.append(result)
-        
-    # Calculate overall elapsed time and stats
+    
+    # Calculate total elapsed time
     total_elapsed = time.time() - start_time
+    
+    # Calculate percentages
+    total_completed_tests = passing + failing
+    pass_percentage = (passing / total_completed_tests * 100) if total_completed_tests > 0 else 0
+    fail_percentage = (failing / total_completed_tests * 100) if total_completed_tests > 0 else 0
+    
+    # Calculate time stats
     avg_time = sum(all_times) / len(all_times) if all_times else 0
     
-    # Calculate passing percentage
-    test_count = passing + failing
-    pass_rate = (passing / test_count) * 100 if test_count > 0 else 0
+    print(f"Test run completed in {total_elapsed:.2f} seconds.")
+    print(f"Results: {passing} passing, {failing} failing, {errors} errors")
     
-    # Calculate overall performance metrics
+    # Calculate performance metrics
     precision = total_matches / (total_matches + total_over_matches) if (total_matches + total_over_matches) > 0 else 0
     recall = total_matches / (total_matches + total_under_matches) if (total_matches + total_under_matches) > 0 else 0
     f_score = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
     
-    # Calculate overall metrics for passing tests
+    # Separate tests into passing, failing, and error
     passing_results = [r for r in results if "is_passing" in r and r["is_passing"]]
     failing_results = [r for r in results if "is_passing" in r and not r["is_passing"]]
     error_results = [r for r in results if "error" in r]
     
-    # Return comprehensive results
     return {
         "meta": {
             "total_tests": len(results),
             "passing": passing,
             "failing": failing,
             "errors": errors,
-            "pass_rate_percent": round(pass_rate, 2),
+            "pass_rate_percent": round(pass_percentage, 2),
             "total_elapsed": round(total_elapsed, 3),
             "avg_time_per_test": round(avg_time, 3),
             "performance": {
@@ -266,14 +294,14 @@ class TestResult:
     dataset_name: str = None
     no_matches_expected: bool = False
     
-    def to_dict(self) -> Dict:
+    def to_dict(self):
         return {
             "id": self.id,
             "is_passing": self.is_passing,
             "affiliation": self.affiliation,
-            "matches": [r.to_dict() for r in self.matches],
-            "under_matches": [r.to_dict() for r in self.under_matches],
-            "over_matches": [r.to_dict() for r in self.over_matches],
+            "matches": [record.to_dict() for record in self.matches],
+            "under_matches": [record.to_dict() for record in self.under_matches],
+            "over_matches": [record.to_dict() for record in self.over_matches],
             "elapsed": round(self.elapsed, 3),
             "dataset_name": self.dataset_name,
             "no_matches_expected": self.no_matches_expected
