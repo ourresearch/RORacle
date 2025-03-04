@@ -1,8 +1,9 @@
 from fastapi import FastAPI, HTTPException
 from roracle.ror_matcher import find_ror_records
 from roracle.test_runner import run_tests, run_test_by_id
-from typing import Optional, Union
+from typing import Optional, Union, List
 import logging
+import time
 
 logger = logging.getLogger(__name__)
 
@@ -73,3 +74,37 @@ async def run_single_test(test_id: int):
             status_code=500,
             detail=f"Error running test {test_id}: {str(e)}. This may happen if the Google Sheet is unavailable. Please ensure you have internet access and the Google Sheet URL is correct."
         )
+
+@app.get("/benchmark")
+async def benchmark_ror_records(affiliations: List[str]):
+    """
+    Benchmark the performance of find_ror_records with multiple affiliation strings.
+    
+    Args:
+        affiliations: List of affiliation strings to process
+    """
+    results = []
+    total_start_time = time.time()
+    
+    for affiliation in affiliations:
+        start_time = time.time()
+        records = find_ror_records(affiliation)
+        end_time = time.time()
+        
+        results.append({
+            "affiliation": affiliation,
+            "execution_time": end_time - start_time,
+            "record_count": len(records),
+            "records": [record.to_dict() for record in records]
+        })
+    
+    total_time = time.time() - total_start_time
+    
+    return {
+        "meta": {
+            "total_affiliations": len(affiliations),
+            "total_execution_time": total_time,
+            "average_execution_time": total_time / len(affiliations) if affiliations else 0
+        },
+        "results": results
+    }

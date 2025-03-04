@@ -1,7 +1,7 @@
 import csv
 import os
 import string
-from typing import Dict, List, Set
+from typing import Dict, List, Set, Tuple, Any
 from dataclasses import dataclass
 import re
 import time
@@ -9,6 +9,51 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+# Simple Trie implementation
+class TrieNode:
+    def __init__(self):
+        self.children = {}
+        self.is_end_of_word = False
+        self.value = None
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+        
+    def insert(self, word: str, value: Any = None):
+        """Insert a word into the trie with optional value"""
+        node = self.root
+        for char in word:
+            if char not in node.children:
+                node.children[char] = TrieNode()
+            node = node.children[char]
+        node.is_end_of_word = True
+        node.value = value if value is not None else word
+        
+    def search_all(self, text: str):
+        """Find all occurrences of trie words in the text"""
+        matches = []
+        n = len(text)
+        
+        # Check each position in the text as a potential start
+        for start_pos in range(n):
+            node = self.root
+            # Try to match word starting at current position
+            for i in range(start_pos, n):
+                char = text[i]
+                # If character is not in trie, break
+                if char not in node.children:
+                    break
+                # Move to next node
+                node = node.children[char]
+                # If this is a word ending, we found a match
+                if node.is_end_of_word:
+                    end_pos = i
+                    value = node.value
+                    matches.append((start_pos, end_pos, value))
+                    
+        return matches
 
 @dataclass
 class RORLocation:
@@ -40,6 +85,7 @@ class RORDataManager:
     def __init__(self):
         self.name_to_institutions: Dict[str, List[RORInstitution]] = {}
         self.sorted_names: List[str] = []
+        self.trie = Trie()  # Replace automaton with trie
         logger.info("Starting RORDataManager initialization...")
         start_time = time.time()
         self._load_data()
@@ -106,6 +152,13 @@ class RORDataManager:
                                  key=lambda x: (-len(x), x))
         sort_time = time.time() - sort_start
         logger.info(f"Name sorting completed in {sort_time:.2f} seconds")
+        
+        # Build Trie
+        trie_start = time.time()
+        logger.info("Building Trie for efficient string matching...")
+        self._build_trie()
+        trie_time = time.time() - trie_start
+        logger.info(f"Trie building completed in {trie_time:.2f} seconds")
 
     def _add_name_mapping(self, name: str, institution: RORInstitution):
         """Add a name->institution mapping to our lookup dictionary"""
@@ -114,6 +167,18 @@ class RORDataManager:
             if normalized_name not in self.name_to_institutions:
                 self.name_to_institutions[normalized_name] = []
             self.name_to_institutions[normalized_name].append(institution)
+            
+    def _build_trie(self):
+        """Build Trie for efficient string matching"""
+        # Add all normalized institution names to the trie
+        # Skip very short names (less than 3 characters) to prevent spurious matches
+        count = 0
+        for name in self.name_to_institutions.keys():
+            if len(name) >= 3:
+                self.trie.insert(name, name)
+                count += 1
+        
+        logger.info(f"Built trie with {count} patterns")
 
 def normalize_text(text: str) -> str:
     """
