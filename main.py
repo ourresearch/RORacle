@@ -34,10 +34,8 @@ async def run_test_suite(limit: Optional[int] = None, sample: Optional[Union[boo
         sample: If True, randomizes test order. If int, uses it as random seed.
         dataset_name: Optional filter to only run tests from a specific dataset
     """
-    # For Heroku, enforce a limit to prevent memory issues
-    if not limit or limit > 100:
-        limit = 100
-        
+    # No default limit - run all tests unless the user explicitly sets a limit
+    
     try:
         return run_tests(limit=limit, sample=sample, dataset_name=dataset_name)
     except Exception as e:
