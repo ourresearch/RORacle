@@ -2,6 +2,9 @@ from fastapi import FastAPI, HTTPException
 from roracle.ror_matcher import find_ror_records
 from roracle.test_runner import run_tests, run_test_by_id
 from typing import Optional, Union
+import logging
+
+logger = logging.getLogger(__name__)
 
 app = FastAPI(title="RORacle API")
 
