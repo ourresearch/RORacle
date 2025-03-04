@@ -175,21 +175,33 @@ def run_tests(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = 
     if dataset_name:
         filtered_test_cases = [tc for tc in test_cases if tc.get("dataset_name") == dataset_name]
     else:
-        filtered_test_cases = test_cases
+        filtered_test_cases = test_cases.copy()  # Make a copy to avoid modifying the global cache
     
     # Handle sampling if requested
+    # First get the test IDs to ensure consistent ordering regardless of other data
+    test_ids = [int(tc["id"]) for tc in filtered_test_cases]
+    
+    # If sample is provided, use it to shuffle the ids consistently
     if sample:
-        if isinstance(sample, int):
-            # Use as random seed
-            random.seed(sample)
-        random.shuffle(filtered_test_cases)
+        print(f"Using sample seed: {sample}")
+        # Create a new random generator with the specified seed
+        rng = random.Random(sample if isinstance(sample, int) else None)
+        
+        # Create a list of (index, id) pairs, shuffle it, and then reorder test_cases
+        id_with_indices = list(enumerate(test_ids))
+        rng.shuffle(id_with_indices)
+        
+        # Extract the reordered indices
+        shuffled_indices = [idx for idx, _ in id_with_indices]
+        
+        # Reorder the test cases according to the shuffled indices
+        filtered_test_cases = [filtered_test_cases[i] for i in shuffled_indices]
+        test_ids = [test_ids[i] for i in shuffled_indices]
     
     # Apply limit if specified
     if limit and limit < len(filtered_test_cases):
         filtered_test_cases = filtered_test_cases[:limit]
-    
-    # Get the actual test IDs from the filtered cases
-    test_ids = [int(tc["id"]) for tc in filtered_test_cases]
+        test_ids = test_ids[:limit]
     
     # Run tests
     results = []
