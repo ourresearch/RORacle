@@ -2,6 +2,7 @@ import csv
 import os
 import ast
 from typing import Dict, List, Optional
+import requests
 
 # Importing here to avoid circular imports
 # This will only be used for type annotations
@@ -126,37 +127,53 @@ def extract_ror_ids_from_google_sheet_labels(labels_str: str) -> List[str]:
     ror_ids = labels_str.split()
     return ror_ids
 
-def download_google_sheet_tests() -> str:
+def download_google_sheet_tests(force_refresh=False):
     """
-    Download the latest version of the test cases from Google Sheets.
+    Download the latest test cases from Google Sheets
     
+    Args:
+        force_refresh: If True, bypass caching and force a new download
+        
     Returns:
         Path to the downloaded CSV file
+        
+    Raises:
+        Exception: If the download fails and no cached version is available
     """
-    import requests
-    from datetime import datetime
-    
-    # Google Sheet URL
-    url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR_sVx4ts9ndZJ6UP8mPqKd-Rw_v-_A_ShaIvgIE4QhmdPeNb5H7GUPZIBZiMEXvLax1iAChlH6Mk6W/pub?output=csv"
-    
-    # Get the absolute path
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(script_dir)
     csv_path = os.path.join(project_root, 'data', 'google_sheet_tests.csv')
     
+    # If the file exists and we're not forcing a refresh, use the cached version
+    if os.path.exists(csv_path) and not force_refresh:
+        print(f"Using cached Google Sheet tests from {csv_path}")
+        return csv_path
+    
     try:
-        # Download the CSV
-        response = requests.get(url)
-        response.raise_for_status()  # Raise an exception for HTTP errors
+        print("Downloading test cases from Google Sheet...")
+        # URL to the publicly published CSV
+        csv_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSyEANmiZ-19Bmy5xNl-A8J7NOdQdVU6rXQYSC0B4EjgYMrUb-hPRxX9QydsIzYbEN5YZnXFcN8EVUm/pub?gid=0&single=true&output=csv"
         
-        # Write the content to file
+        # Create the directory if it doesn't exist
+        os.makedirs(os.path.dirname(csv_path), exist_ok=True)
+        
+        # Download the CSV
+        response = requests.get(csv_url, timeout=10)
+        response.raise_for_status()  # Raises an exception for HTTP errors
+        
+        # Write to file
         with open(csv_path, 'wb') as f:
             f.write(response.content)
-            
-        print(f"Successfully downloaded test cases from Google Sheet at {datetime.now()}")
-        return csv_path
         
-    except Exception as e:
-        print(f"Error downloading test cases from Google Sheet: {e}")
-        # If download fails, return the path anyway (it might exist from previous downloads)
+        print(f"Test cases downloaded successfully to {csv_path}")
         return csv_path
+    except Exception as e:
+        error_msg = f"Failed to download test cases from Google Sheet: {str(e)}"
+        
+        # Check if we have a cached version we can use as a fallback
+        if os.path.exists(csv_path):
+            print(f"Warning: {error_msg}, using cached version from {csv_path}")
+            return csv_path
+        
+        # No cached version available, raise a clear error
+        raise Exception(f"{error_msg}. No cached version available. Please ensure you have internet access and the Google Sheet URL is correct.")
