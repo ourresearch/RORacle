@@ -18,7 +18,7 @@ from collections import defaultdict
 
 # Define file paths
 INPUT_FILE = Path("data/insti_bench_openalex_ids.tsv")
-OUTPUT_FILE = Path("data/insti_bench.tsv")
+OUTPUT_FILE = Path("data/affiliation_string_to_rors.csv")
 LOG_FILE = Path("data/logs/conversion_log.txt")
 
 # Maximum number of IDs to include in a single batch request
@@ -36,6 +36,9 @@ RETRY_BACKOFF = 2.0
 # Pattern for valid OpenAlex IDs (numeric and not -1)
 VALID_OPENALEX_ID_PATTERN = re.compile(r'^(?!-1$)\d+$')
 
+# Pattern for validating ROR IDs (e.g., "https://ror.org/02mhbdp94" or "02mhbdp94")
+VALID_ROR_ID_PATTERN = re.compile(r'^(?:https?://ror\.org/)?([0-9a-zA-Z]{9})$')
+
 def is_valid_openalex_id(openalex_id):
     """
     Check if an OpenAlex ID is valid for API queries.
@@ -47,6 +50,28 @@ def is_valid_openalex_id(openalex_id):
         bool: True if the ID is valid, False otherwise
     """
     return bool(VALID_OPENALEX_ID_PATTERN.match(openalex_id))
+
+def extract_and_format_ror_id(ror_id):
+    """
+    Extract and format a valid ROR ID.
+    
+    Args:
+        ror_id (str): ROR ID to validate and format
+        
+    Returns:
+        str or None: Formatted ROR ID if valid, None otherwise
+    """
+    if not ror_id:
+        return None
+        
+    # Check if the ROR ID is valid
+    match = VALID_ROR_ID_PATTERN.match(ror_id)
+    if not match:
+        return None
+        
+    # Extract the 9-character ID and format it with the ror.org prefix
+    ror_id_value = match.group(1)
+    return f"https://ror.org/{ror_id_value}"
 
 def extract_openalex_ids_from_labels(all_rows):
     """
@@ -136,7 +161,7 @@ def get_ror_ids_for_openalex_batch(openalex_ids, log_file, retry_count=0):
             # Extract the ROR ID (removing the https://ror.org/ prefix if present)
             ror_id = item.get('ror')
             if ror_id:
-                ror_id = ror_id.replace('https://ror.org/', '')
+                ror_id = extract_and_format_ror_id(ror_id)
                 ror_mapping[openalex_id] = ror_id
             else:
                 log_file.write(f"OpenAlex ID {openalex_id} has no ROR ID in API response\n")
@@ -245,7 +270,7 @@ def process_in_batches(openalex_id_positions, log_file):
                         result = data['results'][0]
                         ror_id = result.get('ror')
                         if ror_id:
-                            ror_id = ror_id.replace('https://ror.org/', '')
+                            ror_id = extract_and_format_ror_id(ror_id)
                             ror_mapping[unmapped_id] = ror_id
                             log_file.write(f"    Success! Found ROR ID {ror_id} for OpenAlex ID {unmapped_id}\n")
                         else:
@@ -274,12 +299,15 @@ def update_labels_with_ror_ids(all_rows, openalex_id_positions, ror_mapping, log
     # Create a copy of the rows to modify
     updated_rows = [row.copy() for row in all_rows]
     
+    # Create a mapping from row index to a list of ROR IDs
+    row_to_rors = defaultdict(set)
+    
     # Keep track of how many IDs were successfully converted
     converted_count = 0
     not_found_count = 0
     invalid_count = 0
     
-    # Update each position with the corresponding ROR ID
+    # Collect ROR IDs for each row
     for openalex_id, positions in openalex_id_positions.items():
         ror_id = ror_mapping.get(openalex_id)
         
@@ -288,32 +316,38 @@ def update_labels_with_ror_ids(all_rows, openalex_id_positions, ror_mapping, log
                 # Parse the labels column
                 labels = ast.literal_eval(updated_rows[row_idx][1])
                 
-                # Split the label into ID and name
+                # Get institution name for logging
                 parts = labels[label_idx].split(' - ', 1)
-                if len(parts) != 2:
-                    continue
-                
-                _, name = parts
+                name = parts[1] if len(parts) == 2 else "Unknown"
                 
                 if ror_id:
-                    # Replace the OpenAlex ID with the ROR ID
-                    labels[label_idx] = f"{ror_id} - {name}"
+                    # Add this ROR ID to the set for this row
+                    row_to_rors[row_idx].add(ror_id)
                     converted_count += 1
                 else:
-                    # Keep the original if ROR ID not found
+                    # Log when ROR ID not found
                     if is_valid_openalex_id(openalex_id):
                         not_found_count += 1
                         log_file.write(f"No ROR ID found for OpenAlex ID {openalex_id} ({name}) in row {row_idx}\n")
                     else:
                         invalid_count += 1
                 
-                # Update the row with the modified labels
-                updated_rows[row_idx][1] = str(labels)
-                
             except (IndexError, SyntaxError, ValueError) as e:
                 error_msg = f"Error updating labels in row {row_idx}: {e}\n"
                 print(error_msg)
                 log_file.write(error_msg)
+    
+    # Now update each row with the space-separated list of ROR IDs
+    for row_idx, ror_set in row_to_rors.items():
+        if row_idx < len(updated_rows):
+            if ror_set:  # Only update if there are valid ROR IDs
+                # Join all ROR IDs with spaces
+                ror_list = " ".join(sorted(ror_set))
+                # Replace the labels column with the space-separated list of ROR IDs
+                updated_rows[row_idx][1] = ror_list
+            else:
+                # Leave the cell empty if no valid ROR IDs
+                updated_rows[row_idx][1] = ""
     
     print(f"Converted {converted_count} OpenAlex IDs to ROR IDs")
     print(f"Could not find ROR IDs for {not_found_count} valid OpenAlex IDs")
@@ -372,12 +406,29 @@ def main():
         print("Updating labels with ROR IDs...")
         log_file.write("Updating labels with ROR IDs...\n")
         updated_rows = update_labels_with_ror_ids(all_rows, openalex_id_positions, ror_mapping, log_file)
+        
+        # Set all remaining label cells to empty strings instead of the original labels
+        for i in range(1, len(updated_rows)):
+            if i < len(updated_rows) and len(updated_rows[i]) > 1:
+                # Check if the labels column hasn't been updated (if it's still a string representation of a list)
+                if updated_rows[i][1].startswith('[') and updated_rows[i][1].endswith(']'):
+                    updated_rows[i][1] = ""
+        
         log_file.write("\n")
         
         # Write the updated rows to the output file
         with open(OUTPUT_FILE, 'w', newline='', encoding='utf-8') as outfile:
-            writer = csv.writer(outfile, delimiter='\t')
-            writer.writerows(updated_rows)
+            writer = csv.writer(outfile, delimiter=',')
+            
+            # Add "id" to the header row
+            header_row = updated_rows[0]
+            header_row.insert(0, "id")
+            writer.writerow(header_row)
+            
+            # Add incremental IDs to all data rows
+            for i, row in enumerate(updated_rows[1:], 1):
+                row.insert(0, str(i))
+                writer.writerow(row)
         
         print(f"Conversion complete! Output written to {OUTPUT_FILE}")
         log_file.write(f"Conversion completed at {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
