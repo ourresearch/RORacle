@@ -9,6 +9,7 @@ import time
 
 logger = logging.getLogger(__name__)
 
+# Initialize the FastAPI application
 app = FastAPI(title="RORacle API")
 
 # Add CORS middleware to allow cross-origin requests from any domain
