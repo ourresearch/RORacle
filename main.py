@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from roracle.ror_matcher import find_ror_records
 from roracle.test_runner import run_tests, run_test_by_id
 from roracle.ror_utils import get_test_cases_from_google_sheet
@@ -9,6 +10,15 @@ import time
 logger = logging.getLogger(__name__)
 
 app = FastAPI(title="RORacle API")
+
+# Add CORS middleware to allow cross-origin requests from any domain
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allow all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all methods
+    allow_headers=["*"],  # Allow all headers
+)
 
 @app.get("/")
 async def root():
