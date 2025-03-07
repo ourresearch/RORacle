@@ -1,6 +1,6 @@
-Conversion started at 2025-02-27 14:09:57
+Conversion started at 2025-03-04 16:11:25
 Reading from: data/insti_bench_openalex_ids.tsv
-Writing to: data/insti_bench.tsv
+Writing to: data/affiliation_string_to_rors.csv
 Batch size: 50
 API pause: 1.0 seconds
 Max retries: 3
@@ -91,7 +91,7 @@ Processing batch 27 of 44 (50 IDs)
 Processing batch 28 of 44 (50 IDs)
   Found ROR IDs for 50 out of 50 valid OpenAlex IDs in this batch
 Processing batch 29 of 44 (50 IDs)
-The following OpenAlex IDs were not found in the API response: 4210092770, 4210124352, 4210136436
+The following OpenAlex IDs were not found in the API response: 4210124352, 4210136436, 4210092770
 API URL: https://api.openalex.org/institutions?select=id,ror&filter=ids.openalex:I4210153928|I4210138757|I4210139715|I165831266|I42405503|I70054679|I4210162705|I4210119095|I4210097806|I4210108471|I115592961|I4210108951|I13268429|I4210149451|I208086522|I4210152006|I12411659|I21160419|I4210121553|I1286583668|I4210092770|I67581229|I177828482|I202539009|I211433327|I4210100888|I4210131342|I2802334042|I133836048|I4210138501|I4210142396|I43218427|I50928471|I4210136436|I50760025|I177156846|I4210164952|I192507692|I56085075|I1314696892|I26120043|I64175962|I4210115246|I2799740997|I2799971621|I2801056593|I2801799315|I4210124352|I24571045|I192168892&per_page=50
   Found ROR IDs for 47 out of 50 valid OpenAlex IDs in this batch
   Could not map the following OpenAlex IDs: 4210092770, 4210136436, 4210124352
@@ -189,5 +189,5 @@ Converted 3842 OpenAlex IDs to ROR IDs
 Could not find ROR IDs for 20 valid OpenAlex IDs
 Skipped 354 invalid OpenAlex IDs
 
-Conversion completed at 2025-02-27 14:11:20
-Output written to data/insti_bench.tsv
+Conversion completed at 2025-03-04 16:12:48
+Output written to data/affiliation_string_to_rors.csv

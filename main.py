@@ -110,7 +110,7 @@ async def list_datasets():
             detail=f"Error listing datasets: {str(e)}. This may happen if the Google Sheet is unavailable. Please ensure you have internet access and the Google Sheet URL is correct."
         )
 
-@app.get("/tests/dataset/{dataset_name}")
+@app.get("/tests/datasets/{dataset_name}")
 async def run_dataset_tests(dataset_name: str):
     """
     Run all tests for a specific dataset and return results.
