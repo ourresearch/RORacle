@@ -126,8 +126,8 @@ def run_tests(test_cases: List[Dict], limit: Optional[int] = None, sample: Optio
     
     Args:
         test_cases: List of test cases to run
-        limit: Optional maximum number of tests to run
-        sample: If True, randomizes test order. If int, uses it as random seed.
+        limit: Deprecated parameter, no longer used
+        sample: Deprecated parameter, no longer used
         dataset_name: Optional filter to only run tests from a specific dataset
     
     Returns:
@@ -139,31 +139,8 @@ def run_tests(test_cases: List[Dict], limit: Optional[int] = None, sample: Optio
     else:
         filtered_test_cases = test_cases.copy()  # Make a copy to avoid modifying the input
     
-    # Handle sampling if requested
-    # First get the test IDs to ensure consistent ordering regardless of other data
+    # Get the test IDs to ensure consistent ordering regardless of other data
     test_ids = [int(tc["id"]) for tc in filtered_test_cases]
-    
-    # If sample is provided, use it to shuffle the ids consistently
-    if sample:
-        print(f"Using sample seed: {sample}")
-        # Create a new random generator with the specified seed
-        rng = random.Random(sample if isinstance(sample, int) else None)
-        
-        # Create a list of (index, id) pairs, shuffle it, and then reorder test_cases
-        id_with_indices = list(enumerate(test_ids))
-        rng.shuffle(id_with_indices)
-        
-        # Extract the reordered indices
-        shuffled_indices = [idx for idx, _ in id_with_indices]
-        
-        # Reorder the test cases according to the shuffled indices
-        filtered_test_cases = [filtered_test_cases[i] for i in shuffled_indices]
-        test_ids = [test_ids[i] for i in shuffled_indices]
-    
-    # Apply limit if specified
-    if limit and limit > 0:
-        test_ids = test_ids[:limit]
-        filtered_test_cases = filtered_test_cases[:limit]
         
     # Track start time for the whole test run
     overall_start = time.time()

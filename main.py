@@ -41,13 +41,11 @@ async def get_ror_records(affiliation: str):
     }
 
 @app.get("/tests")
-async def run_test_suite(limit: Optional[int] = None, sample: Optional[Union[bool, int]] = None, dataset_name: Optional[str] = None):
+async def run_test_suite(dataset_name: Optional[str] = None):
     """
     Run test suite and return results.
     
     Args:
-        limit: Optional maximum number of tests to run
-        sample: If True, randomizes test order. If int, uses it as random seed.
         dataset_name: Optional filter to only run tests from a specific dataset
     """
     try:
@@ -57,7 +55,7 @@ async def run_test_suite(limit: Optional[int] = None, sample: Optional[Union[boo
         print(f"Loaded {len(test_cases)} test cases.")
         
         # Run the test suite with the fetched test cases
-        result = run_tests(test_cases, limit, sample, dataset_name)
+        result = run_tests(test_cases, None, None, dataset_name)
         
         return result
     except Exception as e:
@@ -65,6 +63,76 @@ async def run_test_suite(limit: Optional[int] = None, sample: Optional[Union[boo
         raise HTTPException(
             status_code=500,
             detail=f"Error running test suite: {str(e)}. This may happen if the Google Sheet is unavailable. Please ensure you have internet access and the Google Sheet URL is correct."
+        )
+
+@app.get("/tests/datasets")
+async def list_datasets():
+    """
+    List all available datasets with test counts.
+    
+    Returns:
+        Dict with dataset names and their test counts
+    """
+    try:
+        # Fetch test cases from Google Sheets
+        print("Loading test cases from Google Sheets to list datasets...")
+        test_cases = get_test_cases_from_google_sheet()
+        print(f"Loaded {len(test_cases)} total test cases.")
+        
+        # Group test cases by dataset_name and count them
+        datasets = {}
+        for test_case in test_cases:
+            dataset_name = test_case.get("dataset_name", "unknown")
+            if dataset_name not in datasets:
+                datasets[dataset_name] = 0
+            datasets[dataset_name] += 1
+        
+        # Format the response
+        dataset_list = [
+            {"name": name, "count": count} 
+            for name, count in datasets.items()
+        ]
+        
+        # Sort alphabetically by name
+        dataset_list.sort(key=lambda x: x["name"])
+        
+        return {
+            "meta": {
+                "total_datasets": len(dataset_list),
+                "total_tests": len(test_cases)
+            },
+            "results": dataset_list
+        }
+    except Exception as e:
+        logger.error(f"Error listing datasets: {str(e)}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error listing datasets: {str(e)}. This may happen if the Google Sheet is unavailable. Please ensure you have internet access and the Google Sheet URL is correct."
+        )
+
+@app.get("/tests/dataset/{dataset_name}")
+async def run_dataset_tests(dataset_name: str):
+    """
+    Run all tests for a specific dataset and return results.
+    
+    Args:
+        dataset_name: Name of the dataset to run tests for
+    """
+    try:
+        # Fetch test cases from Google Sheets once at the beginning
+        print(f"Loading test cases from Google Sheets for dataset: {dataset_name}...")
+        test_cases = get_test_cases_from_google_sheet()
+        print(f"Loaded {len(test_cases)} total test cases.")
+        
+        # Run the test suite with the fetched test cases for the specified dataset
+        result = run_tests(test_cases, None, None, dataset_name)
+        
+        return result
+    except Exception as e:
+        logger.error(f"Error running tests for dataset {dataset_name}: {str(e)}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error running tests for dataset {dataset_name}: {str(e)}. This may happen if the Google Sheet is unavailable. Please ensure you have internet access and the Google Sheet URL is correct."
         )
 
 @app.get("/tests/{test_id}")
