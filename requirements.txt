@@ -2,3 +2,10 @@ fastapi==0.109.2
 uvicorn==0.27.1
 gunicorn==22.0.0
 requests==2.28.2
+sentry-sdk==2.71.0
+# Pinned 2026-10-14 (#1685) to what the live dyno ran since 2025-03, so a rebuild changes nothing else.
+anyio==4.8.0
+pydantic==2.10.6
+pydantic_core==2.27.2
+starlette==0.36.3
+urllib3==1.26.20

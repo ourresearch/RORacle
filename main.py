@@ -1,3 +1,22 @@
+import os
+
+import sentry_sdk
+from sentry_sdk.integrations.logging import LoggingIntegration
+
+# Sentry error reporting (oxjob #1685); a missing SENTRY_DSN makes this a no-op. Errors only:
+# unhandled exceptions and HTTPException 5xx (the FastAPI integration's default). The
+# logger.error lines before each 500 stay breadcrumbs, so a failure isn't reported twice.
+if os.environ.get("SENTRY_DSN"):
+    sentry_sdk.init(
+        dsn=os.environ["SENTRY_DSN"],
+        environment=os.environ.get("SENTRY_ENVIRONMENT", "production"),
+        release=os.environ.get("HEROKU_SLUG_COMMIT") or os.environ.get("HEROKU_RELEASE_VERSION"),
+        server_name=os.environ.get("DYNO"),
+        send_default_pii=False,
+        traces_sample_rate=0,
+        integrations=[LoggingIntegration(event_level=None)],
+    )
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from roracle.ror_matcher import find_ror_records
